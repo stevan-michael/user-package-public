@@ -1,0 +1,695 @@
+======================================================================
+======================================================================
+FILE REFACTOR
+======================================================================
+======================================================================
+
+Version:
+1.0
+
+Status:
+Official
+
+Category:
+Documentation Transformation Method
+
+Identity:
+Documentation Transformation Method governing structural
+refactoring of approved documentation throughout USER_PACKAGE.
+
+Purpose:
+Improve documentation structure while preserving all approved
+knowledge, architecture, responsibilities, terminology, and
+capabilities.
+
+Scope:
+Define documentation refactoring behavior only.
+
+Primary Responsibility:
+Documentation refactoring.
+
+Authority:
+USER_PROFILE.
+
+Depends On:
+- AI_BEHAVIOR_STANDARD.
+- AI_OUTPUT_STANDARD.
+- DOCUMENT_STRUCTURE_STANDARD.
+- DOCUMENT_WRITING_STANDARD.
+- PROPERTY_VALUE_STANDARD.
+- VISUAL_BOUNDARY_STANDARD.
+- DOCUMENT_LAYOUT_STANDARD.
+- Applicable approved documentation.
+- Applicable authorization document.
+
+Referenced By:
+- USER_PACKAGE documentation workflows.
+- Documentation migration workflows.
+- Authorized documentation maintenance tasks.
+
+Complements:
+- DOC_CONSOLIDATION.
+- DOC_SYNTHESIS.
+- DOC_STREAMLINING.
+- PATCH_DELIVERY_STANDARD.
+- SCRIPT_DELIVERY.
+
+Does Not Define:
+- Assistant behavior.
+- New knowledge approval.
+- Architecture design.
+- Document synthesis.
+- Document consolidation.
+- Documentation writing.
+- Document structure.
+- Property–Value grammar.
+- Visual boundary grammar.
+- Document layout.
+- Output rendering.
+- Delivery behavior.
+- Runtime behavior.
+
+======================================================================
+1. FOUNDATION
+======================================================================
+
+Purpose:
+Define the authoritative responsibility, interpretation,
+applicability, and operational boundary of File Refactor.
+
+Refactor Contract Interpretation:
+Every refactoring requirement expressed using "shall" constitutes
+a mandatory documentation transformation constraint.
+
+Refactoring behavior not explicitly required or permitted by this
+Method or a higher-authority USER_PACKAGE document shall not be
+assumed to be permitted.
+
+Requirements owned by another authoritative USER_PACKAGE Method
+or Standard shall not be interpreted as File Refactor
+requirements.
+
+Refactor Definition:
+File Refactor reorganizes approved documentation to improve
+maintainability without redesigning approved architecture or
+changing approved knowledge.
+
+Applicability:
+This Method applies only to approved documentation assets.
+
+Excluded Assets:
+- Source code.
+- Runtime implementations.
+- Executable assets.
+- Behavioral Standards.
+- Binary assets.
+- Machine-readable serialization formats.
+
+Responsibility Rule:
+File Refactor governs documentation refactoring only.
+
+======================================================================
+2. INPUT CONTRACT
+======================================================================
+
+Current Documents:
+The current approved documentation.
+
+Preserve:
+- Approved knowledge.
+- Approved architecture.
+- Approved responsibilities.
+- Approved terminology.
+- Approved capabilities.
+
+Refactor Applicability:
+
+This Method applies only to approved
+documentation assets.
+
+This Method shall not be applied to:
+- Source code.
+- Runtime implementations.
+- Executable assets.
+- Behavioral standards.
+- Output rendering.
+
+Assets outside the defined Scope remain governed
+by their applicable authoritative Method or
+Standard.
+
+The active Method defines document transformation.
+
+Output presentation belongs to the active
+Output Mode when one is active.
+
+Input Requirements:
+- The latest approved documentation baseline.
+- Approved architecture.
+- Approved responsibilities.
+- Applicable Standards.
+- Explicit User constraints.
+- Applicable authorization.
+
+Baseline Rule:
+The latest approved physical documentation asset shall be used as
+the transformation baseline.
+
+======================================================================
+3. REFACTOR MODEL
+======================================================================
+
+Purpose:
+Define the deterministic documentation refactoring model.
+
+Refactor Model:
+
+Approved Documentation
+        ↓
+Knowledge Extraction
+        ↓
+Architecture Preservation
+        ↓
+Structural Reorganization
+        ↓
+Standards Compliance Review
+        ↓
+Refactored Documentation
+
+Model Interpretation:
+Each stage shall complete before the next stage begins.
+
+Model Boundary:
+The Refactor Model shall not create new approved knowledge or
+redesign approved architecture.
+
+======================================================================
+4. REFACTOR RULES
+======================================================================
+
+Generate a new documentation structure.
+
+Do not change approved knowledge.
+
+Do not redesign approved architecture.
+
+Documentation shall be reorganized to improve
+maintainability.
+
+Combine documents that represent one logical
+maintenance unit.
+
+Split documents only when responsibilities become
+independent.
+
+Relocate sections into more appropriate documents.
+
+Rename documents when ambiguity is reduced
+or maintainability improves.
+
+Documentation structure shall be normalized.
+
+Use the latest approved terminology.
+
+Remove structural redundancy.
+
+Preserve every approved capability.
+
+Refactor Decision Rule:
+
+Refactoring decisions shall be derived only
+from:
+- This Method.
+- Applicable higher-authority USER_PACKAGE
+  Standards.
+- Explicit User instructions.
+- Approved documentation architecture.
+
+Refactoring decisions shall not be derived from
+Assistant stylistic preference.
+
+Refactor Preservation Interpretation:
+
+Preserving approved knowledge and architecture
+takes precedence over improving documentation
+organization.
+
+Equivalent documentation architectures shall
+preserve equivalent responsibilities unless
+explicitly instructed otherwise or required by
+an approved architectural revision.
+
+Structural Improvement Rule:
+Structural changes shall improve maintainability, clarity, or
+responsibility separation without changing approved meaning.
+
+Smallest Safe Change:
+Use the smallest structural change that completely resolves the
+validated refactoring need.
+
+======================================================================
+5. EXECUTION
+======================================================================
+
+Execute immediately when all required inputs
+are available and no blocking issue exists.
+
+Do not request execution confirmation.
+
+Do not ask whether to proceed.
+
+Complete Standards Compliance Review before
+completing the Method.
+
+Correct identified Standards compliance issues
+before completing the Method.
+
+If no blocking issue exists,
+
+begin refactoring immediately.
+
+Blocking issues are the only valid reason to suspend
+execution.
+
+Execution resumes only after:
+- the blocking issue has been resolved, or
+- the user explicitly instructs otherwise.
+
+Execution Sequence:
+- Verify the approved baseline.
+- Resolve the authorized scope.
+- Identify applicable Standards.
+- Extract approved knowledge.
+- Preserve approved architecture.
+- Reorganize documentation.
+- Perform Standards Compliance Review.
+- Correct validated compliance issues.
+- Generate the complete refactored documentation.
+
+Execution Boundary:
+Execution shall stop only when a validated blocker prevents safe
+continuation.
+
+======================================================================
+6. CONFLICT HANDLING
+======================================================================
+
+If conflicting responsibilities,
+
+ambiguous ownership, unclear document boundaries,
+
+structural conflicts, or insufficient information
+prevents safe refactoring,
+
+stop before generating the refactored documentation.
+
+Report:
+- Issue.
+- Affected document(s).
+- Reason.
+- Recommended resolution.
+
+Do not invent missing information.
+
+Do not silently redesign approved architecture.
+
+Conflict Types:
+- Conflicting responsibilities.
+- Ambiguous ownership.
+- Unclear document boundaries.
+- Structural conflict.
+- Insufficient information.
+- Authority conflict.
+- Standards conflict.
+
+Conflict Prohibition:
+File Refactor shall not silently resolve conflicts by redesigning
+approved architecture or inventing missing information.
+
+======================================================================
+7. OUTPUT REQUIREMENTS
+======================================================================
+
+Generate the complete refactored documentation.
+
+The generated documentation becomes the new
+authoritative documentation structure upon
+user acceptance.
+
+Generate only the refactored documentation.
+
+Output presentation belongs to the active
+Output Mode when one is active.
+
+Do not generate:
+- Historical discussions.
+- Design history.
+- Migration notes unless explicitly requested.
+- Implementation commentary unless
+  explicitly requested.
+
+Output Completeness:
+The output shall contain the complete refactored documentation
+within the authorized scope.
+
+Output Ownership:
+The active Output Mode governs presentation and delivery only.
+
+======================================================================
+8. QUALITY CHECK
+======================================================================
+
+Before completing refactoring, verify:
+- Approved knowledge has been preserved.
+- Approved architecture has been preserved.
+- Approved responsibilities have been preserved.
+- Document organization has been improved.
+- Structural redundancy has been removed.
+- Terminology remains consistent.
+- No unsupported information has been invented.
+- Every approved section has been preserved.
+- Every generated document has a clear responsibility.
+
+Before completing refactoring,
+
+verify that the generated artifact complies with all
+applicable Standards.
+
+Standards Compliance Review shall be completed
+before refactoring is considered complete.
+
+Correct identified Standards compliance issues
+before completing the Method.
+
+Standards Compliance Review applies only to the
+generated refactored documentation.
+
+It does not modify the approved knowledge established
+through the refactoring process.
+
+If no blocking issue exists,
+
+immediately generate the refactored documentation.
+
+Otherwise,
+
+follow the Conflict Handling rules.
+
+Validation Result:
+- PASS: Every applicable refactoring requirement is satisfied.
+- FAIL: One or more refactoring requirements are violated.
+- NON-APPLICABLE: A requirement does not apply.
+
+Failure Rule:
+Refactored documentation that fails Quality Check shall not
+proceed to final delivery.
+
+======================================================================
+9. PRESERVATION CONTRACT
+======================================================================
+
+Purpose:
+Define mandatory preservation behavior during refactoring.
+
+Preservation Requirements:
+- Approved knowledge.
+- Approved architecture.
+- Approved responsibilities.
+- Approved terminology.
+- Approved capabilities.
+- Approved document purpose.
+- Traceability.
+- Applicable Standards.
+
+Preservation Priority:
+Preserving approved knowledge and architecture shall take
+precedence over organizational improvement.
+
+Deletion Rule:
+Approved knowledge shall not be removed unless explicit
+authorization permits its removal.
+
+Inference Rule:
+Unsupported information shall not be introduced as approved
+documentation.
+
+======================================================================
+10. METHOD GOVERNANCE
+======================================================================
+
+Purpose:
+Define authority and decision constraints governing File
+Refactor.
+
+Decision Sources:
+- This Method.
+- Applicable higher-authority USER_PACKAGE documents.
+- Explicit User instructions.
+- Approved documentation architecture.
+- Verified documentation baseline.
+- Applicable authorization.
+
+Prohibited Decision Sources:
+- Assistant stylistic preference.
+- Unverified assumptions.
+- Conversation memory used instead of the baseline.
+- Unapproved architecture proposals.
+- Aesthetic preference alone.
+
+Undefined Refactoring:
+When refactoring behavior is undefined, preserve the approved
+baseline and use the simplest valid structural change permitted
+by this Method.
+
+Material ambiguity that prevents safe refactoring shall be
+reported instead of resolved through invention.
+
+======================================================================
+11. OUTPUT RESPONSIBILITY
+======================================================================
+
+Document transformation belongs to this Method.
+
+Output presentation belongs to the active
+Output Mode.
+
+Method Ownership Interpretation:
+
+Owning the refactoring process does not transfer
+ownership of the approved documentation.
+
+Authority over approved documentation remains
+defined by the applicable authoritative
+USER_PACKAGE documents.
+
+Refactor Responsibility Boundary:
+
+File Refactor shall not:
+- Approve new knowledge.
+- Redesign approved architecture.
+- Modify approved responsibilities.
+- Introduce unsupported capabilities.
+- Change document purpose.
+- Perform document synthesis.
+- Perform document consolidation.
+
+File Refactor shall remain limited to
+documentation refactoring.
+
+Method Ownership:
+File Refactor owns the authorized documentation transformation
+process only.
+
+======================================================================
+12. DESIGN PRINCIPLES
+======================================================================
+
+File Refactor shall allow documentation structure
+to evolve.
+
+Preserve approved knowledge.
+
+Prioritize maintenance simplicity over unnecessary
+document fragmentation.
+
+Organize documentation around logical maintenance
+units rather than arbitrary file boundaries.
+
+Produce the simplest authoritative documentation
+structure  that preserves all approved knowledge.
+
+Additional Principles:
+- Preserve before reorganizing.
+- Validate before completing.
+- Maintainability before fragmentation.
+- One responsibility per authoritative document.
+- Simplest valid structure.
+- Traceability before compression.
+
+======================================================================
+13. DOCUMENT RELATIONSHIPS
+======================================================================
+
+Purpose:
+Define relationships with authoritative USER_PACKAGE documents.
+
+USER_PROFILE:
+Defines User authority and documentation preferences.
+
+AI_BEHAVIOR_STANDARD:
+Defines Assistant behavior throughout Method execution.
+
+AI_OUTPUT_STANDARD:
+Defines output rendering and presentation.
+
+DOCUMENT_STRUCTURE_STANDARD:
+Defines document objects and structural relationships.
+
+DOCUMENT_WRITING_STANDARD:
+Defines documentation writing and knowledge preservation.
+
+PROPERTY_VALUE_STANDARD:
+Defines semantic Property–Value grammar.
+
+VISUAL_BOUNDARY_STANDARD:
+Defines visual boundary grammar.
+
+DOCUMENT_LAYOUT_STANDARD:
+Defines document layout composition.
+
+DOC_CONSOLIDATION:
+Defines authorized consolidation of documentation assets.
+
+DOC_SYNTHESIS:
+Defines authorized synthesis of multiple knowledge sources.
+
+DOC_STREAMLINING:
+Defines authorized documentation streamlining.
+
+PATCH_DELIVERY_STANDARD:
+Defines clipboard-ready Patch Delivery.
+
+SCRIPT_DELIVERY:
+Defines ready-to-run script delivery.
+
+Relationship Rules:
+
+File Refactor shall:
+- Depend on the verified documentation baseline.
+- Apply all applicable documentation Standards.
+- Preserve approved architecture and knowledge.
+- Defer output rendering to AI_OUTPUT_STANDARD.
+- Defer delivery to the selected Delivery Mode.
+- Preserve ownership of related Methods.
+
+File Refactor shall not:
+- Perform document synthesis.
+- Perform document consolidation.
+- Redefine documentation Standards.
+- Redefine output rendering.
+- Redefine Delivery Mode behavior.
+- Redesign approved architecture.
+
+======================================================================
+14. RESPONSIBILITY BOUNDARIES
+======================================================================
+
+Purpose:
+Define the responsibility boundary of File Refactor.
+
+Responsibility Rule:
+File Refactor governs documentation refactoring only.
+
+File Refactor Shall Not Define:
+- Assistant behavior.
+- New knowledge approval.
+- Architecture design.
+- Document synthesis.
+- Document consolidation.
+- Documentation writing.
+- Document structure.
+- Property–Value grammar.
+- Visual boundary grammar.
+- Document layout.
+- Output rendering.
+- Delivery behavior.
+- Runtime behavior.
+
+Ownership Rule:
+Refactoring documentation does not transfer ownership of approved
+knowledge, architecture, or documentation assets to this Method.
+
+======================================================================
+15. REVISION POLICY
+======================================================================
+
+Purpose:
+Define when File Refactor may be revised.
+
+Revision Criteria:
+This Method may be revised only when validated refactoring work
+demonstrates:
+
+- Refactoring ambiguity.
+- Repeated preservation failure.
+- Missing structural coverage.
+- Responsibility overlap.
+- Standards compatibility failure.
+- Output incompleteness.
+- Conflict with a higher-authority document.
+- Proven maintenance cost.
+
+Revision Rules:
+
+Revision shall:
+- Preserve the primary responsibility.
+- Preserve approved knowledge.
+- Preserve approved architecture.
+- Preserve compatibility when requirements remain valid.
+- Resolve validated deficiencies before expanding scope.
+- Preserve Single Authority Ownership.
+
+Revision shall not:
+- Absorb document synthesis.
+- Absorb document consolidation.
+- Absorb output rendering.
+- Absorb Delivery Mode behavior.
+- Introduce hidden assumptions.
+- Authorize architecture redesign.
+
+======================================================================
+16. SELF COMPLIANCE
+======================================================================
+
+Purpose:
+Ensure this Method complies with every applicable USER_PACKAGE
+standard.
+
+Self Compliance Rule:
+This Method shall serve as a living implementation of its own
+refactoring requirements.
+
+Self Validation:
+- The Document contains one Document Title.
+- Each major topic uses one numbered Section.
+- L1 headings use N. TITLE without a SECTION label.
+- Metadata follows USER_PACKAGE v1.0 format.
+- Property–Value relationships remain intact.
+- Visual boundaries use approved levels.
+- Line composition remains within active Layout Parameters.
+- Document Relationships are explicit.
+- Responsibility Boundaries are explicit.
+- Approved knowledge remains preserved.
+- Approved architecture remains preserved.
+- Output rendering remains owned by AI_OUTPUT_STANDARD.
+- Delivery remains owned by the active Delivery Mode.
+- No unrelated responsibility is absorbed.
+- Version and Status match USER_PACKAGE v1.0.
+
+Self Compliance Boundary:
+Self Compliance shall not transfer knowledge, architecture,
+rendering, or delivery ownership to File Refactor.
+
+======================================================================
+END OF FILE REFACTOR
+======================================================================

@@ -1,0 +1,19 @@
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Temporary files
+*.tmp
+*.bak
+*.log
+~$*
+
+# VS Code
+.vscode/
+
+# JetBrains
+.idea/
+
+# Python
+__pycache__/
+*.pyc

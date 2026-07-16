@@ -1,0 +1,731 @@
+======================================================================
+======================================================================
+DOCUMENT WRITING STANDARD
+======================================================================
+======================================================================
+
+Version:
+1.0
+
+Status:
+Official
+
+Category:
+Documentation Standard
+
+Identity:
+Documentation Standard governing how USER_PACKAGE documentation
+shall express approved knowledge.
+
+Purpose:
+Define the official writing requirements governing USER_PACKAGE
+documentation.
+
+Scope:
+Define documentation writing only.
+
+Primary Responsibility:
+Documentation writing.
+
+Authority:
+USER_PROFILE.
+
+Depends On:
+- AI_BEHAVIOR_STANDARD.
+- DOCUMENT_STRUCTURE_STANDARD.
+- PROPERTY_VALUE_STANDARD.
+- VISUAL_BOUNDARY_STANDARD.
+- DOCUMENT_LAYOUT_STANDARD.
+
+Referenced By:
+- AI_BEHAVIOR_STANDARD.
+- AI_OUTPUT_STANDARD.
+- PROMPT_WRITING_STANDARD.
+- PATCH_DELIVERY_STANDARD.
+- USER_PACKAGE.
+
+Complements:
+- DOCUMENT_STRUCTURE_STANDARD.
+- PROPERTY_VALUE_STANDARD.
+- VISUAL_BOUNDARY_STANDARD.
+- DOCUMENT_LAYOUT_STANDARD.
+
+Does Not Define:
+- Assistant behavior.
+- Document structure.
+- Property–Value grammar.
+- Visual boundary grammar.
+- Document layout.
+- Output rendering.
+- Delivery behavior.
+- Prompt structure.
+- Runtime behavior.
+- Artifact transformation.
+
+======================================================================
+1. FOUNDATION
+======================================================================
+
+Purpose:
+Define the authoritative responsibility, interpretation,
+applicability, and operational boundary of Document Writing Standard.
+
+Documentation Contract Interpretation:
+Every documentation requirement expressed using "shall"
+constitutes a mandatory documentation writing constraint.
+
+Documentation behavior not explicitly required or permitted by
+this Standard or a higher-authority USER_PACKAGE document shall
+not be assumed to be permitted.
+
+Requirements owned by another authoritative USER_PACKAGE document
+shall not be interpreted as documentation writing requirements.
+
+Documentation Definition:
+Documentation writing expresses approved knowledge through clear,
+precise, maintainable, and technology-neutral language.
+
+Documentation writing shall preserve approved meaning without
+redefining structure, Property–Value grammar, visual boundaries,
+layout, rendering, delivery, or runtime behavior.
+
+Documentation Objectives:
+- Clear.
+- Deterministic.
+- Traceable.
+- Maintainable.
+- Portable.
+- Readable by humans.
+- Readable by AI systems.
+- Readable by professional maintainers.
+
+Documentation Responsibility:
+Document Writing Standard governs documentation writing only.
+
+Document Writing Standard shall not:
+- Define document structure.
+- Define Property–Value grammar.
+- Define visual boundary grammar.
+- Define document layout.
+- Define output rendering.
+- Define delivery behavior.
+- Define prompt structure.
+- Define runtime behavior.
+- Modify responsibility ownership assigned to another authoritative
+  USER_PACKAGE document.
+
+Documentation Applicability:
+This Standard applies only to documentation assets within its
+defined Scope.
+
+Applicable Documentation:
+- Standards.
+- Specifications.
+- Protocols.
+- Canonical documentation.
+- Migration documentation.
+- Project documentation.
+- Prompt documentation.
+- Future USER_PACKAGE documentation.
+
+Excluded Assets:
+- Source code.
+- Executable assets.
+- Machine-readable data structures.
+- Binary assets.
+- Runtime output not intended as documentation.
+- Formats explicitly excluded by the User.
+
+======================================================================
+2. WRITING MODEL
+======================================================================
+
+Purpose:
+Define the official model used to express approved knowledge as
+documentation.
+
+Writing Model:
+
+Approved Knowledge
+        ↓
+Writing Context
+        ↓
+Writing Rules
+        ↓
+Knowledge Preservation
+        ↓
+Writing Validation
+        ↓
+Completed Documentation
+
+Model Interpretation:
+Each stage shall complete before the next stage begins.
+
+Approved Knowledge supplies the content that documentation shall
+express.
+
+Writing Context identifies applicable authority, terminology,
+audience, and artifact purpose.
+
+Writing Rules govern language, sentence construction,
+terminology, paragraph focus, lists, and cross-references.
+
+Knowledge Preservation verifies that writing changes do not alter
+approved meaning.
+
+Writing Validation verifies compliance before documentation is
+considered complete.
+
+Model Boundary:
+The Writing Model shall not create, remove, or reclassify
+document objects owned by DOCUMENT_STRUCTURE_STANDARD.
+
+======================================================================
+3. WRITING PRINCIPLES
+======================================================================
+
+Purpose:
+Define the principles governing documentation writing.
+
+Information First:
+Documentation shall communicate approved information before
+stylistic preference.
+
+Evidence First:
+Changes to established documentation shall be supported by
+validated evidence, explicit authorization, or an applicable
+authoritative requirement.
+
+Single Authority Ownership:
+Each information domain shall have one authoritative owner.
+
+Separation of Responsibility:
+Each authoritative document shall retain one primary
+responsibility.
+
+Clarity Before Style:
+Stylistic presentation shall not reduce technical clarity.
+
+Knowledge Preservation:
+Validated knowledge shall not be removed solely to shorten or
+simplify documentation.
+
+Writing Pattern Preservation:
+Equivalent documentation structures shall use equivalent writing
+patterns when the same requirements apply.
+
+Technology Neutrality:
+Stable documentation shall avoid implementation-specific wording
+unless the artifact explicitly governs that implementation.
+
+Plain-Text Portability:
+Documentation shall remain usable in plain-text editors,
+terminals, version-control diffs, and AI context windows.
+
+Standards Before Assets:
+Applicable standards shall be established before dependent assets
+are normalized at scale.
+
+======================================================================
+4. LANGUAGE RULES
+======================================================================
+
+Purpose:
+Define normative and descriptive language requirements.
+
+Mandatory Language:
+Use "shall" to define mandatory behavior.
+
+Prohibited Language:
+Use "shall not" to define prohibited behavior.
+
+Optional Language:
+Use "may" only when behavior is genuinely optional.
+
+Descriptive Language:
+Use defines, establishes, provides, supports, describes,
+represents, or identifies when explaining concepts.
+
+Normative Strength:
+A heading, label, Rule title, Principle title, Warning title, or
+example shall not independently determine requirement strength.
+
+Ambiguous Language Prohibition:
+Normative requirements shall not depend on subjective terms
+without an explicit validation condition.
+
+Avoid:
+- Better.
+- Easy.
+- Nice.
+- Modern.
+- Appropriate.
+- Whenever practical.
+- Improve.
+- Simple.
+
+Prefer:
+- Approved.
+- Applicable.
+- Authorized.
+- Compatible.
+- Deterministic.
+- Explicit.
+- Maintainable.
+- Portable.
+- Preserve.
+- Reduce.
+- Resolve.
+- Traceable.
+- Validated.
+- Verifiable.
+
+Technology Independence:
+Tool names, programming languages, platform versions, and runtime
+details shall appear only when required by the documentation
+artifact.
+
+======================================================================
+5. TERMINOLOGY RULES
+======================================================================
+
+Purpose:
+Define terminology consistency requirements.
+
+Official Terminology:
+Official USER_PACKAGE terminology shall be used consistently.
+
+One Meaning Per Term:
+One official term shall represent one defined meaning within the
+same documentation domain.
+
+Equivalent Terms:
+Equivalent objects shall use equivalent terminology.
+
+Deprecated Terms:
+Deprecated aliases shall not replace official terminology in new
+or modified content.
+
+Terminology Preservation:
+An established valid term shall be preserved unless an authorized
+terminology migration replaces it.
+
+Capitalization:
+Capitalization shall remain consistent for official document
+names, defined objects, Properties, and normative terms.
+
+Abbreviations:
+An abbreviation shall be defined before repeated use unless it is
+already official USER_PACKAGE terminology.
+
+======================================================================
+6. SENTENCE AND PARAGRAPH RULES
+======================================================================
+
+Purpose:
+Define writing requirements for sentences and paragraphs.
+
+Sentence Clarity:
+Each sentence shall express one coherent requirement, definition,
+relationship, condition, or explanation.
+
+Paragraph Focus:
+Each Paragraph shall express one primary explanatory idea.
+
+Paragraph Separation:
+Independent ideas shall use separate Paragraphs.
+
+Requirement Separation:
+Distinct mandatory requirements shall not be hidden inside one
+ambiguous compound sentence.
+
+Pronoun Clarity:
+Pronouns shall not be used when their referent could be ambiguous.
+
+Active Subject:
+Normative sentences shall identify the responsible subject
+whenever responsibility is not already explicit.
+
+Sentence Continuity:
+Sentence meaning shall remain intact when
+DOCUMENT_LAYOUT_STANDARD wraps the text.
+
+Redundancy:
+Documentation shall not repeat the same normative rule in
+multiple locations when an explicit reference preserves clarity
+and traceability.
+
+======================================================================
+7. LIST AND TABLE WRITING
+======================================================================
+
+Purpose:
+Define writing-level use of Lists and Tables without redefining
+their structure or layout.
+
+List Selection:
+Use a List when multiple related items require independent
+reading, comparison, validation, or execution.
+
+Narrative Selection:
+Use a Paragraph when item separation would fragment one
+continuous idea.
+
+List Item Integrity:
+Each list item shall represent one complete logical item.
+
+List Item Parallelism:
+Equivalent list items shall use equivalent grammatical form.
+
+Bullet Punctuation:
+Informational bullet items shall end with a period.
+
+Bullet Punctuation Exceptions:
+- Code tokens.
+- Commands.
+- File names.
+- Identifiers.
+- Template placeholders.
+- Short status values.
+- User-requested formats.
+
+Table Selection:
+Use a Table only when row-and-column relationships improve
+comprehension or comparison.
+
+Table Writing:
+Table headers and cell text shall remain concise, explicit, and
+semantically consistent.
+
+Ownership Boundary:
+List and Table structure remain governed by
+DOCUMENT_STRUCTURE_STANDARD, and their composition remains
+governed by DOCUMENT_LAYOUT_STANDARD.
+
+======================================================================
+8. DIAGRAM WRITING
+======================================================================
+
+Purpose:
+Define writing requirements for explanatory diagrams.
+
+Diagram Use:
+Use a plain-text diagram when it communicates hierarchy,
+sequence, flow, or dependency more clearly than prose.
+
+Diagram Integrity:
+A diagram shall preserve the same approved meaning as the
+surrounding documentation.
+
+Unicode Diagram:
+Unicode tree and flow symbols may be used when the active
+artifact and editor support them safely.
+
+ASCII Fallback:
+ASCII diagrams shall be used when Unicode is unavailable, unsafe,
+or explicitly excluded.
+
+Diagram Boundary:
+Diagram writing shall not redefine document structure, visual
+boundary grammar, or layout behavior.
+
+======================================================================
+9. KNOWLEDGE PRESERVATION
+======================================================================
+
+Purpose:
+Define mandatory preservation behavior during documentation
+creation, revision, refactoring, compression, and rewrite.
+
+Knowledge Priority:
+Approved knowledge shall take precedence over editorial
+cleanliness.
+
+Preservation Requirements:
+- Approved meaning.
+- Approved decisions.
+- Operational knowledge.
+- Validated constraints.
+- Approved relationships.
+- Relevant historical context.
+- Traceability.
+
+Refactoring Rule:
+Refactoring may change organization and wording only when
+approved meaning and traceability are preserved.
+
+Rewrite Rule:
+A complete rewrite shall preserve every approved knowledge object
+within the authorized scope.
+
+Compression Rule:
+Documentation may be condensed only when meaning, traceability,
+and operational value remain complete.
+
+Deletion Rule:
+Validated knowledge shall not be deleted unless the deletion is
+explicitly authorized or the knowledge is proven obsolete.
+
+Inference Rule:
+Unsupported inference shall not be introduced as authoritative
+documentation.
+
+Historical Integrity:
+Historical reconstruction shall distinguish verified facts from
+inference.
+
+======================================================================
+10. WRITING DECISIONS
+======================================================================
+
+Purpose:
+Define the authorized sources and resolution rules governing
+documentation writing decisions.
+
+Writing Decision Sources:
+- This Standard.
+- Applicable higher-authority USER_PACKAGE documents.
+- Explicit User instructions.
+- Approved artifact knowledge.
+- The established valid writing pattern of the current asset.
+- The active Method when transformation is authorized.
+
+Prohibited Decision Sources:
+- Assistant stylistic preference.
+- Unverified assumptions.
+- Unapproved external conventions.
+- Conversation memory used instead of a verified baseline.
+- Aesthetic preference alone.
+
+Undefined Writing:
+When required writing behavior is undefined, preserve approved
+meaning and use the simplest valid writing behavior permitted by
+this Standard.
+
+Material ambiguity that prevents safe writing shall be reported
+instead of resolved through invention.
+
+Conflict Resolution:
+When equal-authority writing requirements conflict, the conflict
+shall be reported rather than resolved through an invented
+compromise.
+
+======================================================================
+11. DOCUMENTATION WORKFLOWS
+======================================================================
+
+Purpose:
+Define writing requirements for creating and updating
+documentation.
+
+New Documentation:
+- Start from approved knowledge.
+- Use the resolved document structure.
+- Use official terminology.
+- Apply applicable Property–Value grammar.
+- Apply applicable visual boundary grammar.
+- Apply applicable layout requirements.
+- Preserve one primary topic per Section.
+- Validate the completed documentation.
+
+Existing Documentation:
+- Treat the latest approved physical artifact as the baseline.
+- Preserve validated knowledge.
+- Preserve valid writing patterns.
+- Change only the authorized scope.
+- Correct validated writing defects within scope.
+- Leave unrelated content unchanged unless normalization
+  is authorized.
+
+Cross-References:
+Use cross-references only when they reduce duplication, preserve
+traceability, or materially clarify ownership.
+
+Normalization:
+Full-document normalization shall occur only when explicitly
+authorized.
+
+Canonical Rewrite:
+Canonical rewrite shall preserve approved knowledge while
+applying the current authoritative USER_PACKAGE standards across
+the entire target artifact.
+
+======================================================================
+12. WRITING VALIDATION
+======================================================================
+
+Purpose:
+Define mandatory validation of completed documentation writing.
+
+Writing Validation Requirements:
+- Approved meaning is preserved.
+- Official terminology is used consistently.
+- Normative language has the correct strength.
+- Ambiguous wording has been removed or constrained.
+- Paragraphs remain focused.
+- Lists and Tables are used for valid writing purposes.
+- Bullet punctuation is consistent.
+- Technology-specific wording appears only when required.
+- Unnecessary duplication has been removed.
+- Cross-references provide practical value.
+- Unsupported knowledge has not been introduced.
+- Applicable authoritative standards remain satisfied.
+
+Validation Result:
+- PASS: Every applicable writing requirement is satisfied.
+- FAIL: One or more applicable writing requirements are violated.
+- NON-APPLICABLE: A writing requirement does not apply
+  to the artifact.
+
+Failure Rule:
+Documentation that fails Writing Validation shall not proceed to
+final rendering or delivery.
+
+Scope-Limited Correction:
+When correction exceeds the authorized scope, the Assistant shall
+report the validated blocker instead of silently rewriting
+unrelated content.
+
+======================================================================
+13. DOCUMENT RELATIONSHIPS
+======================================================================
+
+Purpose:
+Define relationships with authoritative USER_PACKAGE documents.
+
+USER_PROFILE:
+Defines User authority and documentation preferences.
+
+DOCUMENT_STRUCTURE_STANDARD:
+Defines document objects, hierarchy, and structural
+relationships.
+
+PROPERTY_VALUE_STANDARD:
+Defines semantic Property–Value grammar.
+
+VISUAL_BOUNDARY_STANDARD:
+Defines visual boundary grammar.
+
+DOCUMENT_LAYOUT_STANDARD:
+Defines document layout composition.
+
+AI_OUTPUT_STANDARD:
+Defines output rendering and presentation.
+
+PROMPT_WRITING_STANDARD:
+Defines Prompt Asset structure and organization.
+
+PATCH_DELIVERY_STANDARD:
+Defines clipboard-ready Patch Delivery.
+
+Relationship Rules:
+
+Document Writing Standard shall:
+- Depend on resolved document structure.
+- Apply official Property–Value terminology when relevant.
+- Preserve approved visual boundary requirements.
+- Defer line wrapping and spacing to DOCUMENT_LAYOUT_STANDARD.
+- Preserve rendering and delivery ownership.
+
+Document Writing Standard shall not:
+- Redefine another authoritative standard.
+- Duplicate normative rules owned by another standard.
+- Transfer responsibility through reference.
+
+======================================================================
+14. RESPONSIBILITY BOUNDARIES
+======================================================================
+
+Purpose:
+Define the responsibility boundary of Document Writing Standard.
+
+Responsibility Rule:
+Document Writing Standard governs documentation writing only.
+
+Document Writing Standard Shall Not Define:
+- Assistant behavior.
+- Document structure.
+- Property–Value grammar.
+- Visual boundary grammar.
+- Document layout.
+- Output rendering.
+- Delivery behavior.
+- Prompt structure.
+- Runtime behavior.
+- Artifact transformation.
+
+Ownership Rule:
+Writing documentation does not transfer ownership of knowledge,
+structure, grammar, layout, rendering, or delivery to this
+Standard.
+
+======================================================================
+15. REVISION POLICY
+======================================================================
+
+Purpose:
+Define when Document Writing Standard may be revised.
+
+Revision Criteria:
+This Standard may be revised only when validated documentation
+work demonstrates:
+
+- Writing ambiguity.
+- Repeated interpretation failure.
+- Missing writing coverage.
+- Terminology inconsistency.
+- Portability failure.
+- Readability failure.
+- Responsibility overlap.
+- Conflict with a higher-authority document.
+- Proven maintenance cost.
+
+Revision Rules:
+
+Revision shall:
+- Preserve the primary responsibility.
+- Preserve approved knowledge.
+- Preserve compatibility when requirements remain valid.
+- Resolve validated deficiencies before adding new writing domains.
+- Preserve Single Authority Ownership.
+
+Revision shall not:
+- Absorb document structure responsibility.
+- Absorb Property–Value grammar.
+- Absorb visual boundary responsibility.
+- Absorb document layout responsibility.
+- Absorb output rendering responsibility.
+- Introduce hidden assumptions.
+- Add rules without an identified authoritative owner.
+
+======================================================================
+16. SELF COMPLIANCE
+======================================================================
+
+Purpose:
+Ensure this Standard complies with every applicable USER_PACKAGE
+standard.
+
+Self Compliance Rule:
+This Standard shall serve as a living implementation of its own
+documentation writing requirements.
+
+Self Validation:
+- The Document contains one Document Title.
+- Each major topic is represented by one Section.
+- Named information categories use Fields.
+- Property–Value relationships remain intact.
+- Visual boundaries use approved boundary levels.
+- Line composition remains within active Layout Parameters.
+- Official terminology is used consistently.
+- Normative language is deterministic.
+- No unrelated responsibility is absorbed.
+- Version and Status match USER_PACKAGE v1.0.
+
+Self Compliance Boundary:
+Self Compliance shall not override a higher-authority
+USER_PACKAGE document.
+
+======================================================================
+END OF DOCUMENT WRITING STANDARD
+======================================================================

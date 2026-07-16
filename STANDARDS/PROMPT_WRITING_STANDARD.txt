@@ -1,0 +1,680 @@
+======================================================================
+======================================================================
+PROMPT WRITING STANDARD
+======================================================================
+======================================================================
+
+Version:
+1.0
+
+Status:
+Official
+
+Category:
+Prompt Standard
+
+Identity:
+Prompt Standard governing the structure and organization of
+Prompt Assets throughout USER_PACKAGE.
+
+Purpose:
+Define the official requirements for creating, maintaining,
+organizing, and reusing Prompt Assets.
+
+Scope:
+Define Prompt Asset structure and organization only.
+
+Primary Responsibility:
+Prompt Asset structure and organization.
+
+Authority:
+USER_PROFILE.
+
+Depends On:
+- AI_BEHAVIOR_STANDARD.
+- DOCUMENT_STRUCTURE_STANDARD.
+- DOCUMENT_WRITING_STANDARD.
+- PROPERTY_VALUE_STANDARD.
+- VISUAL_BOUNDARY_STANDARD.
+- DOCUMENT_LAYOUT_STANDARD.
+- AI_OUTPUT_STANDARD.
+
+Referenced By:
+- USER_PACKAGE Prompt Assets.
+- USER_PACKAGE migration workflows.
+- USER_PACKAGE runtime workflows.
+- USER_PACKAGE activation workflows.
+- USER_PACKAGE execution workflows.
+
+Complements:
+- AI_BEHAVIOR_STANDARD.
+- DOCUMENT_STRUCTURE_STANDARD.
+- DOCUMENT_WRITING_STANDARD.
+- PROPERTY_VALUE_STANDARD.
+- VISUAL_BOUNDARY_STANDARD.
+- DOCUMENT_LAYOUT_STANDARD.
+- AI_OUTPUT_STANDARD.
+
+Does Not Define:
+- Assistant behavior.
+- Documentation writing.
+- Document structure.
+- Property–Value grammar.
+- Visual boundary grammar.
+- Document layout.
+- Output rendering.
+- Delivery behavior.
+- Runtime behavior.
+- Runtime implementation.
+- Artifact transformation.
+
+======================================================================
+1. FOUNDATION
+======================================================================
+
+Purpose:
+Define the authoritative responsibility, interpretation,
+applicability, and operational boundary of Prompt Writing
+Standard.
+
+Prompt Contract Interpretation:
+Every Prompt Asset requirement expressed using "shall"
+constitutes a mandatory Prompt structure constraint.
+
+Prompt Asset behavior not explicitly required or permitted by
+this Standard or a higher-authority USER_PACKAGE document shall
+not be assumed to be permitted.
+
+Requirements owned by another authoritative USER_PACKAGE document
+shall not be interpreted as Prompt Asset requirements.
+
+Prompt Asset Definition:
+A Prompt Asset is a structured, reusable instruction artifact
+that defines metadata, instructions, constraints, and an expected
+output contract.
+
+Prompt Responsibility:
+Prompt Writing Standard governs Prompt Asset structure and
+organization only.
+
+Prompt Writing Standard shall not:
+- Define Assistant behavior.
+- Define documentation writing.
+- Define document structure.
+- Define Property–Value grammar.
+- Define visual boundaries.
+- Define document layout.
+- Define output rendering.
+- Define delivery behavior.
+- Define runtime behavior.
+- Redefine another authoritative responsibility.
+
+Prompt Applicability:
+This Standard applies only to Prompt Assets within its defined
+Scope.
+
+Applicable Prompt Assets:
+- Migration prompts.
+- Documentation prompts.
+- Audit prompts.
+- Workflow prompts.
+- Utility prompts.
+- Runtime prompts.
+- Activation prompts.
+- Execution prompts.
+- Future USER_PACKAGE Prompt Assets.
+
+Excluded Assets:
+- General documentation assets.
+- Source code.
+- Executable assets.
+- Runtime implementations.
+- Machine-readable data structures.
+- Binary assets.
+
+======================================================================
+2. DESIGN PRINCIPLES
+======================================================================
+
+Purpose:
+Define the principles governing Prompt Asset design.
+
+Design Principles:
+- Human-readable.
+- Machine-readable.
+- Explicit instructions.
+- Single responsibility.
+- Reusable by design.
+- Deterministic structure.
+- Metadata before instructions.
+- Knowledge before conversation.
+- Standards before assets.
+- AI independence.
+- Evolution before duplication.
+- Scope preservation.
+- Output contract clarity.
+- Equivalent Prompt Assets preserve equivalent structures.
+
+======================================================================
+3. PROMPT MODEL
+======================================================================
+
+Purpose:
+Define the official Prompt Asset model.
+
+Prompt Model:
+
+Prompt
+        ↓
+Metadata
+        ↓
+Instruction Blocks
+        ↓
+Constraints
+        ↓
+Output Contract
+
+Model Interpretation:
+The Prompt Model defines Prompt Asset composition only.
+
+Model Boundary:
+Prompt Writing Standard shall not use the Prompt Model to
+redefine behavior lifecycle, runtime behavior, or output
+rendering.
+
+Deterministic Structure:
+Equivalent Prompt Assets shall preserve equivalent Prompt Model
+structures when the same requirements apply.
+
+======================================================================
+4. PROMPT METADATA
+======================================================================
+
+Purpose:
+Define required and optional Prompt Asset metadata.
+
+Official Representation:
+Prompt metadata shall use the approved Property–Value grammar.
+
+Mandatory Properties:
+- ID.
+- Title.
+- Category.
+- Status.
+- Version.
+- Role.
+- Purpose.
+- Instructions.
+- Output.
+
+Optional Properties:
+- Tags.
+- Input.
+- Constraints.
+- Dependencies.
+- References.
+- Examples.
+- Notes.
+- Author.
+
+Prompt Status Values:
+- Draft.
+- Testing.
+- Stable.
+- Deprecated.
+
+Metadata Rules:
+- Each mandatory Property shall appear exactly once.
+- Property names shall remain semantically distinct.
+- Equivalent metadata shall use equivalent Property names.
+- Metadata Values shall remain complete.
+- Metadata order shall remain deterministic.
+- Metadata shall precede instruction content.
+
+======================================================================
+5. PROMPT INSTRUCTIONS
+======================================================================
+
+Purpose:
+Define requirements governing Prompt Asset instructions.
+
+Instruction Requirements:
+- Each Prompt shall have one primary objective.
+- Each Prompt shall define explicit instructions.
+- Each Prompt shall define expected output.
+- Each Prompt shall preserve intended scope.
+- Each Prompt shall avoid hidden context.
+- Each Prompt shall remain reusable unless constrained by its
+  approved purpose.
+- Each Prompt shall remain AI-independent unless explicitly
+  platform-specific.
+- Each Prompt shall avoid unrelated work.
+
+Instruction Sequence:
+Instructions shall proceed from context and authority to action,
+constraints, and output.
+
+Instruction Clarity:
+Each instruction shall identify one authorized action, condition,
+constraint, or deliverable.
+
+Instruction Prohibitions:
+- Hidden requirements.
+- Implicit authorization.
+- Unbounded scope.
+- Contradictory instructions.
+- Unsupported knowledge.
+- Unidentified output expectations.
+
+======================================================================
+6. PROMPT CONSTRAINTS
+======================================================================
+
+Purpose:
+Define how Prompt Assets express constraints.
+
+Constraint Rule:
+A Prompt constraint shall identify one explicit boundary on
+behavior, scope, authority, input, execution, or output.
+
+Constraint Requirements:
+- Constraints shall be explicit.
+- Constraints shall remain within authorized scope.
+- Constraints shall not redefine another Standard.
+- Constraints shall preserve User authority.
+- Constraints shall remain testable whenever applicable.
+
+Behavior Boundary:
+Prompt constraints may reference AI_BEHAVIOR_STANDARD but shall
+not redefine Assistant behavior.
+
+Rendering Boundary:
+Prompt constraints may reference AI_OUTPUT_STANDARD but shall not
+redefine output rendering.
+
+======================================================================
+7. OUTPUT CONTRACT
+======================================================================
+
+Purpose:
+Define Prompt Asset output-contract requirements.
+
+Output Contract Definition:
+The Output Contract defines the expected deliverable produced
+after Prompt instructions are executed.
+
+Output Contract Requirements:
+- Identify the expected deliverable.
+- Identify required format when applicable.
+- Identify completeness requirements.
+- Identify delivery constraints when applicable.
+- Preserve active Delivery Mode ownership.
+- Preserve AI_OUTPUT_STANDARD rendering ownership.
+
+Output Boundary:
+Prompt Writing Standard defines the Output Contract structure but
+shall not render or deliver the completed output.
+
+======================================================================
+8. PROMPT PRESERVATION
+======================================================================
+
+Purpose:
+Define preservation requirements for existing Prompt Assets.
+
+Prompt Preservation Rule:
+Established valid Prompt Asset structures shall be preserved
+before stylistic variation is introduced.
+
+Preservation Requirements:
+- Prompt identity.
+- Primary objective.
+- Approved metadata.
+- Approved instructions.
+- Approved constraints.
+- Approved output contract.
+- Equivalent structure.
+- Traceability.
+
+Prompt Modification:
+When modifying an existing Prompt Asset, change only the
+authorized scope unless broader normalization is explicitly
+authorized.
+
+Equivalent Prompt Assets:
+Equivalent Prompt Assets shall preserve equivalent Prompt
+patterns unless an approved revision changes the pattern.
+
+======================================================================
+9. PROMPT DECISIONS
+======================================================================
+
+Purpose:
+Define authorized sources and resolution rules governing Prompt
+Asset decisions.
+
+Prompt Decision Sources:
+- This Standard.
+- Applicable higher-authority USER_PACKAGE documents.
+- Explicit User instructions.
+- Approved Prompt knowledge.
+- The established valid Prompt pattern of the current asset.
+
+Prohibited Decision Sources:
+- Assistant stylistic preference.
+- Unverified assumptions.
+- Unapproved external conventions.
+- Conversation memory used instead of a verified baseline.
+- Aesthetic preference alone.
+
+Undefined Prompt Behavior:
+When required Prompt behavior is undefined, preserve approved
+scope and use the simplest valid Prompt structure permitted by
+this Standard.
+
+Material ambiguity that prevents safe Prompt construction shall
+be reported instead of resolved through invention.
+
+Conflict Resolution:
+Equal-authority Prompt requirements shall be reported rather than
+resolved through an invented compromise.
+
+======================================================================
+10. AI AND RUNTIME COMPATIBILITY
+======================================================================
+
+Purpose:
+Define AI independence and Runtime ownership boundaries.
+
+AI Independence:
+Prompt Assets shall remain vendor-neutral unless approved
+platform-specific behavior is required.
+
+Compatibility Targets:
+- AI Assistants.
+- Local language models.
+- Future compatible AI systems.
+
+Compatibility Exclusions:
+- AI reasoning quality.
+- Tool availability.
+- Model accuracy.
+- Vendor-specific capability.
+
+Runtime Relationship:
+A Prompt Asset may activate, configure, or execute Runtime
+behavior only when an applicable Runtime Standard authorizes that
+role.
+
+Runtime Ownership:
+Serving as a Runtime implementation asset shall not transfer
+Runtime ownership to Prompt Writing Standard.
+
+Runtime Prohibition:
+Prompt Assets shall not redefine Runtime contracts.
+
+======================================================================
+11. PROMPT VALIDATION
+======================================================================
+
+Purpose:
+Define mandatory validation of completed Prompt Assets.
+
+Prompt Validation Requirements:
+- All mandatory metadata exists.
+- Prompt identity is unique.
+- One primary objective is defined.
+- Instructions are explicit.
+- Constraints are explicit.
+- Expected output is defined.
+- Scope is preserved.
+- Hidden context is absent.
+- Applicable Standards are referenced correctly.
+- Equivalent structures remain consistent.
+- No unsupported knowledge is introduced.
+- No unrelated responsibility is absorbed.
+
+Validation Result:
+- PASS: Every applicable Prompt requirement is satisfied.
+- FAIL: One or more Prompt requirements are violated.
+- NON-APPLICABLE: A Prompt requirement does not apply.
+
+Failure Rule:
+A Prompt Asset that fails Prompt Validation shall not proceed to
+final rendering or delivery.
+
+======================================================================
+12. EXAMPLES
+======================================================================
+
+Purpose:
+Demonstrate compliant Prompt Asset structures without creating
+additional requirements.
+
+----------------------------------------------------------------------
+OFFICIAL PROMPT TEMPLATE
+----------------------------------------------------------------------
+
+ID:
+<Unique ID>
+
+Title:
+<Prompt Title>
+
+Category:
+<Category>
+
+Status:
+<Draft | Testing | Stable | Deprecated>
+
+Version:
+<Version>
+
+Role:
+<AI Role>
+
+Tags:
+<Comma-separated tags>
+
+Purpose:
+<Prompt purpose>
+
+Input:
+<Input requirements>
+
+Constraints:
+<Prompt constraints>
+
+Instructions:
+<Prompt instructions>
+
+Output:
+<Expected output>
+
+----------------------------------------------------------------------
+MINIMAL PROMPT EXAMPLE
+----------------------------------------------------------------------
+
+ID:
+DEMO-001
+
+Title:
+Example Prompt
+
+Category:
+Documentation
+
+Status:
+Stable
+
+Version:
+1.0
+
+Role:
+Documentation Architect
+
+Purpose:
+Show the minimum usable structure of a compliant Prompt Asset.
+
+Instructions:
+Use this example as a basic structural reference.
+
+Output:
+A valid minimal Prompt Asset.
+
+======================================================================
+13. DOCUMENT RELATIONSHIPS
+======================================================================
+
+Purpose:
+Define relationships with authoritative USER_PACKAGE documents.
+
+USER_PROFILE:
+Defines User authority and Prompt preferences.
+
+AI_BEHAVIOR_STANDARD:
+Defines Assistant behavior throughout Prompt execution.
+
+DOCUMENT_STRUCTURE_STANDARD:
+Defines document objects and structural relationships.
+
+DOCUMENT_WRITING_STANDARD:
+Defines documentation writing and knowledge preservation.
+
+PROPERTY_VALUE_STANDARD:
+Defines semantic Property–Value grammar.
+
+VISUAL_BOUNDARY_STANDARD:
+Defines visual boundary grammar.
+
+DOCUMENT_LAYOUT_STANDARD:
+Defines layout composition.
+
+AI_OUTPUT_STANDARD:
+Defines output rendering and presentation.
+
+Relationship Rules:
+
+Prompt Writing Standard shall:
+- Depend on AI_BEHAVIOR_STANDARD for execution behavior.
+- Depend on DOCUMENT_STRUCTURE_STANDARD for structure.
+- Depend on DOCUMENT_WRITING_STANDARD for writing.
+- Depend on PROPERTY_VALUE_STANDARD for metadata grammar.
+- Depend on VISUAL_BOUNDARY_STANDARD for boundaries.
+- Depend on DOCUMENT_LAYOUT_STANDARD for composition.
+- Depend on AI_OUTPUT_STANDARD for rendering.
+- Preserve downstream Delivery Mode ownership.
+
+Prompt Writing Standard shall not:
+- Redefine Assistant behavior.
+- Redefine documentation writing.
+- Redefine document structure.
+- Redefine Property–Value grammar.
+- Redefine visual boundaries.
+- Redefine document layout.
+- Redefine output rendering.
+- Redefine runtime behavior.
+
+======================================================================
+14. RESPONSIBILITY BOUNDARIES
+======================================================================
+
+Purpose:
+Define the responsibility boundary of Prompt Writing Standard.
+
+Responsibility Rule:
+Prompt Writing Standard governs Prompt Asset structure and
+organization only.
+
+Prompt Writing Standard Shall Not Define:
+- Assistant behavior.
+- Documentation writing.
+- Document structure.
+- Property–Value grammar.
+- Visual boundary grammar.
+- Document layout.
+- Output rendering.
+- Delivery behavior.
+- Runtime behavior.
+- Runtime implementation.
+- Artifact transformation.
+
+Ownership Rule:
+Structuring Prompt Assets does not transfer ownership of
+behavior, writing, structure, grammar, presentation, delivery, or
+runtime behavior to this Standard.
+
+======================================================================
+15. REVISION POLICY
+======================================================================
+
+Purpose:
+Define when Prompt Writing Standard may be revised.
+
+Revision Criteria:
+This Standard may be revised only when validated Prompt work
+demonstrates:
+
+- Prompt ambiguity.
+- Repeated instruction failure.
+- Missing Prompt coverage.
+- Metadata inconsistency.
+- Scope leakage.
+- Output-contract ambiguity.
+- Compatibility failure.
+- Responsibility overlap.
+- Conflict with a higher-authority document.
+- Proven maintenance cost.
+
+Revision Rules:
+
+Revision shall:
+- Preserve the primary responsibility.
+- Preserve approved Prompt behavior.
+- Preserve compatibility when requirements remain valid.
+- Resolve validated deficiencies before adding new objects.
+- Preserve Single Authority Ownership.
+
+Revision shall not:
+- Absorb Assistant behavior.
+- Absorb document structure responsibility.
+- Absorb documentation writing responsibility.
+- Absorb Property–Value grammar.
+- Absorb visual boundary or layout responsibility.
+- Absorb output rendering or delivery responsibility.
+- Absorb runtime behavior.
+- Introduce hidden assumptions.
+
+======================================================================
+16. SELF COMPLIANCE
+======================================================================
+
+Purpose:
+Ensure this Standard complies with every applicable USER_PACKAGE
+standard.
+
+Self Compliance Rule:
+This Standard shall serve as a living implementation of its own
+Prompt Asset requirements.
+
+Self Validation:
+- The Document contains one Document Title.
+- Each major topic uses one numbered Section.
+- L1 headings use N. TITLE without a SECTION label.
+- Metadata follows approved Property–Value grammar.
+- Visual boundaries use approved levels.
+- Line composition remains within active Layout Parameters.
+- Document Relationships use current official Standards.
+- Responsibility Boundaries are explicit.
+- AI Behavior remains a dependency, not a rendering source.
+- Output rendering remains owned by AI_OUTPUT_STANDARD.
+- No unrelated responsibility is absorbed.
+- Version and Status match USER_PACKAGE v1.0.
+
+Self Compliance Boundary:
+Self Compliance shall not override a higher-authority
+USER_PACKAGE document.
+
+======================================================================
+END OF PROMPT WRITING STANDARD
+======================================================================

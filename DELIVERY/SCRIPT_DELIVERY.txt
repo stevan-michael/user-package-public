@@ -1,0 +1,685 @@
+======================================================================
+======================================================================
+SCRIPT DELIVERY
+======================================================================
+======================================================================
+
+Version:
+1.0
+
+Status:
+Official
+
+Category:
+Delivery Mode Standard
+
+Identity:
+Delivery Mode Standard governing ready-to-run Python writer
+script delivery throughout USER_PACKAGE.
+
+Purpose:
+Define the official delivery contract for delivering completed
+artifacts as ready-to-run Python writer scripts.
+
+Scope:
+Define Script Delivery behavior only.
+
+Primary Responsibility:
+Ready-to-run script delivery.
+
+Authority:
+USER_PROFILE.
+
+Depends On:
+- AI_BEHAVIOR_STANDARD.
+- AI_OUTPUT_STANDARD.
+- DOCUMENT_STRUCTURE_STANDARD.
+- DOCUMENT_WRITING_STANDARD.
+- PROPERTY_VALUE_STANDARD.
+- VISUAL_BOUNDARY_STANDARD.
+- DOCUMENT_LAYOUT_STANDARD.
+- Active Method when artifact authoring is required.
+- Applicable authorization document when authorization is
+  required.
+
+Referenced By:
+- Python writer scripts.
+- Delivery workflows.
+- USER_PACKAGE implementation assets.
+- USER_PACKAGE documentation workflows.
+
+Complements:
+- PATCH_DELIVERY_STANDARD.
+- Active Method.
+- Applicable authorization document.
+
+Does Not Define:
+- Assistant behavior.
+- Artifact authoring.
+- Artifact transformation.
+- Architecture.
+- Documentation writing.
+- Document structure.
+- Property–Value grammar.
+- Visual boundary grammar.
+- Document layout.
+- Output rendering.
+- Standards Compliance Review.
+- Runtime behavior.
+- Artifact content.
+
+======================================================================
+1. FOUNDATION
+======================================================================
+
+Purpose:
+Define the authoritative responsibility, interpretation,
+applicability, and operational boundary of Script Delivery.
+
+Script Delivery Contract Interpretation:
+Every Script Delivery requirement expressed using "shall"
+constitutes a mandatory delivery constraint.
+
+Script Delivery behavior not explicitly required or permitted by
+this Standard or a higher-authority USER_PACKAGE document shall
+not be assumed to be permitted.
+
+Requirements owned by another authoritative USER_PACKAGE document
+shall not be interpreted as Script Delivery requirements.
+
+Script Delivery Definition:
+Script Delivery packages one completed artifact into one
+ready-to-run Python writer script.
+
+Delivery Boundary:
+The completed artifact shall exist before Script Delivery begins.
+
+Applicability:
+This Standard applies only to ready-to-run script delivery of
+completed artifacts.
+
+Excluded Activities:
+- Artifact authoring.
+- Artifact transformation.
+- Documentation writing.
+- Runtime orchestration.
+- Standards Compliance Review.
+- Output rendering.
+
+Responsibility Rule:
+Script Delivery governs ready-to-run script delivery only.
+
+======================================================================
+2. ROLE
+======================================================================
+
+Script Delivery is a Delivery Mode.
+
+It defines how the completed artifact is
+delivered.
+
+It does not define what the artifact contains.
+
+The active Method defines artifact content.
+
+Script Delivery defines delivery only.
+
+======================================================================
+3. DELIVERY PHILOSOPHY
+======================================================================
+
+Script Delivery exists to deliver completed
+artifacts.
+
+It is a delivery mechanism.
+
+It is not an authoring method.
+
+The artifact shall be complete before Script
+Delivery begins.
+
+Script Delivery packages the approved artifact into
+one ready-to-run Python writer script.
+
+It preserves the approved artifact exactly.
+
+It does not:
+- Redesign.
+- Review.
+- Consolidate.
+- Synthesize.
+- Author artifacts.
+
+These responsibilities remain owned by the active
+Method.
+
+The purpose of Script Delivery is to reduce
+manual work while preserving the completed
+artifact exactly as approved.
+
+======================================================================
+4. APPLICABILITY
+======================================================================
+
+Purpose:
+Define when Script Delivery is appropriate and when another
+Delivery Mode should be selected.
+
+Use Script Delivery when:
+- The artifact is implementation-ready.
+- Artifact generation is preferred over manual
+  editing.
+- Release delivery is required.
+- The user requests Script Delivery.
+- Manual reconstruction should be avoided.
+- Multiple output files are required.
+
+Use PATCH_DELIVERY_STANDARD instead when:
+- The change is small.
+- The output is a clipboard-ready patch.
+- Script execution is unnecessary.
+- The User requests Patch Delivery.
+
+Script Delivery is generally not intended for:
+- Documents under active refinement.
+- Frequently changing documents.
+- Artifacts expected to receive immediate
+  iterative revisions.
+
+Patch Delivery Relationship:
+PATCH_DELIVERY_STANDARD shall be preferred when a complete
+clipboard-ready replacement is sufficient and script execution
+would add unnecessary work.
+
+Applicability Boundary:
+Script Delivery shall not be selected merely because a script can
+be generated.
+
+======================================================================
+5. DELIVERY CONTRACT
+======================================================================
+
+When Script Delivery is active, generate
+one complete ready-to-run Python writer script.
+
+The script shall:
+- Embed the completed artifact.
+- Preserve the approved artifact exactly.
+- Write the target output file.
+- Require no manual content insertion.
+
+Script Delivery shall not:
+- Replace Standards Compliance Review.
+- Replace the active Method.
+- Replace artifact authoring.
+- Deliver partial artifacts.
+- Deliver incremental fragments.
+
+If complete Script Delivery cannot be produced
+safely, stop and report the blocker.
+
+Only the user may authorize another Delivery
+Mode.
+
+Script Delivery Decision Rule:
+
+Script Delivery decisions shall be derived only
+from:
+- This Standard.
+- Applicable higher-authority USER_PACKAGE
+  documents.
+- The active Method.
+- Explicit User instructions.
+
+Script Delivery decisions shall not be derived
+from Assistant delivery preference.
+
+Execution Rule:
+When Script Delivery is active, execution shall continue without
+additional confirmation unless a validated blocker exists.
+
+Delivery Mode Preservation:
+Script Delivery shall not silently replace itself with another
+Delivery Mode.
+
+======================================================================
+6. AUTHORING AND DELIVERY SEQUENCE
+======================================================================
+
+Active Method
+↓
+Complete Artifact
+Authoring
+↓
+Standards Compliance
+Review
+↓
+Artifact Validation
+↓
+Python Writer Script
+Generation
+↓
+User Execution
+
+Authoring shall complete before delivery begins.
+
+The completed artifact shall be embedded inside
+the generated script.
+
+Do not expose partial artifacts while authoring
+is in progress.
+
+If a blocker exists,
+
+stop and report the blocker.
+
+Do not change the selected Delivery Mode.
+
+Sequence Interpretation:
+Each stage shall complete before the next stage begins.
+
+Ownership Preservation:
+The active Method retains ownership of artifact authoring, and
+Script Delivery retains ownership of delivery only.
+
+======================================================================
+7. SCRIPT REQUIREMENTS
+======================================================================
+
+The generated Python writer script shall:
+- Use UTF-8.
+- Write the target TXT file.
+- Create a backup when the target file already
+  exists.
+- Avoid deleting files.
+- Avoid modifying unrelated files.
+- Remain inside the script folder unless another
+  output location is explicitly requested.
+- Validate required markers.
+- Print RESULT: PASS when successful.
+- Print RESULT: FAIL when validation fails.
+- Print the output file path.
+- Print the backup file path when a backup is
+  created.
+- Explain the next user step.
+
+Script Delivery Preservation Interpretation:
+
+Preserving the approved artifact takes
+precedence over reducing script size,
+simplifying script generation,
+or improving presentation.
+
+Equivalent approved artifacts shall produce
+equivalent generated writer scripts unless
+explicitly instructed otherwise.
+
+Script Safety Requirements:
+- Use deterministic file paths.
+- Avoid destructive operations.
+- Avoid network access unless explicitly authorized.
+- Preserve the embedded artifact exactly.
+- Create a backup before replacing an existing target.
+- Stop before writing when validation fails.
+
+Script Output Requirements:
+- Print RESULT: PASS when successful.
+- Print RESULT: FAIL when validation fails.
+- Print the generated output path.
+- Print the backup path when a backup is created.
+- Explain the next User action.
+
+======================================================================
+8. OPTIONAL BAT LAUNCHER
+======================================================================
+
+When practical, generate a simple BAT launcher.
+
+The BAT launcher shall:
+- Execute the Python writer script.
+- Remain inside the script folder.
+- Pause after execution.
+
+Recommended user workflow:
+1. Download the Python writer script.
+2. Download the BAT launcher when provided.
+3. Place both files in the same folder.
+4. Run the BAT launcher.
+5. Upload the generated TXT file for review.
+
+Launcher Boundary:
+The BAT launcher shall execute the Python writer script only and
+shall not redefine artifact content or validation behavior.
+
+======================================================================
+9. VALIDATION REQUIREMENTS
+======================================================================
+
+The generated Python writer script shall verify:
+- The final artifact is not empty.
+- Required markers are present.
+- The expected end marker is present when
+  applicable.
+- The target output file has been written.
+
+Validation shall:
+- Be simple.
+- Be deterministic.
+
+Validation shall not evaluate document quality.
+
+Document quality review belongs to the Assistant
+after the generated TXT file has been uploaded.
+
+Validation Result:
+- PASS: Every required script and artifact marker is valid.
+- FAIL: One or more required validations fail.
+- NON-APPLICABLE: A validation rule does not apply.
+
+Validation Boundary:
+Script validation shall verify safe generation behavior and shall
+not perform documentation quality review.
+
+======================================================================
+10. FAILURE BEHAVIOR
+======================================================================
+
+If the script cannot safely write the target file,
+
+stop and print:
+
+RESULT: FAIL
+
+If required markers are missing,
+
+stop and print:
+
+RESULT: FAIL
+
+If validation fails,
+
+do not write the output file.
+
+If the generated TXT file is created successfully,
+
+the user shall upload the generated TXT file for
+Assistant review before locking.
+
+Failure Integrity:
+A failed script shall not leave a partial target file.
+
+Failure Reporting:
+Failure output shall identify the failed validation or write
+operation without hiding incomplete work.
+
+======================================================================
+11. DELIVERY PRESERVATION
+======================================================================
+
+Purpose:
+Define preservation requirements during Script Delivery.
+
+Preservation Priority:
+Preserving the approved artifact shall take precedence over
+reducing script size, simplifying generation, or changing
+presentation.
+
+Preservation Requirements:
+- Approved artifact content.
+- Approved wording.
+- Approved structure.
+- Approved Property–Value relationships.
+- Approved visual boundaries.
+- Approved layout.
+- Approved output filename.
+- Required validation markers.
+
+Equivalent Delivery:
+Equivalent approved artifacts shall produce equivalent writer
+scripts when the same requirements apply.
+
+Modification Prohibition:
+Script Delivery shall not modify completed Method output except
+where script packaging and validation are explicitly required.
+
+======================================================================
+12. DELIVERY GOVERNANCE
+======================================================================
+
+Purpose:
+Define authority and decision constraints governing Script
+Delivery.
+
+Decision Sources:
+- This Standard.
+- Applicable higher-authority USER_PACKAGE documents.
+- Explicit User instructions.
+- The active Method.
+- Applicable authorization.
+- The completed approved artifact.
+
+Prohibited Decision Sources:
+- Assistant delivery preference.
+- Assistant stylistic preference.
+- Unverified assumptions.
+- An incomplete artifact.
+- An unapproved target path.
+
+Undefined Delivery:
+When required delivery behavior is undefined, preserve the
+completed artifact and use the simplest valid script behavior
+permitted by this Standard.
+
+Material ambiguity that prevents safe script generation shall be
+reported instead of resolved through invention.
+
+======================================================================
+13. DESIGN PRINCIPLES
+======================================================================
+
+Script Delivery shall:
+- Remain simple.
+- Reduce manual work.
+- Avoid long partial output.
+- Preserve the active Method.
+- Preserve the approved artifact exactly as
+  generated.
+- Support future TXT workflows without
+  requiring redesign.
+- Not replace document authoring.
+
+Deliver completed artifacts only.
+
+Authoring remains the responsibility of the
+active Method.
+
+Additional Principles:
+- Validate before writing.
+- Back up before replacing.
+- Fail safely.
+- Preserve before packaging.
+- Deliver before explaining.
+- Keep execution local unless otherwise authorized.
+
+======================================================================
+14. DOCUMENT RELATIONSHIPS
+======================================================================
+
+Purpose:
+Define relationships with authoritative USER_PACKAGE documents.
+
+USER_PROFILE:
+Defines User authority and delivery preferences.
+
+AI_BEHAVIOR_STANDARD:
+Defines Assistant behavior throughout Script Delivery execution.
+
+AI_OUTPUT_STANDARD:
+Defines presentation of the delivered script package.
+
+DOCUMENT_STRUCTURE_STANDARD:
+Defines structure of Script Delivery documentation.
+
+DOCUMENT_WRITING_STANDARD:
+Defines documentation writing and knowledge preservation.
+
+PROPERTY_VALUE_STANDARD:
+Defines semantic Property–Value grammar.
+
+VISUAL_BOUNDARY_STANDARD:
+Defines visual boundary grammar.
+
+DOCUMENT_LAYOUT_STANDARD:
+Defines layout composition.
+
+PATCH_DELIVERY_STANDARD:
+Defines clipboard-ready Patch Delivery as an alternative Delivery
+Mode.
+
+Active Method:
+Defines and produces the completed artifact.
+
+Applicable Authorization Document:
+Authorizes implementation or artifact generation when required.
+
+Relationship Rules:
+
+Script Delivery shall:
+- Depend on the completed artifact.
+- Depend on the active Method when authoring is required.
+- Depend on applicable authorization when required.
+- Apply AI_BEHAVIOR_STANDARD during execution.
+- Apply AI_OUTPUT_STANDARD during presentation.
+- Preserve all documentation Standards.
+- Complement PATCH_DELIVERY_STANDARD.
+
+Script Delivery shall not:
+- Replace the active Method.
+- Replace authorization.
+- Redefine output rendering.
+- Redefine artifact content.
+- Activate another Delivery Mode automatically.
+- Absorb review or transformation responsibility.
+
+Legacy Compatibility:
+
+RTCT (Ready-To-Copy Text) was the previous name used for
+clipboard-ready delivery behavior.
+
+PATCH_DELIVERY_STANDARD replaces RTCT as the official
+Delivery Mode Standard.
+
+Historical RTCT references shall be interpreted as
+PATCH_DELIVERY_STANDARD unless referring to historical documentation.
+
+======================================================================
+15. RESPONSIBILITY BOUNDARIES
+======================================================================
+
+Purpose:
+Define the operational responsibility boundary of Script
+Delivery.
+
+Responsibility Rule:
+Script Delivery governs delivery of completed artifacts through
+ready-to-run Python writer scripts only.
+
+Script Delivery Shall Not Define:
+- Assistant behavior.
+- Artifact authoring.
+- Artifact transformation.
+- Architecture.
+- Documentation writing.
+- Document structure.
+- Property–Value grammar.
+- Visual boundary grammar.
+- Document layout.
+- Output rendering.
+- Standards Compliance Review.
+- Runtime behavior.
+- Artifact content.
+- Project documentation.
+- Design decisions.
+- User approval.
+- Active Method behavior.
+
+Ownership Rule:
+Delivering an artifact through a writer script does not transfer
+artifact ownership or authoring responsibility to Script
+Delivery.
+
+======================================================================
+16. REVISION POLICY
+======================================================================
+
+Purpose:
+Define when Script Delivery may be revised.
+
+Revision Criteria:
+This Standard may be revised only when validated delivery work
+demonstrates:
+
+- Unsafe file writing.
+- Backup failure.
+- Validation ambiguity.
+- Repeated execution failure.
+- Excessive manual work.
+- Delivery compatibility failure.
+- Responsibility overlap.
+- Conflict with a higher-authority document.
+- Proven maintenance cost.
+
+Revision Rules:
+
+Revision shall:
+- Preserve the primary responsibility.
+- Preserve approved artifact content.
+- Preserve safe backup behavior.
+- Preserve deterministic validation.
+- Preserve compatibility when requirements remain valid.
+- Preserve Single Authority Ownership.
+
+Revision shall not:
+- Absorb artifact authoring.
+- Absorb artifact transformation.
+- Absorb output rendering.
+- Absorb Runtime behavior.
+- Introduce destructive behavior.
+- Introduce hidden assumptions.
+
+======================================================================
+17. SELF COMPLIANCE
+======================================================================
+
+Purpose:
+Ensure this Standard complies with every applicable USER_PACKAGE
+standard.
+
+Self Compliance Rule:
+This Standard shall serve as a living implementation of its own
+Script Delivery requirements.
+
+Self Validation:
+- The Document contains one Document Title.
+- Each major topic uses one numbered Section.
+- L1 headings use N. TITLE without a SECTION label.
+- Metadata follows USER_PACKAGE v1.0 format.
+- Property–Value relationships remain intact.
+- Visual boundaries use approved levels.
+- Line composition remains within active Layout Parameters.
+- Document Relationships are explicit.
+- Responsibility Boundaries are explicit.
+- The active Method retains artifact authoring ownership.
+- AI_OUTPUT_STANDARD retains rendering ownership.
+- PATCH_DELIVERY_STANDARD remains an alternative Delivery Mode.
+- RTCT is not an active Delivery Mode.
+- No unrelated responsibility is absorbed.
+- Version and Status match USER_PACKAGE v1.0.
+
+Self Compliance Boundary:
+Self Compliance shall not transfer artifact authoring, rendering,
+or Runtime ownership to Script Delivery.
+
+======================================================================
+END OF SCRIPT DELIVERY
+======================================================================

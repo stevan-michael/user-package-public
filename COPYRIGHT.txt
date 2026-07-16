@@ -1,0 +1,28 @@
+USER_PACKAGE COPYRIGHT AND USAGE NOTICE
+
+Copyright © 2026 Stevan Michael.
+All rights reserved.
+
+USER_PACKAGE and its included documentation, standards, methods,
+templates, workflows, and supporting materials are publicly visible
+for portfolio, evaluation, and educational review purposes.
+
+No open-source license is granted.
+
+Unless explicit written permission is provided by the copyright owner,
+you may not:
+
+- Copy or redistribute substantial portions of this repository.
+- Publish modified or derivative versions.
+- Repackage or present the work as your own.
+- Use the materials as part of a commercial product or paid service.
+- Remove or misrepresent ownership and attribution information.
+
+Public visibility does not transfer ownership or grant permission for
+reuse beyond rights that may apply under applicable law or GitHub's
+platform terms.
+
+Requests for additional permission may be submitted through the
+repository owner's public GitHub contact channels.
+
+This notice is not an open-source license.

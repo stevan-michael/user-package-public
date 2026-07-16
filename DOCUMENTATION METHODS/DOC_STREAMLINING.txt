@@ -1,0 +1,707 @@
+======================================================================
+======================================================================
+DOCUMENT STREAMLINING
+======================================================================
+======================================================================
+
+Version:
+1.0
+
+Status:
+Official
+
+Category:
+Documentation Transformation Method
+
+Identity:
+Documentation Transformation Method governing complexity
+reduction in approved documentation throughout USER_PACKAGE.
+
+Purpose:
+Improve document quality by reducing unnecessary complexity while
+preserving purpose, meaning, behavior, functionality, and safety.
+
+Scope:
+Define documentation streamlining behavior only.
+
+Primary Responsibility:
+Documentation streamlining.
+
+Authority:
+USER_PROFILE.
+
+Depends On:
+- AI_BEHAVIOR_STANDARD.
+- AI_OUTPUT_STANDARD.
+- DOCUMENT_STRUCTURE_STANDARD.
+- DOCUMENT_WRITING_STANDARD.
+- PROPERTY_VALUE_STANDARD.
+- VISUAL_BOUNDARY_STANDARD.
+- DOCUMENT_LAYOUT_STANDARD.
+- Approved documentation baseline.
+- Applicable authorization document.
+
+Referenced By:
+- USER_PACKAGE documentation workflows.
+- Documentation maintenance workflows.
+- Authorized complexity-reduction tasks.
+
+Complements:
+- DOC_REFACTOR.
+- DOC_SYNTHESIS.
+- DOC_CONSOLIDATION.
+- PATCH_DELIVERY_STANDARD.
+- SCRIPT_DELIVERY.
+
+Does Not Define:
+- Assistant behavior.
+- New knowledge approval.
+- Architecture design.
+- Document refactoring.
+- Document synthesis.
+- Document consolidation.
+- Documentation writing.
+- Document structure.
+- Property–Value grammar.
+- Visual boundary grammar.
+- Document layout.
+- Output rendering.
+- Delivery behavior.
+- Runtime behavior.
+
+======================================================================
+1. FOUNDATION
+======================================================================
+
+Purpose:
+Define the authoritative responsibility, interpretation,
+applicability, and operational boundary of Document Streamlining.
+
+Streamlining Contract Interpretation:
+Every streamlining requirement expressed using "shall"
+constitutes a mandatory documentation transformation constraint.
+
+Streamlining behavior not explicitly required or permitted by
+this Method or a higher-authority USER_PACKAGE document shall not
+be assumed to be permitted.
+
+Requirements owned by another authoritative USER_PACKAGE Method
+or Standard shall not be interpreted as Document Streamlining
+requirements.
+
+Streamlining Definition:
+Document Streamlining reduces unnecessary complexity in approved
+documentation while preserving approved purpose, meaning,
+behavior, functionality, and safety.
+
+Applicability:
+This Method applies only to approved documentation assets.
+
+Excluded Assets:
+- Source code.
+- Runtime implementations.
+- Executable assets.
+- Behavioral Standards.
+- Binary assets.
+- Machine-readable serialization formats.
+
+Responsibility Rule:
+Document Streamlining governs documentation streamlining only.
+
+======================================================================
+2. GOALS
+======================================================================
+
+Reduce unnecessary duplication.
+
+Merge similar rules.
+
+Improve readability.
+
+Improve maintainability.
+
+Preserve:
+- Document intent.
+- Meaning.
+- Behavior.
+- Functionality.
+- Safety.
+- Future compatibility.
+
+Streamlining Applicability:
+
+This Method applies only to documentation
+assets.
+
+This Method shall not be applied to:
+- Source code.
+- Runtime implementations.
+- Executable assets.
+- Behavioral Standards.
+- Output rendering.
+
+Assets outside the defined Scope remain governed
+by their applicable authoritative Method or
+Standard.
+
+Goal Priority:
+Preservation of approved meaning, behavior, functionality, and
+safety shall take precedence over size reduction.
+
+======================================================================
+3. STREAMLINING MODEL
+======================================================================
+
+Purpose:
+Define the deterministic documentation streamlining model.
+
+Streamlining Model:
+
+Approved Documentation
+        ↓
+Complexity Analysis
+        ↓
+Redundancy Detection
+        ↓
+Meaning Preservation Check
+        ↓
+Minimum Safe Reduction
+        ↓
+Standards Compliance Review
+        ↓
+Streamlined Documentation
+
+Model Interpretation:
+Each stage shall complete before the next stage begins.
+
+Model Boundary:
+The Streamlining Model shall not approve new knowledge, redesign
+architecture, or change document purpose.
+
+======================================================================
+4. STREAMLINING RULES
+======================================================================
+
+Do not change the document purpose.
+
+Do not change the intended meaning.
+
+Do not change operational behavior.
+
+Do not remove required functionality.
+
+Do not remove safety mechanisms.
+
+Do not introduce new functionality unless
+explicitly requested.
+
+Only the minimum required changes shall be
+applied.
+
+Redundant statements shall be merged unless
+doing so would alter approved meaning.
+
+Unnecessary wording shall be removed without
+changing approved meaning.
+
+Preserve the original document structure unless
+a structural improvement is clearly beneficial.
+
+Streamlining Decision Rule:
+
+Streamlining decisions shall be derived only
+from:
+- This Method.
+- Applicable higher-authority USER_PACKAGE
+  Standards.
+- Explicit User instructions.
+- Approved document meaning.
+
+Streamlining decisions shall not be derived
+from Assistant stylistic preference.
+
+Streamlining Preservation Interpretation:
+
+Preserving approved meaning, behavior,
+functionality, and safety takes precedence over
+reducing document size or improving readability.
+
+Equivalent approved information shall produce
+equivalent streamlined information unless
+explicitly instructed otherwise.
+
+Minimum Change Rule:
+Only the minimum change required to remove validated unnecessary
+complexity shall be applied.
+
+Redundancy Rule:
+Equivalent statements may be merged only when approved meaning
+and applicability remain unchanged.
+
+Structure Rule:
+Existing valid structure shall be preserved unless a clearly
+beneficial structural improvement remains within authorized
+scope.
+
+======================================================================
+5. EXECUTION
+======================================================================
+
+Execute immediately when all required inputs
+are available and no blocking issue exists.
+
+Do not request execution confirmation.
+
+Do not ask whether to proceed.
+
+If no blocking issue exists,
+
+begin streamlining immediately.
+
+Blocking issues are the only valid reason
+to suspend execution.
+
+Execution resumes only after:
+- the blocking issue has been resolved, or
+- the user explicitly instructs otherwise.
+
+Execution Sequence:
+- Verify the approved baseline.
+- Resolve authorized scope.
+- Identify applicable Standards.
+- Identify unnecessary complexity.
+- Identify redundant statements.
+- Verify preservation requirements.
+- Apply the minimum safe reduction.
+- Perform Standards Compliance Review.
+- Correct validated compliance issues.
+- Validate the completed streamlined document.
+
+Execution Boundary:
+Execution shall stop only when a validated blocker prevents safe
+continuation.
+
+======================================================================
+6. CONFLICT HANDLING
+======================================================================
+
+If streamlining would:
+- Change the document purpose.
+- Change the intended meaning.
+- Change operational behavior.
+- Reduce safety.
+- Remove required
+  functionality.
+- Introduce ambiguity.
+
+Stop before modifying the document.
+
+Report:
+- Issue.
+- Affected section(s).
+- Reason.
+- Recommended resolution.
+
+Do not silently modify the document intent.
+
+Do not modify the document until the conflict
+has been resolved or the user explicitly
+instructs otherwise.
+
+Conflict Types:
+- Purpose change.
+- Meaning change.
+- Operational behavior change.
+- Functional behavior change.
+- Safety reduction.
+- Required functionality removal.
+- Ambiguity introduction.
+- Authority conflict.
+- Standards conflict.
+
+Conflict Prohibition:
+Document Streamlining shall not silently change document intent,
+meaning, behavior, functionality, or safety.
+
+======================================================================
+7. OUTPUT REQUIREMENTS
+======================================================================
+
+Generate one complete standalone streamlined
+document.
+
+Generate only the final streamlined document.
+
+Output presentation belongs to the active
+Output Mode when one is active.
+
+Method Ownership Interpretation:
+
+Owning the streamlining process does not
+transfer authority over the approved document
+or its approved meaning.
+
+Authority remains defined by the applicable
+authoritative USER_PACKAGE documents.
+
+Do not explain the streamlining process.
+
+Do not generate comparison tables unless
+explicitly requested.
+
+Output Completeness:
+The output shall contain one complete standalone streamlined
+document.
+
+Output Ownership:
+The active Output Mode governs presentation and delivery only.
+
+Authority Preservation:
+The streamlined document remains governed by applicable
+authoritative USER_PACKAGE documents.
+
+======================================================================
+8. QUALITY CHECK
+======================================================================
+
+Before completing streamlining,
+
+verify:
+- Document purpose remains unchanged.
+- Intended meaning remains unchanged.
+- Operational behavior remains unchanged.
+- Functional behavior remains unchanged.
+- Safety remains unchanged.
+- Readability has improved.
+- Redundancy has been reduced.
+- Document clarity has improved.
+- No required information has been removed.
+- No unsupported information has been introduced.
+
+Before completing streamlining,
+
+verify that the generated document complies
+with all applicable Standards.
+
+Complete Standards Compliance Review before
+the Method is considered complete.
+
+Correct identified Standards compliance issues
+before completing the Method.
+
+Standards Compliance Review applies only
+to the generated streamlined document.
+
+It shall not modify the approved purpose,
+meaning, behavior, functionality, or safety
+preserved by the streamlining process.
+
+If no blocking issue exists,
+
+immediately generate the final streamlined
+document.
+
+Otherwise, follow the Conflict Handling rules.
+
+Streamlining Responsibility Boundary:
+
+Document Streamlining shall not:
+- Approve new knowledge.
+- Redesign approved architecture.
+- Modify approved responsibilities.
+- Perform document refactoring.
+- Perform document synthesis.
+- Perform document consolidation.
+
+Document Streamlining shall remain limited to
+complexity reduction while preserving approved
+meaning.
+
+Validation Result:
+- PASS: Every applicable streamlining requirement is satisfied.
+- FAIL: One or more streamlining requirements are violated.
+- NON-APPLICABLE: A requirement does not apply.
+
+Failure Rule:
+A streamlined document that fails Quality Check shall not proceed
+to final delivery.
+
+======================================================================
+9. PRESERVATION CONTRACT
+======================================================================
+
+Purpose:
+Define mandatory preservation behavior during streamlining.
+
+Preservation Requirements:
+- Approved document purpose.
+- Approved meaning.
+- Approved operational behavior.
+- Approved functionality.
+- Approved safety mechanisms.
+- Approved responsibilities.
+- Approved terminology.
+- Approved compatibility.
+- Traceability.
+- Applicable Standards.
+
+Preservation Priority:
+Preserving approved purpose, meaning, behavior, functionality,
+and safety shall take precedence over reducing size or improving
+readability.
+
+Deletion Rule:
+Required information shall not be removed merely because it
+appears repetitive.
+
+Inference Rule:
+Unsupported information shall not be introduced during
+streamlining.
+
+======================================================================
+10. METHOD GOVERNANCE
+======================================================================
+
+Purpose:
+Define authority and decision constraints governing Document
+Streamlining.
+
+Decision Sources:
+- This Method.
+- Applicable higher-authority USER_PACKAGE documents.
+- Explicit User instructions.
+- Approved document meaning.
+- Verified documentation baseline.
+- Applicable authorization.
+
+Prohibited Decision Sources:
+- Assistant stylistic preference.
+- Unverified assumptions.
+- Conversation memory used instead of the baseline.
+- Aesthetic preference alone.
+- Unapproved optimization goals.
+
+Undefined Streamlining:
+When streamlining behavior is undefined, preserve the approved
+baseline and use the smallest valid reduction permitted by this
+Method.
+
+Material ambiguity that prevents safe streamlining shall be
+reported instead of resolved through invention.
+
+======================================================================
+11. OUTPUT RESPONSIBILITY
+======================================================================
+
+Purpose:
+Define transformation and presentation ownership.
+
+Transformation Ownership:
+Document transformation belongs to Document Streamlining.
+
+Presentation Ownership:
+Output presentation belongs to the active Output Mode.
+
+Method Ownership Interpretation:
+Owning streamlining does not transfer authority over the approved
+document or its approved meaning.
+
+Authority Preservation:
+Authority remains defined by applicable authoritative
+USER_PACKAGE documents.
+
+======================================================================
+12. DESIGN PRINCIPLES
+======================================================================
+
+Purpose:
+Define the long-term principles governing Document Streamlining.
+
+Design Principles:
+- Preserve before reducing.
+- Minimum change before broad rewriting.
+- Meaning before brevity.
+- Safety before compactness.
+- Clarity before compression.
+- Merge only verified redundancy.
+- Validate before completing.
+- No unapproved functionality.
+- No silent behavior change.
+- One complete standalone output.
+
+======================================================================
+13. DOCUMENT RELATIONSHIPS
+======================================================================
+
+Purpose:
+Define relationships with authoritative USER_PACKAGE documents.
+
+USER_PROFILE:
+Defines User authority and documentation preferences.
+
+AI_BEHAVIOR_STANDARD:
+Defines Assistant behavior throughout Method execution.
+
+AI_OUTPUT_STANDARD:
+Defines output rendering and presentation.
+
+DOCUMENT_STRUCTURE_STANDARD:
+Defines document objects and structural relationships.
+
+DOCUMENT_WRITING_STANDARD:
+Defines documentation writing and knowledge preservation.
+
+PROPERTY_VALUE_STANDARD:
+Defines semantic Property–Value grammar.
+
+VISUAL_BOUNDARY_STANDARD:
+Defines visual boundary grammar.
+
+DOCUMENT_LAYOUT_STANDARD:
+Defines document layout composition.
+
+DOC_REFACTOR:
+Defines authorized documentation refactoring.
+
+DOC_SYNTHESIS:
+Defines authorized document synthesis.
+
+DOC_CONSOLIDATION:
+Defines authorized document consolidation.
+
+PATCH_DELIVERY_STANDARD:
+Defines clipboard-ready Patch Delivery.
+
+SCRIPT_DELIVERY:
+Defines ready-to-run script delivery.
+
+Relationship Rules:
+
+Document Streamlining shall:
+- Depend on the verified documentation baseline.
+- Apply all applicable documentation Standards.
+- Preserve approved purpose and meaning.
+- Preserve approved behavior, functionality, and safety.
+- Defer output rendering to AI_OUTPUT_STANDARD.
+- Defer delivery to the selected Delivery Mode.
+- Preserve ownership of related Methods.
+
+Document Streamlining shall not:
+- Perform document refactoring.
+- Perform document synthesis.
+- Perform document consolidation.
+- Redefine documentation Standards.
+- Redefine output rendering.
+- Redefine Delivery Mode behavior.
+- Redesign approved architecture.
+
+======================================================================
+14. RESPONSIBILITY BOUNDARIES
+======================================================================
+
+Purpose:
+Define the responsibility boundary of Document Streamlining.
+
+Responsibility Rule:
+Document Streamlining governs complexity reduction while
+preserving approved meaning only.
+
+Document Streamlining Shall Not Define:
+- Assistant behavior.
+- New knowledge approval.
+- Architecture design.
+- Document refactoring.
+- Document synthesis.
+- Document consolidation.
+- Documentation writing.
+- Document structure.
+- Property–Value grammar.
+- Visual boundary grammar.
+- Document layout.
+- Output rendering.
+- Delivery behavior.
+- Runtime behavior.
+
+Ownership Rule:
+Streamlining documentation does not transfer authority over the
+approved document, meaning, behavior, functionality, or safety to
+this Method.
+
+======================================================================
+15. REVISION POLICY
+======================================================================
+
+Purpose:
+Define when Document Streamlining may be revised.
+
+Revision Criteria:
+This Method may be revised only when validated streamlining work
+demonstrates:
+
+- Preservation ambiguity.
+- Repeated meaning-change risk.
+- Missing streamlining coverage.
+- Redundancy-resolution failure.
+- Safety-preservation failure.
+- Standards compatibility failure.
+- Responsibility overlap.
+- Conflict with a higher-authority document.
+- Proven maintenance cost.
+
+Revision Rules:
+
+Revision shall:
+- Preserve the primary responsibility.
+- Preserve approved purpose and meaning.
+- Preserve approved behavior, functionality, and safety.
+- Preserve compatibility when requirements remain valid.
+- Resolve validated deficiencies before expanding scope.
+- Preserve Single Authority Ownership.
+
+Revision shall not:
+- Absorb document refactoring.
+- Absorb document synthesis.
+- Absorb document consolidation.
+- Absorb output rendering.
+- Absorb Delivery Mode behavior.
+- Introduce hidden assumptions.
+- Authorize architecture redesign.
+
+======================================================================
+16. SELF COMPLIANCE
+======================================================================
+
+Purpose:
+Ensure this Method complies with every applicable USER_PACKAGE
+standard.
+
+Self Compliance Rule:
+This Method shall serve as a living implementation of its own
+streamlining requirements.
+
+Self Validation:
+- The Document contains one Document Title.
+- Each major topic uses one numbered Section.
+- L1 headings use N. TITLE without a SECTION label.
+- Metadata follows USER_PACKAGE v1.0 format.
+- Property–Value relationships remain intact.
+- Visual boundaries use approved levels.
+- Line composition remains within active Layout Parameters.
+- Document Relationships are explicit.
+- Responsibility Boundaries are explicit.
+- Approved purpose remains unchanged.
+- Approved meaning remains unchanged.
+- Approved behavior and functionality remain unchanged.
+- Approved safety remains unchanged.
+- Output rendering remains owned by AI_OUTPUT_STANDARD.
+- Delivery remains owned by the active Delivery Mode.
+- No unrelated responsibility is absorbed.
+- Version and Status match USER_PACKAGE v1.0.
+
+Self Compliance Boundary:
+Self Compliance shall not transfer document, rendering, or
+delivery ownership to Document Streamlining.
+
+======================================================================
+END OF DOCUMENT STREAMLINING
+======================================================================

@@ -1,0 +1,745 @@
+======================================================================
+======================================================================
+FILE CONSOLIDATION
+======================================================================
+======================================================================
+
+Version:
+1.0
+
+Status:
+Official
+
+Category:
+Documentation Transformation Method
+
+Identity:
+Documentation Transformation Method governing consolidation of
+approved documentation into one authoritative baseline.
+
+Purpose:
+Produce one consolidated document that becomes the new
+authoritative baseline by combining all accepted information into
+one coherent document.
+
+Scope:
+Define document consolidation behavior only.
+
+Primary Responsibility:
+Document consolidation.
+
+Authority:
+USER_PROFILE.
+
+Depends On:
+- AI_BEHAVIOR_STANDARD.
+- AI_OUTPUT_STANDARD.
+- DOCUMENT_STRUCTURE_STANDARD.
+- DOCUMENT_WRITING_STANDARD.
+- PROPERTY_VALUE_STANDARD.
+- VISUAL_BOUNDARY_STANDARD.
+- DOCUMENT_LAYOUT_STANDARD.
+- Approved Baseline document.
+- Approved Source document or Source documents.
+- Applicable authorization document.
+
+Referenced By:
+- USER_PACKAGE documentation workflows.
+- Documentation migration workflows.
+- Authorized baseline maintenance tasks.
+
+Complements:
+- DOC_REFACTOR.
+- DOC_SYNTHESIS.
+- DOC_STREAMLINING.
+- PATCH_DELIVERY_STANDARD.
+- SCRIPT_DELIVERY.
+
+Does Not Define:
+- Assistant behavior.
+- New knowledge approval.
+- Architecture design.
+- Document synthesis.
+- Documentation refactoring.
+- Documentation writing.
+- Document structure.
+- Property–Value grammar.
+- Visual boundary grammar.
+- Document layout.
+- Output rendering.
+- Delivery behavior.
+- Runtime behavior.
+
+======================================================================
+1. FOUNDATION
+======================================================================
+
+Purpose:
+Define the authoritative responsibility, interpretation,
+applicability, and operational boundary of File Consolidation.
+
+Consolidation Contract Interpretation:
+Every consolidation requirement expressed using "shall"
+constitutes a mandatory documentation transformation constraint.
+
+Consolidation behavior not explicitly required or permitted by
+this Method or a higher-authority USER_PACKAGE document shall not
+be assumed to be permitted.
+
+Requirements owned by another authoritative USER_PACKAGE Method
+or Standard shall not be interpreted as File Consolidation
+requirements.
+
+Consolidation Definition:
+File Consolidation merges accepted information from approved
+Sources into the current approved Baseline and produces one
+coherent replacement baseline.
+
+Authority Model:
+The Baseline defines the current authoritative document. Sources
+define accepted information to be incorporated.
+
+Applicability:
+This Method applies only to approved documentation assets.
+
+Excluded Assets:
+- Source code.
+- Runtime implementations.
+- Executable assets.
+- Behavioral Standards.
+- Binary assets.
+- Machine-readable serialization formats.
+
+Responsibility Rule:
+File Consolidation governs document consolidation only.
+
+======================================================================
+2. INPUT CONTRACT
+======================================================================
+
+Baseline:
+The current authoritative document.
+
+Sources:
+One or more authoritative information sources
+to be consolidated.
+
+Consolidation Applicability:
+
+This Method applies only to approved
+documentation assets.
+
+This Method shall not be applied to:
+- Source code.
+- Runtime implementations.
+- Executable assets.
+- Behavioral Standards.
+- Output rendering.
+
+Assets outside the defined Scope remain governed
+by their applicable authoritative Method or
+Standard.
+
+Baseline defines the existing document.
+
+Sources define the accepted information.
+
+The active Method defines document transformation.
+
+Output presentation belongs to the active
+Output Mode when one is active.
+
+Required Inputs:
+- One approved Baseline document.
+- One or more approved Source documents.
+- Applicable Standards.
+- Explicit User constraints.
+- Applicable authorization.
+
+Baseline Authority:
+The Baseline governs the current approved document state.
+
+Source Authority:
+Sources govern accepted information to be consolidated.
+
+Input Verification:
+Every required Baseline and Source shall be accessible and
+verifiable before consolidation begins.
+
+======================================================================
+3. CONSOLIDATION MODEL
+======================================================================
+
+Purpose:
+Define the deterministic document consolidation model.
+
+Consolidation Model:
+
+Approved Baseline
+        +
+Approved Sources
+        ↓
+Information Validation
+        ↓
+Supersession Resolution
+        ↓
+Merge and De-duplication
+        ↓
+Normalization
+        ↓
+Standards Compliance Review
+        ↓
+Consolidated Baseline
+
+Model Interpretation:
+Each stage shall complete before the next stage begins.
+
+Model Boundary:
+The Consolidation Model shall not approve new knowledge, redesign
+architecture, or change document purpose.
+
+======================================================================
+4. CONSOLIDATION RULES
+======================================================================
+
+Preserve:
+
+Keep all current information that
+remains valid.
+
+Replace:
+
+Completely replace superseded information with
+the latest accepted version.
+
+Do not preserve deprecated content unless
+explicitly requested.
+
+Merge:
+
+Compatible information shall be merged into the
+new baseline.
+
+Duplicate concepts shall be eliminated.
+
+Delete:
+
+Remove:
+- Obsolete architecture.
+- Deprecated terminology.
+- Retired workflows.
+- Superseded rules.
+
+Normalize:
+
+The document shall be rewritten as one coherent
+baseline.
+
+Use the latest accepted terminology.
+
+Remove:
+- Contradictions.
+- Historical wording.
+- Redundant content.
+
+Consolidation Decision Rule:
+
+Consolidation decisions shall be derived only
+from:
+- This Method.
+- Applicable higher-authority USER_PACKAGE
+  Standards.
+- Explicit User instructions.
+- Approved Baseline authority.
+- Approved Source authority.
+
+Consolidation decisions shall not be derived
+from Assistant stylistic preference.
+
+Consolidation Preservation Interpretation:
+
+Preserving approved information takes precedence
+over improving presentation or organization.
+
+Equivalent approved information shall produce
+equivalent consolidated information unless
+explicitly instructed otherwise or required by
+an approved architectural revision.
+
+Supersession Rule:
+The latest accepted information shall replace superseded
+information completely.
+
+Duplicate Resolution:
+Equivalent information shall appear once in the consolidated
+baseline.
+
+Normalization Rule:
+The final document shall read as one coherent current-state
+baseline rather than a sequence of historical edits.
+
+======================================================================
+5. EXECUTION
+======================================================================
+
+Execute immediately when all required inputs
+are available and no blocking issue exists.
+
+Do not request execution confirmation.
+
+Do not ask whether to proceed.
+
+If no blocking issue exists,
+
+begin consolidation immediately.
+
+Blocking issues are the only valid reason
+to suspend execution.
+
+Execution resumes only after:
+- the blocking issue has been resolved, or
+- the user explicitly instructs otherwise.
+
+Execution Sequence:
+- Verify the Baseline.
+- Verify all required Sources.
+- Resolve authorized scope.
+- Identify applicable Standards.
+- Classify preserved, replaced, merged, and deleted information.
+- Resolve superseded information.
+- Merge compatible information.
+- Remove duplication and obsolete content.
+- Normalize the complete baseline.
+- Perform Standards Compliance Review.
+- Correct validated compliance issues.
+- Validate the consolidated baseline.
+
+Execution Boundary:
+Execution shall stop only when a validated blocker prevents safe
+continuation.
+
+======================================================================
+6. CONFLICT HANDLING
+======================================================================
+
+If conflicting accepted information,
+missing evidence,
+
+ambiguous authority,
+
+structural conflict,
+
+or insufficient information prevents successful
+consolidation,
+
+stop before generating the consolidated document.
+
+Report:
+- Issue.
+- Affected section(s).
+- Reason.
+- Recommended resolution.
+
+Do not invent missing information.
+
+Do not silently ignore conflicts.
+
+Conflict Types:
+- Conflicting accepted information.
+- Missing evidence.
+- Ambiguous authority.
+- Structural conflict.
+- Insufficient information.
+- Standards conflict.
+- Unclear supersession order.
+
+Conflict Prohibition:
+File Consolidation shall not silently ignore conflicts, invent
+missing information, or select authority without evidence.
+
+======================================================================
+7. OUTPUT REQUIREMENTS
+======================================================================
+
+Generate one complete standalone consolidated document.
+
+The generated document becomes the new
+authoritative baseline upon user acceptance.
+
+Output presentation belongs to the active
+Output Mode when one is active.
+
+Do not generate:
+- Patches.
+- Diffs.
+- Append-only updates.
+- Historical sections unless explicitly requested.
+
+Historical evolution belongs to:
+- Sprint Journals.
+- Development Logs.
+- Save Points.
+
+Historical evolution does not belong in the
+consolidated baseline.
+
+Method Ownership Interpretation:
+
+Owning the consolidation process does not
+transfer authority over the Baseline document,
+Source documents, or consolidated knowledge.
+
+Authority remains defined by the applicable
+authoritative USER_PACKAGE documents.
+
+Consolidation Responsibility Boundary:
+
+File Consolidation shall not:
+- Approve new knowledge.
+- Redesign approved architecture.
+- Modify approved responsibilities.
+- Perform document synthesis.
+- Perform documentation refactoring.
+- Change document purpose.
+
+File Consolidation shall remain limited to
+document consolidation.
+
+Output Completeness:
+The output shall contain one complete standalone consolidated
+document.
+
+Authority Transition:
+The consolidated document becomes the new authoritative baseline
+only after User acceptance.
+
+Historical Separation:
+Historical evolution shall remain outside the consolidated
+baseline unless explicitly requested.
+
+Output Ownership:
+The active Output Mode governs presentation and delivery only.
+
+======================================================================
+8. QUALITY CHECK
+======================================================================
+
+Before completing consolidation, verify:
+- Accepted information has been preserved.
+- Superseded information has been replaced.
+- Obsolete information has been removed.
+- Duplicate information has been eliminated.
+- Terminology is consistent.
+- Historical wording has been removed.
+- The document forms one coherent baseline.
+- No unsupported information has been invented.
+- Every accepted change has been consolidated.
+
+Before completing consolidation,
+
+verify that the generated artifact complies with all
+applicable Standards.
+
+Standards Compliance Review shall be completed
+before consolidation is considered complete.
+
+Correct identified Standards compliance issues
+before completing the Method.
+
+Standards Compliance Review applies only to
+the generated consolidated artifact.
+
+It does not modify the approved knowledge established
+through the consolidation process.
+
+If no blocking issue exists,
+
+immediately complete consolidation.
+
+Otherwise, follow the Conflict Handling rules.
+
+Validation Result:
+- PASS: Every applicable consolidation requirement is satisfied.
+- FAIL: One or more consolidation requirements are violated.
+- NON-APPLICABLE: A requirement does not apply.
+
+Failure Rule:
+A consolidated document that fails Quality Check shall not
+proceed to final delivery.
+
+======================================================================
+9. PRESERVATION CONTRACT
+======================================================================
+
+Purpose:
+Define mandatory preservation behavior during consolidation.
+
+Preservation Requirements:
+- Accepted information.
+- Current valid Baseline knowledge.
+- Approved architecture.
+- Approved responsibilities.
+- Approved terminology.
+- Approved document purpose.
+- Traceability.
+- Applicable Standards.
+
+Preservation Priority:
+Preserving accepted information shall take precedence over
+presentation or organizational improvement.
+
+Replacement Integrity:
+Superseded information shall be replaced without retaining
+obsolete contradictions.
+
+Inference Rule:
+Unsupported information shall not be introduced as consolidated
+knowledge.
+
+======================================================================
+10. METHOD GOVERNANCE
+======================================================================
+
+Purpose:
+Define authority and decision constraints governing File
+Consolidation.
+
+Decision Sources:
+- This Method.
+- Applicable higher-authority USER_PACKAGE documents.
+- Explicit User instructions.
+- Approved Baseline authority.
+- Approved Source authority.
+- Applicable authorization.
+
+Prohibited Decision Sources:
+- Assistant stylistic preference.
+- Unverified assumptions.
+- Conversation memory used instead of physical inputs.
+- Unapproved external information.
+- Aesthetic preference alone.
+
+Undefined Consolidation:
+When consolidation behavior is undefined, preserve accepted
+information and the verified Baseline, then use the simplest
+valid consolidation behavior permitted by this Method.
+
+Material ambiguity that prevents safe consolidation shall be
+reported instead of resolved through invention.
+
+======================================================================
+11. OUTPUT RESPONSIBILITY
+======================================================================
+
+Purpose:
+Define transformation and presentation ownership.
+
+Transformation Ownership:
+Document transformation belongs to File Consolidation.
+
+Presentation Ownership:
+Output presentation belongs to the active Output Mode.
+
+Method Ownership Interpretation:
+Owning consolidation does not transfer authority over the
+Baseline, Sources, or consolidated knowledge.
+
+Authority Preservation:
+Authority remains defined by applicable authoritative
+USER_PACKAGE documents.
+
+======================================================================
+12. DESIGN PRINCIPLES
+======================================================================
+
+File Consolidation shall always generate one coherent
+baseline.
+
+Historical evolution belongs outside the consolidated
+document.
+
+Accepted information replaces historical information.
+
+The resulting baseline shall represent the current
+authoritative state only.
+
+Additional Principles:
+- Current state before history.
+- Accepted information before obsolete information.
+- One coherent baseline.
+- Preserve before replacing.
+- Validate before merging.
+- De-duplicate before finalizing.
+- Normalize before delivery.
+- Evidence before inference.
+
+======================================================================
+13. DOCUMENT RELATIONSHIPS
+======================================================================
+
+Purpose:
+Define relationships with authoritative USER_PACKAGE documents.
+
+USER_PROFILE:
+Defines User authority and documentation preferences.
+
+AI_BEHAVIOR_STANDARD:
+Defines Assistant behavior throughout Method execution.
+
+AI_OUTPUT_STANDARD:
+Defines output rendering and presentation.
+
+DOCUMENT_STRUCTURE_STANDARD:
+Defines document objects and structural relationships.
+
+DOCUMENT_WRITING_STANDARD:
+Defines documentation writing and knowledge preservation.
+
+PROPERTY_VALUE_STANDARD:
+Defines semantic Property–Value grammar.
+
+VISUAL_BOUNDARY_STANDARD:
+Defines visual boundary grammar.
+
+DOCUMENT_LAYOUT_STANDARD:
+Defines document layout composition.
+
+DOC_REFACTOR:
+Defines authorized documentation refactoring.
+
+DOC_SYNTHESIS:
+Defines authorized document synthesis.
+
+DOC_STREAMLINING:
+Defines authorized documentation streamlining.
+
+PATCH_DELIVERY_STANDARD:
+Defines clipboard-ready Patch Delivery.
+
+SCRIPT_DELIVERY:
+Defines ready-to-run script delivery.
+
+Relationship Rules:
+
+File Consolidation shall:
+- Depend on the approved Baseline.
+- Depend on approved Sources.
+- Apply all applicable documentation Standards.
+- Preserve accepted information.
+- Defer output rendering to AI_OUTPUT_STANDARD.
+- Defer delivery to the selected Delivery Mode.
+- Preserve ownership of related Methods.
+
+File Consolidation shall not:
+- Perform document synthesis.
+- Perform documentation refactoring.
+- Redefine documentation Standards.
+- Redefine output rendering.
+- Redefine Delivery Mode behavior.
+- Redesign approved architecture.
+
+======================================================================
+14. RESPONSIBILITY BOUNDARIES
+======================================================================
+
+Purpose:
+Define the responsibility boundary of File Consolidation.
+
+Responsibility Rule:
+File Consolidation governs document consolidation only.
+
+File Consolidation Shall Not Define:
+- Assistant behavior.
+- New knowledge approval.
+- Architecture design.
+- Document synthesis.
+- Documentation refactoring.
+- Documentation writing.
+- Document structure.
+- Property–Value grammar.
+- Visual boundary grammar.
+- Document layout.
+- Output rendering.
+- Delivery behavior.
+- Runtime behavior.
+
+Ownership Rule:
+Consolidating documentation does not transfer authority over the
+Baseline, Sources, or consolidated knowledge to this Method.
+
+======================================================================
+15. REVISION POLICY
+======================================================================
+
+Purpose:
+Define when File Consolidation may be revised.
+
+Revision Criteria:
+This Method may be revised only when validated consolidation work
+demonstrates:
+
+- Supersession ambiguity.
+- Repeated merge failure.
+- Missing consolidation coverage.
+- Duplicate-resolution failure.
+- Preservation failure.
+- Standards compatibility failure.
+- Responsibility overlap.
+- Conflict with a higher-authority document.
+- Proven maintenance cost.
+
+Revision Rules:
+
+Revision shall:
+- Preserve the primary responsibility.
+- Preserve accepted information.
+- Preserve Baseline authority until User acceptance.
+- Preserve compatibility when requirements remain valid.
+- Resolve validated deficiencies before expanding scope.
+- Preserve Single Authority Ownership.
+
+Revision shall not:
+- Absorb document synthesis.
+- Absorb documentation refactoring.
+- Absorb output rendering.
+- Absorb Delivery Mode behavior.
+- Introduce hidden assumptions.
+- Authorize architecture redesign.
+
+======================================================================
+16. SELF COMPLIANCE
+======================================================================
+
+Purpose:
+Ensure this Method complies with every applicable USER_PACKAGE
+standard.
+
+Self Compliance Rule:
+This Method shall serve as a living implementation of its own
+consolidation requirements.
+
+Self Validation:
+- The Document contains one Document Title.
+- Each major topic uses one numbered Section.
+- L1 headings use N. TITLE without a SECTION label.
+- Metadata follows USER_PACKAGE v1.0 format.
+- Property–Value relationships remain intact.
+- Visual boundaries use approved levels.
+- Line composition remains within active Layout Parameters.
+- Document Relationships are explicit.
+- Responsibility Boundaries are explicit.
+- Accepted information remains preserved.
+- Superseded information is replaced.
+- Historical evolution remains separated.
+- Output rendering remains owned by AI_OUTPUT_STANDARD.
+- Delivery remains owned by the active Delivery Mode.
+- No unrelated responsibility is absorbed.
+- Version and Status match USER_PACKAGE v1.0.
+
+Self Compliance Boundary:
+Self Compliance shall not transfer Baseline, Source, rendering,
+or delivery ownership to File Consolidation.
+
+======================================================================
+END OF FILE CONSOLIDATION
+======================================================================

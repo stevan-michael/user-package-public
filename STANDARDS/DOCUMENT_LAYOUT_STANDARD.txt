@@ -1,0 +1,717 @@
+======================================================================
+======================================================================
+DOCUMENT LAYOUT STANDARD
+======================================================================
+======================================================================
+
+Version:
+1.0
+
+Status:
+Official
+
+Category:
+Layout Standard
+
+Identity:
+Layout Standard governing deterministic document composition
+throughout USER_PACKAGE.
+
+Purpose:
+Define the official layout contract governing how approved
+document structures are composed into consistent, readable, and
+maintainable document layouts.
+
+Scope:
+Define document layout behavior only.
+
+Primary Responsibility:
+Document layout composition.
+
+Authority:
+USER_PROFILE.
+
+Depends On:
+- DOCUMENT_STRUCTURE_STANDARD.
+- DOCUMENT_WRITING_STANDARD.
+- PROPERTY_VALUE_STANDARD.
+- VISUAL_BOUNDARY_STANDARD.
+
+Referenced By:
+- AI_OUTPUT_STANDARD.
+- PATCH_DELIVERY_STANDARD.
+- PROMPT_WRITING_STANDARD.
+- USER_PACKAGE.
+
+Complements:
+- DOCUMENT_STRUCTURE_STANDARD.
+- DOCUMENT_WRITING_STANDARD.
+- PROPERTY_VALUE_STANDARD.
+- VISUAL_BOUNDARY_STANDARD.
+
+Does Not Define:
+- Document structure.
+- Documentation writing.
+- Property–Value grammar.
+- Visual boundary grammar.
+- Output rendering.
+- Delivery behavior.
+- Runtime behavior.
+- Artifact content.
+
+======================================================================
+1. FOUNDATION
+======================================================================
+
+Purpose:
+Define the authoritative responsibility, interpretation,
+applicability, and operational boundary of Document Layout
+Standard.
+
+Layout Contract Interpretation:
+Every layout requirement expressed using "shall" constitutes a
+mandatory layout constraint.
+
+Layout behavior not explicitly required or permitted by this
+Standard or a higher-authority USER_PACKAGE document shall not be
+assumed to be permitted.
+
+Requirements owned by another authoritative USER_PACKAGE document
+shall not be interpreted as layout requirements.
+
+Layout Definition:
+Document Layout Standard governs approved document structures
+into a readable visual form.
+
+Composition Boundary:
+Layout composition operates only after document structure,
+semantic grammar, and visual boundary requirements have been
+resolved.
+
+Layout Responsibility:
+Document Layout Standard governs layout composition only.
+
+Document Layout Standard shall not:
+- Create document structure.
+- Remove document structure.
+- Rename document objects.
+- Rewrite document content.
+- Modify approved knowledge.
+- Change Property–Value relationships.
+- Redefine visual boundaries.
+- Redefine output rendering.
+- Redefine delivery behavior.
+
+======================================================================
+2. COMPOSITION PRINCIPLES
+======================================================================
+
+Purpose:
+Define the principles governing deterministic layout composition.
+
+Composition Principle:
+Layout shall compose approved document structures without
+changing approved meaning.
+
+Meaning Preservation:
+- Approved knowledge.
+- Approved wording.
+- Approved structure.
+- Approved relationships.
+- Approved Property–Value pairs.
+- Approved visual boundary levels.
+
+Layout Independence:
+Layout decisions shall remain independent of Assistant
+preference, writing-style preference, editor preference, and
+platform appearance.
+
+Deterministic Composition:
+Equivalent approved document structures shall produce equivalent
+layouts when the same Layout Parameters and Layout Context apply.
+
+Single Responsibility:
+All non-layout responsibilities shall remain governed by their
+authoritative USER_PACKAGE documents.
+
+Living Proof:
+This Standard shall comply with its own applicable layout
+requirements.
+
+======================================================================
+3. LAYOUT PARAMETERS
+======================================================================
+
+Purpose:
+Define the authoritative parameters governing document layout.
+
+Renderer Width:
+70 characters.
+
+Preferred Line Width:
+60 characters.
+
+Maximum Line Width:
+65 characters.
+
+Maximum Overflow Tolerance:
+5 characters.
+
+Derived Maximum Width:
+Renderer Width.
+
+Parameter Interpretation:
+Renderer Width defines the absolute composition width. Preferred
+Line Width defines the normal target width. Maximum Line Width
+defines the upper limit before overflow evaluation. Maximum
+Overflow Tolerance defines the permitted extension before
+mandatory wrapping.
+
+Parameter Ownership:
+Layout behavior shall be derived from Layout Parameters and shall
+not redefine or hardcode alternative parameter values.
+
+Parameter Stability:
+Equivalent Layout Parameters shall produce equivalent layout
+constraints.
+
+======================================================================
+4. LAYOUT DECISION PIPELINE
+======================================================================
+
+Purpose:
+Define the deterministic decision sequence governing layout
+composition.
+
+Decision Pipeline:
+
+Layout Parameters
+        ↓
+Layout Context
+        ↓
+Composition Rules
+        ↓
+Overflow Evaluation
+        ↓
+Layout Validation
+        ↓
+Composed Layout
+
+Pipeline Interpretation:
+Each stage shall complete before the next stage begins.
+
+Pipeline Responsibility:
+Layout Parameters define composition constraints. Layout Context
+defines the active environment. Composition Rules compose
+approved objects. Overflow Evaluation determines wrapping. Layout
+Validation verifies the result.
+
+Pipeline Boundary:
+- Rewrite content.
+- Modify document structure.
+- Modify approved wording.
+- Introduce document objects.
+- Remove document objects.
+- Redefine visual boundaries.
+
+The Layout Decision Pipeline shall not perform any prohibited
+operation.
+
+======================================================================
+5. LAYOUT CONTEXT
+======================================================================
+
+Purpose:
+Define the contextual information used during layout composition.
+
+Layout Context:
+- Resolved document structure.
+- Approved documentation writing.
+- Resolved Property–Value relationships.
+- Approved visual boundaries.
+- Active Layout Parameters.
+- Applicable authoritative USER_PACKAGE documents.
+
+Context Rule:
+Composition shall use only the active Layout Context.
+
+Prohibited Context Sources:
+- Assistant preference.
+- Previous conversation state used instead of the baseline.
+- Platform-specific rendering.
+- Estimated visual appearance.
+- Unverified assumptions.
+
+Context Stability:
+Equivalent Layout Context shall produce equivalent layout
+decisions.
+
+======================================================================
+6. LINE COMPOSITION
+======================================================================
+
+Purpose:
+Define deterministic horizontal line composition.
+
+Line Composition Model:
+Line composition shall be derived from Layout Parameters, Layout
+Context, and applicable authoritative USER_PACKAGE documents.
+
+Preferred Composition:
+Text shall be composed toward the Preferred Line Width.
+
+Maximum Composition:
+Text may continue beyond the Preferred Line Width only through
+the Layout Decision Pipeline and shall be evaluated before
+exceeding the Maximum Line Width.
+
+Overflow Evaluation:
+When a line exceeds the Maximum Line Width, remaining length
+shall be compared with Maximum Overflow Tolerance.
+
+Overflow Handling:
+A line may continue when overflow remains within Maximum Overflow
+Tolerance. Otherwise, wrapping shall occur.
+
+Hard Boundary:
+A composed line shall never exceed Renderer Width.
+
+Word Integrity:
+Words shall not be split unless the content format explicitly
+requires it.
+
+======================================================================
+7. PARAGRAPH COMPOSITION
+======================================================================
+
+Purpose:
+Define deterministic Paragraph composition.
+
+Paragraph Composition Model:
+Paragraph composition shall preserve one continuous reading unit
+and shall be derived through the Layout Decision Pipeline.
+
+Paragraph Integrity:
+- Sentence continuity.
+- Reading flow.
+- Approved wording.
+- Approved meaning.
+- Approved Paragraph identity.
+
+Paragraph Prohibitions:
+- Insert semantic breaks.
+- Rearrange sentence order.
+- Merge unrelated Paragraphs.
+- Split one Paragraph for appearance alone.
+- Create additional hierarchy.
+
+Paragraph Consistency:
+Equivalent Paragraphs shall produce equivalent layouts under
+identical Layout Parameters and Layout Context.
+
+======================================================================
+8. VERTICAL COMPOSITION
+======================================================================
+
+Purpose:
+Define deterministic vertical spacing between document objects.
+
+Vertical Composition Model:
+Vertical spacing shall be derived from resolved document
+structure and approved visual boundaries.
+
+Structural Separation:
+Blank lines shall separate independent document objects when
+separation is required for readability or object distinction.
+
+Property–Value Adjacency:
+Blank lines shall not separate one Property from its complete
+Value.
+
+Spacing Prohibition:
+Blank lines shall not be inserted solely for visual preference.
+
+Vertical Consistency:
+Equivalent document structures shall use equivalent vertical
+spacing.
+
+======================================================================
+9. LIST COMPOSITION
+======================================================================
+
+Purpose:
+Define deterministic composition of ordered and unordered Lists.
+
+List Composition Model:
+List composition shall preserve approved item order, hierarchy,
+grouping, and meaning.
+
+List Item Rule:
+Each List item shall remain one logical List entry.
+
+Wrapped Item Rule:
+Wrapped content shall remain visually associated with its
+originating List item.
+
+List Prohibitions:
+- Reorder List items.
+- Merge adjacent List items.
+- Split one logical item into multiple items.
+- Introduce additional hierarchy.
+- Insert blank lines between adjacent items without a validated
+  requirement.
+
+Compact List Rule:
+Lists shall remain compact while preserving readability.
+
+======================================================================
+10. TABLE COMPOSITION
+======================================================================
+
+Purpose:
+Define deterministic layout behavior for Tables.
+
+Table Composition Model:
+Table composition shall preserve approved row, column, header,
+and cell relationships.
+
+Table Preservation:
+- Row order.
+- Column order.
+- Header relationships.
+- Cell ownership.
+- Approved information.
+
+Fallback Rule:
+When a Table cannot be represented safely within Renderer Width,
+information integrity shall take precedence over visual
+alignment.
+
+Table Prohibitions:
+- Remove approved information.
+- Merge unrelated cells.
+- Rewrite cell content.
+- Change row or column meaning.
+- Simplify the Table by altering semantics.
+
+======================================================================
+11. LAYOUT DENSITY
+======================================================================
+
+Purpose:
+Define the balance between readability and compact presentation.
+
+Layout Density Model:
+Layout density shall minimize unnecessary whitespace while
+preserving readability and object distinction.
+
+Whitespace Conditions:
+- Structural separation.
+- Reading clarity.
+- Object distinction.
+- Boundary integrity.
+
+Whitespace Prohibition:
+Whitespace shall not be introduced merely for visual preference.
+
+Density Consistency:
+Equivalent structures shall produce equivalent layout density.
+
+======================================================================
+12. LAYOUT CONSISTENCY
+======================================================================
+
+Purpose:
+Define consistency requirements for repeated layout operations.
+
+Consistency Rule:
+Repeated composition of equivalent document structures using
+identical Layout Parameters and Layout Context shall produce
+equivalent layouts.
+
+Consistency Independence:
+- Conversation history.
+- Assistant preference.
+- Platform rendering.
+- Editor behavior.
+- Visual estimation.
+
+Predictability Rule:
+Layout behavior shall remain deterministic across compatible
+USER_PACKAGE documentation assets.
+
+======================================================================
+13. LAYOUT VALIDATION
+======================================================================
+
+Purpose:
+Define mandatory validation of completed document layouts.
+
+Validation Scope:
+- Layout composition.
+- Layout consistency.
+- Parameter compliance.
+- Composition integrity.
+- Boundary preservation.
+- Property–Value adjacency.
+
+Validation Exclusions:
+- Document meaning.
+- Documentation writing quality.
+- Structure correctness.
+- Output rendering.
+- Delivery behavior.
+
+Validation Requirements:
+- Renderer Width compliance.
+- Preferred Line Width targeting.
+- Maximum Line Width evaluation.
+- Overflow handling compliance.
+- Vertical spacing consistency.
+- Paragraph composition consistency.
+- List composition consistency.
+- Table composition consistency.
+- Layout density consistency.
+- Boundary integrity.
+
+Validation Result:
+- PASS: Every applicable layout requirement is satisfied.
+- FAIL: One or more layout requirements are violated.
+- NON-APPLICABLE: A layout requirement does not apply.
+
+Failure Rule:
+An artifact that fails Layout Validation shall not proceed to
+final rendering or delivery.
+
+======================================================================
+14. LAYOUT GOVERNANCE
+======================================================================
+
+Purpose:
+Define authority and decision constraints governing layout.
+
+Layout Decision Sources:
+- This Standard.
+- Applicable higher-authority USER_PACKAGE documents.
+- Explicit User instructions.
+- Resolved document structure.
+- Approved visual boundaries.
+- Active Layout Parameters.
+- Active Layout Context.
+
+Prohibited Decision Sources:
+- Assistant stylistic preference.
+- Aesthetic preference alone.
+- Unverified assumptions.
+- Platform-specific appearance alone.
+- Editor-specific behavior.
+
+Undefined Layout:
+When required layout behavior is undefined, preserve approved
+meaning and structure, then use the simplest valid layout
+permitted by this Standard.
+
+Material ambiguity that prevents safe composition shall be
+reported instead of resolved through invention.
+
+Conflict Resolution:
+Equal-authority layout conflicts shall be reported rather than
+resolved through an invented compromise.
+
+======================================================================
+15. IMPLEMENTATION REQUIREMENTS
+======================================================================
+
+Purpose:
+Define requirements for compliant layout implementations.
+
+Pipeline Requirement:
+Every implementation shall execute the Layout Decision Pipeline
+before producing the final layout.
+
+Implementation Sources:
+- Layout Parameters.
+- Layout Context.
+- Applicable authoritative USER_PACKAGE documents.
+
+Prohibited Implementation Sources:
+- Assistant preference.
+- Personal writing preference.
+- Platform rendering behavior.
+- Visual estimation.
+
+Implementation Independence:
+Compliant implementations may differ internally, but equivalent
+inputs shall produce equivalent layout results.
+
+======================================================================
+16. GENERATION FREEZE
+======================================================================
+
+Purpose:
+Prevent uncontrolled layout changes after generation begins.
+
+Pre-Generation Rule:
+All validated layout corrections within the authorized scope
+shall be resolved before final generation begins.
+
+Generation Freeze:
+Once final layout generation begins, the composed layout shall
+remain frozen for the current generation.
+
+Freeze Exceptions:
+- A validated blocker is discovered.
+- A higher-authority conflict is discovered.
+- The User explicitly requests another revision.
+
+Freeze Boundary:
+Generation Freeze preserves current-generation stability and does
+not prevent future authorized revisions.
+
+======================================================================
+17. DOCUMENT RELATIONSHIPS
+======================================================================
+
+Purpose:
+Define relationships with authoritative USER_PACKAGE documents.
+
+USER_PROFILE:
+Defines User authority.
+
+DOCUMENT_STRUCTURE_STANDARD:
+Defines document objects and structural relationships.
+
+DOCUMENT_WRITING_STANDARD:
+Defines documentation writing and knowledge preservation.
+
+PROPERTY_VALUE_STANDARD:
+Defines semantic Property–Value grammar.
+
+VISUAL_BOUNDARY_STANDARD:
+Defines visual boundary grammar.
+
+AI_OUTPUT_STANDARD:
+Defines output rendering and presentation.
+
+PATCH_DELIVERY_STANDARD:
+Defines clipboard-ready Patch Delivery.
+
+Relationship Rules:
+
+Document Layout Standard shall:
+- Depend on resolved document structure.
+- Preserve approved documentation writing.
+- Preserve Property–Value grammar.
+- Preserve approved visual boundaries.
+- Provide composed layouts to AI_OUTPUT_STANDARD.
+- Preserve downstream ownership.
+
+Document Layout Standard shall not:
+- Create document objects.
+- Rewrite knowledge.
+- Redefine visual boundaries.
+- Render Assistant output.
+- Deliver artifacts.
+- Define runtime behavior.
+
+======================================================================
+18. RESPONSIBILITY BOUNDARIES
+======================================================================
+
+Purpose:
+Define the responsibility boundary of Document Layout Standard.
+
+Responsibility Rule:
+Document Layout Standard governs layout composition only.
+
+Document Layout Standard Shall Not Define:
+- Document structure.
+- Documentation writing.
+- Property–Value grammar.
+- Visual boundary grammar.
+- Output rendering.
+- Delivery behavior.
+- Runtime behavior.
+- Artifact content.
+
+Ownership Rule:
+Composing layout does not transfer ownership of structure,
+writing, semantics, rendering, delivery, or content to this
+Standard.
+
+======================================================================
+19. REVISION POLICY
+======================================================================
+
+Purpose:
+Define when Document Layout Standard may be revised.
+
+Revision Criteria:
+This Standard may be revised only when validated layout work
+demonstrates:
+
+- Layout ambiguity.
+- Determinism failure.
+- Repeated layout inconsistency.
+- Missing layout coverage.
+- Parameter failure.
+- Compatibility failure.
+- Responsibility overlap.
+- Conflict with a higher-authority document.
+- Proven maintenance cost.
+
+Revision Rules:
+
+Revision shall:
+- Preserve the primary responsibility.
+- Preserve approved Layout Parameters unless revised.
+- Preserve deterministic behavior.
+- Preserve compatibility when requirements remain valid.
+- Resolve validated deficiencies before adding behavior.
+- Preserve Single Authority Ownership.
+
+Revision shall not:
+- Absorb document structure responsibility.
+- Absorb documentation writing responsibility.
+- Absorb Property–Value grammar.
+- Absorb visual boundary responsibility.
+- Absorb output rendering or delivery responsibility.
+- Introduce hidden assumptions.
+- Increase interpretation without validated value.
+
+======================================================================
+20. SELF COMPLIANCE
+======================================================================
+
+Purpose:
+Ensure this Standard complies with every applicable USER_PACKAGE
+standard.
+
+Self Compliance Rule:
+This Standard shall serve as a living implementation of its own
+layout requirements.
+
+Self Validation:
+- The Document contains one Document Title.
+- Each major topic uses one numbered Section.
+- L1 headings use N. TITLE without a SECTION label.
+- Boundary lines use approved lengths.
+- Line composition respects Layout Parameters.
+- Paragraph composition follows the pipeline.
+- Vertical spacing follows approved rules.
+- Lists remain compact and associated.
+- Tables preserve information integrity.
+- Property–Value adjacency is preserved.
+- No unrelated responsibility is absorbed.
+- Version and Status match USER_PACKAGE v1.0.
+- Document Relationships are explicit.
+- Responsibility Boundaries are explicit.
+- The document preserves Single Authority Ownership.
+
+Self Compliance Boundary:
+Self Compliance shall not override a higher-authority
+USER_PACKAGE document.
+
+======================================================================
+END OF DOCUMENT LAYOUT STANDARD
+======================================================================

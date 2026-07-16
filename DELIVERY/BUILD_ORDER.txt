@@ -1,0 +1,823 @@
+======================================================================
+======================================================================
+BUILD ORDER
+======================================================================
+======================================================================
+
+Version:
+1.0
+
+Status:
+Official
+
+Category:
+Implementation Authorization Standard
+
+Identity:
+Implementation authorization Standard governing approved
+implementation execution throughout USER_PACKAGE.
+
+Purpose:
+Define the official implementation contract governing Build
+Orders.
+
+Scope:
+Define implementation authorization and implementation
+requirements only.
+
+Primary Responsibility:
+Implementation authorization.
+
+Authority:
+USER_PROFILE.
+
+Depends On:
+- AI_BEHAVIOR_STANDARD.
+- AI_OUTPUT_STANDARD.
+- DOCUMENT_STRUCTURE_STANDARD.
+- DOCUMENT_WRITING_STANDARD.
+- PROPERTY_VALUE_STANDARD.
+- VISUAL_BOUNDARY_STANDARD.
+- DOCUMENT_LAYOUT_STANDARD.
+- RUNTIME_STANDARD.
+- Applicable approved Standards.
+- Current Project Documentation.
+
+Referenced By:
+- Implementation Assistants.
+- Runtime-capable implementation assets.
+- USER_PACKAGE implementation workflows.
+- SCRIPT_DELIVERY.
+
+Complements:
+- RUNTIME_STANDARD.
+- SCRIPT_DELIVERY.
+- PATCH_DELIVERY_STANDARD.
+- Current Project Documentation.
+
+Does Not Define:
+- Assistant behavior.
+- Architecture.
+- Governance.
+- Documentation writing.
+- Document structure.
+- Property–Value grammar.
+- Visual boundary grammar.
+- Document layout.
+- Output rendering.
+- Delivery behavior.
+- Runtime behavior.
+- Implementation details.
+- Project history.
+
+======================================================================
+1. FOUNDATION
+======================================================================
+
+Purpose:
+Define the authoritative responsibility, interpretation,
+applicability, and operational boundary of Build Order.
+
+Build Order Contract Interpretation:
+Every implementation requirement expressed using "shall"
+constitutes a mandatory implementation constraint.
+
+Implementation behavior not explicitly required or permitted by
+this Standard or a higher-authority USER_PACKAGE document shall
+not be assumed to be permitted.
+
+Requirements owned by another authoritative USER_PACKAGE document
+shall not be interpreted as implementation requirements.
+
+Build Order Definition:
+A Build Order is the approved implementation package that
+translates locked design and project knowledge into authorized
+implementation requirements.
+
+Applicability:
+This Standard applies only to approved implementation activities.
+
+Excluded Activities:
+- Documentation authoring.
+- Documentation review.
+- Architecture design.
+- Governance.
+- Standards authoring.
+- Runtime orchestration.
+- Output rendering.
+
+Responsibility Rule:
+Build Order governs implementation authorization only.
+
+======================================================================
+2. CORE PRINCIPLES
+======================================================================
+
+1.
+
+Build Order represents the final
+implementation state.
+
+Discussion, research, reviews, and alternatives
+are complete before a Build Order is created.
+
+2.
+
+Build Order is implementation-focused.
+
+It explains what shall be implemented.
+
+It does not explain project history.
+
+3.
+
+Build Order is self-contained.
+
+A compatible Implementation Assistant shall be
+able to implement the project using only:
+- Runtime.
+- Approved Standards.
+- Current Project Documentation.
+- Build Order.
+
+Previous conversation history shall not be required.
+
+4.
+
+Build Order never replaces Current Project
+Documentation.
+
+It translates approved design into authorized
+implementation requirements.
+
+5.
+
+Build Order remains concise.
+
+Only implementation-relevant information
+belongs inside the document.
+
+Historical discussion, rejected ideas, and design
+exploration belong elsewhere.
+
+6.
+
+Build Order assumes all architectural decisions have
+already been approved.
+
+The Implementation Assistant executes approved decisions.
+
+The Implementation Assistant does not redesign architecture.
+
+======================================================================
+3. CREATION CONDITIONS
+======================================================================
+
+Purpose:
+Define when a Build Order shall and shall not be created.
+
+When To Create:
+
+Create a Build Order only when implementation is ready.
+
+Typical workflow:
+
+Discussion
+↓
+Research
+↓
+Review
+↓
+Architecture Lock
+↓
+Approval
+↓
+Build Order
+↓
+Implementation
+↓
+Verification
+
+When Not To Create:
+
+Do not create a Build Order when:
+- Requirements are still changing.
+- Architecture remains under discussion.
+- Major blockers remain.
+- Project direction is uncertain.
+- Multiple implementation candidates still exist.
+
+======================================================================
+4. ROLE
+======================================================================
+
+Build Order is not:
+- A specification.
+- A roadmap.
+- A changelog.
+
+Build Order is the approved implementation package.
+
+Its responsibility is to communicate exactly what
+the Implementation Assistant is authorized to implement.
+
+======================================================================
+5. STANDARD STRUCTURE
+======================================================================
+
+Project
+
+Project Scope
+
+Project Identity
+
+Version
+
+Status
+
+Delivery Mode
+
+Target Language
+
+Purpose
+
+These fields define the implementation target,
+eliminate ambiguity, and support interoperability
+across compatible assistants.
+
+Structure Rule:
+Each Build Order shall contain only implementation-relevant
+information required for authorized execution.
+
+======================================================================
+6. OBJECTIVE
+======================================================================
+
+Describe the completed implementation target.
+
+Focus only on the final implementation objective.
+
+======================================================================
+7. DELIVERABLES
+======================================================================
+
+List every required implementation output.
+
+Examples include:
+- Source code.
+- Launchers.
+- Folder structure.
+- Documentation.
+- Configuration.
+- Reports.
+- Templates.
+- Assets.
+- Release packages.
+
+======================================================================
+8. FEATURES
+======================================================================
+
+List every approved implementation feature.
+
+Do not include:
+- Future ideas.
+- Unapproved functionality.
+
+======================================================================
+9. IMPLEMENTATION RULES
+======================================================================
+
+Define mandatory implementation constraints.
+
+Examples include:
+- Portable.
+- Safe by default.
+- Preserve user control.
+- Support approved Standards.
+- Avoid unnecessary administrator requirements.
+
+Every generated artifact shall comply with these
+Implementation Rules.
+
+======================================================================
+10. USER EXPERIENCE
+======================================================================
+
+Describe the expected user interaction.
+
+Examples include:
+- Menu structure.
+- Navigation.
+- Messages.
+- Workflow.
+- Interaction philosophy.
+- Progress behavior.
+- Safety behavior.
+
+======================================================================
+11. PROJECT STRUCTURE
+======================================================================
+
+Define the required project layout.
+
+Include:
+- Folders.
+- Generated files.
+- Output locations.
+- Naming rules.
+
+======================================================================
+12. DEPENDENCIES
+======================================================================
+
+List every required implementation dependency.
+
+Examples include:
+- Software.
+- Libraries.
+- External tools.
+- Operating system
+  requirements.
+- Version requirements.
+
+======================================================================
+13. KNOWN LIMITATIONS
+======================================================================
+
+List intentional implementation limitations.
+
+Do not include:
+- Future roadmap items.
+- Future enhancements.
+- Design discussions.
+
+======================================================================
+14. DELIVERY
+======================================================================
+
+Describe how implementation shall be delivered.
+
+Delivery Mode is defined by the current Build Order.
+
+Examples include:
+- One-shot writer script.
+- Patch Delivery.
+- Complete project generation.
+- ZIP package.
+- Single-file delivery.
+- Multi-file delivery.
+
+The selected Delivery Mode becomes mandatory for the
+current implementation.
+
+======================================================================
+15. DELIVERY ENFORCEMENT
+======================================================================
+
+The selected Delivery Mode is mandatory.
+
+The Implementation Assistant shall deliver the completed
+implementation using the selected Delivery Mode.
+
+The Implementation Assistant shall not replace the selected
+Delivery Mode.
+
+When Script Delivery is selected, deliver one
+complete ready-to-run Python writer script.
+
+Do not substitute:
+- PATCH_DELIVERY_STANDARD.
+- Partial Patch Delivery.
+- Consecutive payloads.
+- Multi-message delivery.
+- Incremental delivery.
+- Manual reconstruction.
+
+A platform limitation does not authorize changing the Delivery Mode.
+
+If the selected Delivery Mode cannot be completed safely,
+
+stop and report the blocker.
+
+Only the user may authorize another Delivery Mode.
+
+Delivery Ownership:
+The selected Delivery Mode defines delivery behavior and shall
+not be redefined by Build Order.
+
+======================================================================
+16. STANDARDS COMPLIANCE
+======================================================================
+
+Before validation, identify every applicable
+Standard.
+
+Perform an internal Standards Compliance Review.
+
+Correct identified compliance issues before
+validation and delivery.
+
+Implementation-ready
+
+requires:
+- Approved requirements.
+- Applicable Standards.
+- Internal consistency.
+
+Do not knowingly deliver artifacts containing
+unresolved Standards compliance violations.
+
+Compliance Boundary:
+Build Order shall require applicable Standards Compliance Review
+without redefining the Standards or the review method.
+
+======================================================================
+17. VALIDATION
+======================================================================
+
+Before delivery verify:
+- Every required file has been generated.
+- Folder structure is complete.
+- Syntax has been verified.
+- Internal consistency has been verified.
+- No placeholder content remains.
+- No incomplete sections remain.
+- Portable requirements are satisfied.
+- Documentation is included.
+- Ready to run.
+- Implementation Rules are respected.
+- Applicable Standards have been identified.
+- Standards Compliance Review has completed.
+- Identified compliance issues have been corrected.
+- Delivery Mode has been respected.
+- Current Project Documentation has been
+  preserved.
+- No unauthorized architectural changes
+  have been introduced.
+
+Validation Result:
+- PASS: Every applicable implementation requirement is satisfied.
+- FAIL: One or more implementation requirements are violated.
+- NON-APPLICABLE: A requirement does not apply.
+
+======================================================================
+18. IMPLEMENTATION ASSISTANT RESPONSIBILITIES
+======================================================================
+
+The Implementation Assistant shall:
+- Implement every approved requirement.
+- Follow Runtime.
+- Follow approved Standards.
+- Preserve project architecture.
+
+Implementation Assistant Ownership Interpretation:
+
+Executing an approved Build Order does not
+transfer ownership of the project,
+architecture, requirements, or Standards to
+the Implementation Assistant.
+
+Authority remains defined by the applicable
+authoritative USER_PACKAGE documents.
+
+Implementation Preservation Interpretation:
+
+Preserving approved architecture, approved
+requirements, and approved Standards takes
+precedence over implementation optimization.
+
+Equivalent implementation requirements shall
+produce equivalent implementations unless
+explicitly instructed otherwise or required by
+an approved architectural revision.
+
+- Avoid redesign.
+- Avoid optimization outside the approved scope.
+- Avoid introducing new concepts.
+- Report blockers instead of inventing solutions.
+- Preserve compatibility with the Current Project
+  Documentation.
+- Report conflicts instead of silently resolving
+  them.
+
+======================================================================
+19. AI EXECUTION RULES
+======================================================================
+
+When a Build Order is supplied,
+
+treat it as the highest implementation authority
+for the current task.
+
+Assume every approved decision is final.
+
+Do not reinterpret requirements.
+
+Do not redesign architecture.
+
+Do not introduce additional features.
+
+Do not remove approved features.
+
+Do not optimize beyond the approved implementation.
+
+If ambiguity exists,
+
+use the Current Project Documentation.
+
+If ambiguity remains,
+
+stop and report the ambiguity.
+
+Never invent missing requirements.
+
+When implementation requirements conflict with
+previous conversation history,
+
+Build Order takes precedence unless explicitly
+superseded by the user.
+
+Implementation Decision Rule:
+
+Implementation decisions shall be derived only
+from:
+- This Build Order.
+- Applicable higher-authority USER_PACKAGE
+  documents.
+- Current Project Documentation.
+- Explicit User instructions.
+
+Implementation decisions shall not be derived
+from Implementation Assistant preference or implementation style.
+
+======================================================================
+20. METHOD PRECEDENCE
+======================================================================
+
+When a Build Order references an active Method,
+
+execute according to that Method.
+
+The Method defines:
+- Transformation
+  behavior.
+
+The Delivery Mode defines:
+- Delivery behavior.
+
+Do not reinterpret, replace, or bypass the Method.
+
+If:
+- Build Order,
+- Method,
+- and Current Project Documentation
+
+are consistent, begin implementation immediately.
+
+Only a verified blocker may suspend execution.
+
+Report blockers instead of changing the Method or
+Delivery Mode.
+
+======================================================================
+21. COMPATIBILITY
+======================================================================
+
+Build Order is designed to
+work across:
+- Different assistants.
+- Different AI models.
+- Different conversations.
+- Different delivery sessions.
+- Different operating systems.
+- Different development environments.
+
+Remain independent from conversation history.
+
+Minimize implementation differences across
+compatible assistants.
+
+======================================================================
+22. DOCUMENT RELATIONSHIPS
+======================================================================
+
+Purpose:
+Define relationships with authoritative USER_PACKAGE documents.
+
+USER_PROFILE:
+Defines User authority and implementation approval authority.
+
+AI_BEHAVIOR_STANDARD:
+Defines Assistant behavior throughout implementation execution.
+
+AI_OUTPUT_STANDARD:
+Defines presentation of implementation results.
+
+DOCUMENT_STRUCTURE_STANDARD:
+Defines document objects and structural relationships.
+
+DOCUMENT_WRITING_STANDARD:
+Defines documentation writing and knowledge preservation.
+
+PROPERTY_VALUE_STANDARD:
+Defines semantic Property–Value grammar.
+
+VISUAL_BOUNDARY_STANDARD:
+Defines visual boundary grammar.
+
+DOCUMENT_LAYOUT_STANDARD:
+Defines document layout composition.
+
+RUNTIME_STANDARD:
+Defines Runtime orchestration.
+
+APPROVED STANDARDS:
+Define mandatory implementation constraints applicable to the
+current task.
+
+CURRENT PROJECT DOCUMENTATION:
+Defines approved project architecture, requirements, and
+implementation targets.
+
+SCRIPT_DELIVERY:
+Defines ready-to-run script delivery when selected.
+
+PATCH_DELIVERY_STANDARD:
+Defines clipboard-ready Patch Delivery when selected.
+
+Relationship Rules:
+
+Build Order shall:
+- Depend on RUNTIME_STANDARD for Runtime orchestration.
+- Depend on applicable approved Standards.
+- Depend on Current Project Documentation.
+- Translate approved architecture into authorized requirements.
+- Preserve the selected Delivery Mode.
+- Preserve ownership of every authoritative document.
+
+Build Order shall not:
+- Redesign architecture.
+- Replace Current Project Documentation.
+- Override approved Standards.
+- Redefine Runtime behavior.
+- Redefine Delivery Mode behavior.
+- Invent implementation requirements.
+
+Relationship Flow:
+
+Governance
+        ↓
+Standards
+        ↓
+Runtime
+        ↓
+Current Project Documentation
+        ↓
+Build Order
+        ↓
+Implementation Assistant
+        ↓
+Implementation
+
+======================================================================
+23. RESPONSIBILITY BOUNDARIES
+======================================================================
+
+Purpose:
+Define the responsibility boundary of Build Order.
+
+Responsibility Rule:
+Build Order governs implementation authorization only.
+
+Build Order Shall Not Define:
+- Assistant behavior.
+- Architecture.
+- Governance.
+- Documentation writing.
+- Document structure.
+- Property–Value grammar.
+- Visual boundary grammar.
+- Document layout.
+- Output rendering.
+- Delivery behavior.
+- Runtime behavior.
+- Project history.
+- New design decisions.
+- New requirements.
+
+Ownership Rule:
+Authorizing implementation does not transfer ownership of
+architecture, requirements, Standards, Runtime, or project
+documentation to Build Order.
+
+======================================================================
+24. DESIGN PHILOSOPHY
+======================================================================
+
+Discussion creates knowledge.
+
+Documentation preserves knowledge.
+
+Build Order translates approved knowledge into
+authorized implementation instructions.
+
+The Implementation Assistant executes.
+
+Implementation produces the final deliverables.
+
+======================================================================
+25. BUILD ORDER PHILOSOPHY
+======================================================================
+
+Build Order separates design from implementation.
+
+Architects design.
+
+Documentation preserves.
+
+Build Order authorizes implementation.
+
+It does not authorize redesign.
+
+Implementation Assistants execute.
+
+This separation enables consistent implementation
+across different assistants, AI models,
+conversations, delivery sessions,
+operating environments, and future projects while
+preserving approved architectural decisions.
+
+======================================================================
+26. REVISION POLICY
+======================================================================
+
+Purpose:
+Define when Build Order Standard may be revised.
+
+Revision Criteria:
+This Standard may be revised only when validated implementation
+work demonstrates:
+
+- Authorization ambiguity.
+- Repeated implementation interpretation failure.
+- Missing implementation coverage.
+- Delivery enforcement failure.
+- Standards compliance failure.
+- Responsibility overlap.
+- Compatibility failure.
+- Conflict with a higher-authority document.
+- Proven maintenance cost.
+
+Revision Rules:
+
+Revision shall:
+- Preserve the primary responsibility.
+- Preserve approved implementation authority.
+- Preserve compatibility when requirements remain valid.
+- Resolve validated deficiencies before adding new fields.
+- Preserve Single Authority Ownership.
+
+Revision shall not:
+- Absorb architecture design.
+- Absorb Runtime behavior.
+- Absorb Delivery Mode behavior.
+- Absorb documentation responsibilities.
+- Introduce hidden assumptions.
+- Authorize redesign without explicit User approval.
+
+======================================================================
+27. SELF COMPLIANCE
+======================================================================
+
+Purpose:
+Ensure this Standard complies with every applicable USER_PACKAGE
+standard.
+
+Self Compliance Rule:
+This Standard shall serve as a living implementation of its own
+Build Order requirements.
+
+Self Validation:
+- The Document contains one Document Title.
+- Each major topic uses one numbered Section.
+- L1 headings use N. TITLE without a SECTION label.
+- Metadata follows USER_PACKAGE v1.0 format.
+- Property–Value relationships remain intact.
+- Visual boundaries use approved levels.
+- Line composition remains within active Layout Parameters.
+- Document Relationships are explicit.
+- Responsibility Boundaries are explicit.
+- Current Project Documentation retains architecture ownership.
+- RUNTIME_STANDARD retains orchestration ownership.
+- The selected Delivery Mode retains delivery ownership.
+- No unrelated responsibility is absorbed.
+- Version and Status match USER_PACKAGE v1.0.
+
+Self Compliance Boundary:
+Self Compliance shall not transfer architecture, Runtime,
+documentation, or delivery ownership to Build Order.
+
+======================================================================
+END OF BUILD ORDER
+======================================================================

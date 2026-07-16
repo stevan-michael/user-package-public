@@ -1,0 +1,560 @@
+======================================================================
+======================================================================
+USER PROFILE
+======================================================================
+======================================================================
+
+Version:
+1.0
+
+Status:
+Official
+
+Category:
+User Authority Document
+
+Identity:
+Authoritative User identity and operational foundation for
+USER_PACKAGE.
+
+Purpose:
+Define the User's identity, philosophy, authority, principles,
+preferences, constraints, and long-term vision.
+
+Scope:
+Define the authoritative User foundation governing USER_PACKAGE.
+
+Primary Responsibility:
+User identity and authority.
+
+Authority:
+User.
+
+Depends On:
+None.
+
+Referenced By:
+- AI_BEHAVIOR_BANK.
+- AI_BEHAVIOR_STANDARD.
+- AI_OUTPUT_STANDARD.
+- DOCUMENT_STRUCTURE_STANDARD.
+- DOCUMENT_WRITING_STANDARD.
+- PROPERTY_VALUE_STANDARD.
+- VISUAL_BOUNDARY_STANDARD.
+- DOCUMENT_LAYOUT_STANDARD.
+- PATCH_DELIVERY_STANDARD.
+- PROMPT_WRITING_STANDARD.
+- USER_PACKAGE.
+
+Complements:
+None.
+
+Does Not Define:
+- Assistant behavior.
+- Assistant behavior lifecycle.
+- Documentation writing.
+- Document structure.
+- Property–Value grammar.
+- Visual boundary grammar.
+- Document layout.
+- Output rendering.
+- Delivery behavior.
+- Runtime behavior.
+- Documentation Methods.
+- Standards implementation.
+
+======================================================================
+1. IDENTITY
+======================================================================
+
+Purpose:
+Define who the User is.
+
+Statements:
+The User is the authoritative owner of USER_PACKAGE.
+
+The User defines the long-term direction of USER_PACKAGE.
+
+The User is the final authority over all authoritative
+knowledge contained within USER_PACKAGE.
+
+The User establishes the principles, standards,
+methods, and boundaries that govern USER_PACKAGE.
+
+The User remains responsible for the long-term
+evolution of USER_PACKAGE.
+
+
+======================================================================
+2. PURPOSE
+======================================================================
+
+Purpose:
+Define why USER_PACKAGE exists.
+
+Statements:
+USER_PACKAGE exists to preserve the
+User's authoritative operational knowledge.
+
+It establishes a portable, consistent, and reusable foundation
+for collaboration between the User and AI Assistants.
+
+It preserves validated knowledge independently of any specific
+Assistant, project, platform, or vendor.
+
+It reduces repetitive setup work by providing a consistent
+operational foundation.
+
+It supports long-term continuity through controlled evolution.
+
+
+======================================================================
+3. AUTHORITY
+======================================================================
+
+Purpose:
+Define who holds decision-making authority.
+
+Statements:
+The User is the final decision authority.
+
+The User retains ownership of all authoritative decisions.
+
+The Assistant may provide analysis, recommendations,
+and implementation support.
+
+Recommendations shall not replace User approval.
+
+The User determines priorities, direction,
+and acceptance of work.
+
+Significant implementation shall require User approval unless
+previous authorization has been explicitly granted.
+
+The User may approve, reject, defer, or revise any recommendation.
+
+Final responsibility for USER_PACKAGE remains with the User.
+
+User Ownership Interpretation:
+
+Delegating analysis, implementation, or documentation work
+does not transfer ownership of USER_PACKAGE.
+
+The User remains the authoritative owner of USER_PACKAGE
+unless explicitly revised by the User.
+
+======================================================================
+4. CORE PHILOSOPHY
+======================================================================
+
+Purpose:
+Define the fundamental philosophy that guides
+the User's engineering decisions.
+
+Statements:
+Documentation is the primary product.
+
+Knowledge shall remain portable.
+
+Knowledge shall remain recoverable.
+
+Knowledge shall remain human-readable.
+
+Knowledge shall remain independent of
+any specific Assistant.
+
+Systems exist to reduce repetitive work.
+
+Automation shall support the User, not replace the User.
+
+The User shall focus on decisions rather than repetitive operations.
+
+Complexity shall be introduced only when justified
+by measurable long-term value.
+
+Simple solutions shall be preferred when they provide
+comparable outcomes.
+
+Validated knowledge shall be preserved.
+
+Controlled evolution is preferred over unnecessary redesign.
+
+Preservation Interpretation:
+
+Preserving approved knowledge takes precedence over optimization,
+redesign, or modernization.
+
+Equivalent approved knowledge shall remain equivalent
+unless explicitly revised by the User.
+
+======================================================================
+5. CORE VALUES
+======================================================================
+
+Purpose:
+Define the fundamental values that shall consistently
+guide decisions, behavior, and engineering practices.
+
+Statements:
+Efficiency First.
+
+Human Readable First.
+
+Portable First.
+
+Local First.
+
+Safety First.
+
+Clarity First.
+
+Free First.
+
+Low Resource First.
+
+Low Maintenance.
+
+Simplicity First.
+
+Maintainability First.
+
+Consistency First.
+
+Traceability First.
+
+Recoverability First.
+
+Long-Term Value First.
+
+Quality shall take precedence over speed when both cannot be achieved.
+
+Knowledge shall be preserved before optimization.
+
+Validated work shall be preserved before introducing change.
+
+
+======================================================================
+6. DECISION PRINCIPLES
+======================================================================
+
+Purpose:
+Define the principles that guide the User's decision-making process.
+
+Decision Interpretation:
+
+User decisions shall be derived only from:
+- Verified information.
+- Approved knowledge.
+- Explicit User objectives.
+- Applicable authoritative USER_PACKAGE documents.
+
+Decisions shall not be derived from Assistant preference.
+
+Statements:
+Decisions shall be based on verified information whenever practical.
+
+Long-term value shall take precedence over short-term convenience.
+
+Simple solutions shall be preferred when they provide
+comparable outcomes.
+
+Complexity shall provide measurable value.
+
+The current objective shall be completed before expanding scope.
+
+Approved baselines shall be respected.
+
+Validated knowledge shall be preserved.
+
+Decisions shall remain explainable.
+
+Decisions shall remain traceable.
+
+Meaningful changes shall be supported by evidence whenever practical.
+
+Controlled evolution shall be preferred over unnecessary replacement.
+
+======================================================================
+7. COLLABORATION PRINCIPLES
+======================================================================
+
+Purpose:
+Define how the User and the Assistant collaborate.
+
+Statements:
+Collaboration shall be transparent.
+
+The User provides direction.
+
+The Assistant provides analysis, recommendations,
+and execution support.
+
+The Assistant shall support the User's decision-making process
+rather than replace it.
+
+Collaboration shall remain focused on achieving
+the User's objectives.
+
+
+======================================================================
+8. PREFERENCES
+======================================================================
+
+Purpose:
+
+Define the User's preferred way of working
+and interacting with AI.
+
+Statements:
+
+Prefer direct communication.
+
+Prefer concise communication.
+
+Prefer actionable responses.
+
+Prefer practical solutions.
+
+Prefer production-ready documentation.
+
+Prefer reusable solutions.
+
+Prefer maintainable solutions.
+
+Prefer incremental progress over large unvalidated changes.
+
+Prefer preserving existing validated work
+before introducing new work.
+
+Prefer documentation that remains portable across assistants.
+
+======================================================================
+9. CONSTRAINTS
+======================================================================
+
+Purpose:
+Define the boundaries that shall always be respected throughout
+collaboration, documentation, and engineering work.
+
+Statements:
+Authoritative knowledge shall not be modified without approval.
+
+Validated work shall not be replaced without justification.
+
+Approved baselines shall be respected.
+
+Unverified assumptions shall not be treated as facts.
+
+Scope shall not expand without approval.
+
+Unnecessary complexity shall be avoided.
+
+Unnecessary maintenance burden shall be avoided.
+
+Unnecessary vendor dependency shall be avoided whenever practical.
+
+
+======================================================================
+10. VISION
+======================================================================
+
+Purpose:
+Define the long-term direction that guides
+the continuous evolution of USER_PACKAGE.
+
+Statements:
+Preserve authoritative operational knowledge for long-term use.
+
+Build a portable operational foundation that remains independent
+of any specific Assistant, vendor, platform, or project.
+
+Enable consistent, sustainable, and reusable collaboration between
+the User and AI Assistants.
+
+Continuously improve through validated experience
+and documented knowledge.
+
+Preserve compatibility while supporting controlled evolution.
+
+Reduce repetitive work through standardization
+and reusable documentation.
+
+Maintain USER_PACKAGE as the authoritative
+foundation for future engineering work.
+
+======================================================================
+11. DOCUMENT RELATIONSHIPS
+======================================================================
+
+Purpose:
+Define relationships with authoritative USER_PACKAGE documents.
+
+User:
+Holds final authority over USER_PROFILE and USER_PACKAGE.
+
+AI_BEHAVIOR_BANK:
+Defines the authoritative Assistant behaviors expected by the User.
+
+AI_BEHAVIOR_STANDARD:
+Defines how Assistant behaviors are applied throughout the task
+lifecycle.
+
+DOCUMENT_STRUCTURE_STANDARD:
+Defines document objects and structural relationships.
+
+DOCUMENT_WRITING_STANDARD:
+Defines documentation writing and knowledge preservation.
+
+PROPERTY_VALUE_STANDARD:
+Defines semantic Property–Value grammar.
+
+VISUAL_BOUNDARY_STANDARD:
+Defines visual boundary grammar.
+
+DOCUMENT_LAYOUT_STANDARD:
+Defines document layout composition.
+
+AI_OUTPUT_STANDARD:
+Defines output rendering and presentation.
+
+PATCH_DELIVERY_STANDARD:
+Defines clipboard-ready Patch Delivery.
+
+PROMPT_WRITING_STANDARD:
+Defines Prompt Asset structure and organization.
+
+USER_PACKAGE:
+Defines the package-level operational composition that applies
+USER_PROFILE and its authoritative supporting documents.
+
+Relationship Rules:
+
+USER_PROFILE shall:
+- Define User identity and authority.
+- Define the User's operational philosophy and values.
+- Define collaboration preferences and constraints.
+- Serve as the highest User-authored authority within USER_PACKAGE.
+- Remain independent from implementation-specific behavior.
+
+USER_PROFILE shall not:
+- Redefine Assistant behavior.
+- Redefine behavior lifecycle.
+- Redefine documentation Standards.
+- Redefine output rendering.
+- Redefine Delivery Modes.
+- Redefine Runtime behavior.
+- Transfer User authority to another document.
+
+======================================================================
+12. RESPONSIBILITY BOUNDARIES
+======================================================================
+
+Purpose:
+Define the responsibility boundary of USER_PROFILE.
+
+Responsibility Rule:
+
+USER_PROFILE governs User identity and authority only.
+
+USER_PROFILE shall not define:
+- Assistant behavior.
+- Assistant behavior lifecycle.
+- Documentation writing.
+- Document structure.
+- Property–Value grammar.
+- Visual boundary grammar.
+- Document layout.
+- Output rendering.
+- Delivery behavior.
+- Runtime behavior.
+- Documentation Methods.
+- Standards implementation.
+- Tool implementation.
+- Project architecture.
+
+Boundary Rule:
+
+When a requirement belongs to another authoritative USER_PACKAGE
+document, USER_PROFILE shall reference that document instead of
+duplicating or redefining its responsibility.
+
+Ownership Rule:
+
+Delegating analysis, execution, documentation, or implementation
+does not transfer ownership of USER_PROFILE or USER_PACKAGE.
+
+======================================================================
+13. REVISION POLICY
+======================================================================
+
+Purpose:
+Define when and how USER_PROFILE may be revised.
+
+Revision Criteria:
+
+USER_PROFILE may be revised only when the User explicitly changes:
+- Identity.
+- Authority.
+- Philosophy.
+- Values.
+- Decision principles.
+- Collaboration principles.
+- Preferences.
+- Constraints.
+- Long-term vision.
+- USER_PACKAGE ownership.
+
+Revision Rules:
+
+Revision shall:
+- Preserve User authority.
+- Preserve approved knowledge that remains valid.
+- Preserve compatibility when requirements remain valid.
+- Record material authority changes explicitly.
+- Preserve Single Authority Ownership.
+
+Revision shall not:
+- Infer User preference changes from Assistant behavior.
+- Infer authority changes from delegation.
+- Absorb responsibilities owned by another document.
+- Replace explicit User decisions with recommendations.
+- Introduce hidden assumptions.
+
+======================================================================
+14. SELF COMPLIANCE
+======================================================================
+
+Purpose:
+Ensure USER_PROFILE complies with every applicable USER_PACKAGE
+standard without surrendering its authority.
+
+Self Compliance Rule:
+
+USER_PROFILE shall serve as a living implementation of applicable
+documentation, structure, grammar, boundary, layout, and rendering
+requirements.
+
+Self Validation:
+
+- The Document contains one Document Title.
+- Each major topic uses one numbered Section.
+- L1 headings use N. TITLE without a separate SECTION label.
+- Metadata follows USER_PACKAGE v1.0 format.
+- Property–Value relationships remain intact.
+- Visual boundaries use approved levels.
+- Line composition remains within active Layout Parameters.
+- Document Relationships are explicit.
+- Responsibility Boundaries are explicit.
+- USER_PROFILE retains User authority.
+- USER_PROFILE depends on no lower-authority document.
+- No unrelated responsibility is absorbed.
+- Version and Status match USER_PACKAGE v1.0.
+
+Self Compliance Boundary:
+
+Self Compliance shall not transfer USER_PROFILE authority to a
+supporting Standard.
+
+======================================================================
+END OF USER PROFILE
+======================================================================

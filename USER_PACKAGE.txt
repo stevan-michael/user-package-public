@@ -1,0 +1,569 @@
+======================================================================
+======================================================================
+USER_PACKAGE
+======================================================================
+======================================================================
+
+Version:
+1.0
+
+Status:
+Official
+
+Category:
+Package Manifest
+
+Identity:
+Authoritative initialization manifest governing package
+composition, initialization, activation, and ready state for
+USER_PACKAGE.
+
+Purpose:
+Define the official initialization contract and package
+composition of USER_PACKAGE.
+
+Scope:
+Define package composition, initialization lifecycle, activation
+behavior, and ready state.
+
+Primary Responsibility:
+Package initialization.
+
+Authority:
+USER_PROFILE.
+
+Depends On:
+- USER_PROFILE.
+- AI_BEHAVIOR_BANK.
+- AI_BEHAVIOR_STANDARD.
+- DOCUMENT_STRUCTURE_STANDARD.
+- DOCUMENT_WRITING_STANDARD.
+- PROPERTY_VALUE_STANDARD.
+- VISUAL_BOUNDARY_STANDARD.
+- DOCUMENT_LAYOUT_STANDARD.
+- AI_OUTPUT_STANDARD.
+- PATCH_DELIVERY_STANDARD.
+- PROMPT_WRITING_STANDARD.
+- SCRIPT_DELIVERY
+- BUILD_ORDER
+
+Referenced By:
+- USER_PACKAGE initialization workflows.
+- USER_PACKAGE migration workflows.
+- USER_PACKAGE execution workflows.
+
+Complements:
+- USER_PROFILE.
+- AI_BEHAVIOR_STANDARD.
+- AI_OUTPUT_STANDARD.
+- PATCH_DELIVERY_STANDARD.
+
+Does Not Define:
+- User authority.
+- Assistant behavior definitions.
+- Behavior lifecycle.
+- Documentation writing.
+- Document structure.
+- Property–Value grammar.
+- Visual boundary grammar.
+- Document layout.
+- Output rendering.
+- Delivery behavior.
+- Prompt structure.
+- Runtime behavior.
+- Artifact transformation.
+
+======================================================================
+1. FOUNDATION
+======================================================================
+
+Purpose:
+Define the authoritative responsibility, interpretation, and
+operational boundary of USER_PACKAGE.
+
+Package Contract Interpretation:
+Every package requirement expressed using "shall" constitutes a
+mandatory package-initialization constraint.
+
+Package behavior not explicitly required or permitted by this
+Manifest or a higher-authority USER_PACKAGE document shall not be
+assumed to be permitted.
+
+Requirements owned by another authoritative USER_PACKAGE document
+shall not be interpreted as package-initialization requirements.
+
+Package Definition:
+USER_PACKAGE is the authoritative package of User-governed
+documents that initializes a consistent operational foundation
+for collaboration with AI Assistants.
+
+Initialization Responsibility:
+USER_PACKAGE governs package initialization only.
+
+USER_PACKAGE shall not:
+- Redefine User authority.
+- Redefine Assistant behavior.
+- Redefine documentation Standards.
+- Redefine output rendering.
+- Redefine Delivery Modes.
+- Redefine Runtime behavior.
+- Merge authoritative responsibilities.
+
+======================================================================
+2. PACKAGE CONTENTS
+======================================================================
+
+Purpose:
+Define the official USER_PACKAGE composition.
+
+Package Contents:
+
+USER_PACKAGE
+│
+├── USER_PROFILE.txt
+├── AI_BEHAVIOR_BANK.txt
+├── AI_BEHAVIOR_STANDARD.txt
+├── DOCUMENT_STRUCTURE_STANDARD.txt
+├── DOCUMENT_WRITING_STANDARD.txt
+├── PROPERTY_VALUE_STANDARD.txt
+├── VISUAL_BOUNDARY_STANDARD.txt
+├── DOCUMENT_LAYOUT_STANDARD.txt
+├── AI_OUTPUT_STANDARD.txt
+├── PATCH_DELIVERY_STANDARD.txt
+├── PROMPT_WRITING_STANDARD.txt
+├── SCRIPT_DELIVERY.txt
+└── BUILD_ORDER.txt
+
+Core Assets:
+- USER_PROFILE.
+- AI_BEHAVIOR_BANK.
+- AI_BEHAVIOR_STANDARD.
+- DOCUMENT_STRUCTURE_STANDARD.
+- DOCUMENT_WRITING_STANDARD.
+- PROPERTY_VALUE_STANDARD.
+- VISUAL_BOUNDARY_STANDARD.
+- DOCUMENT_LAYOUT_STANDARD.
+- AI_OUTPUT_STANDARD.
+- PATCH_DELIVERY_STANDARD.
+- PROMPT_WRITING_STANDARD.
+
+Operational Capability Assets:
+- SCRIPT_DELIVERY.
+- BUILD_ORDER.
+
+Optional Assets:
+Additional Methods, authorization documents, Delivery Modes,
+Prompt Assets, Runtime assets, and project assets may be supplied
+separately when applicable.
+
+Composition Rule:
+Each package asset shall retain one authoritative responsibility.
+
+Composition Prohibition:
+Package composition shall not merge, duplicate, or silently
+transfer responsibilities between assets.
+
+======================================================================
+3. PACKAGE LIFECYCLE
+======================================================================
+
+Purpose:
+Define the official USER_PACKAGE initialization lifecycle.
+
+Package Lifecycle:
+
+Discovery
+        ↓
+Validation
+        ↓
+Initialization
+        ↓
+Activation
+        ↓
+Ready
+
+Lifecycle Interpretation:
+Each lifecycle stage shall complete before the next stage begins.
+
+Discovery:
+Identify supplied package assets and their declared identities.
+
+Validation:
+Verify required assets, ownership, compatibility, and package
+integrity.
+
+Initialization:
+Load validated assets without modifying their authoritative
+responsibilities.
+
+Activation:
+Activate only assets applicable to the current conversation and
+authorized scope.
+
+Ready:
+Declare USER_PACKAGE ready after all required initialization
+requirements are satisfied.
+
+======================================================================
+4. INITIALIZATION CONTRACT
+======================================================================
+
+Purpose:
+Define mandatory behavior during USER_PACKAGE initialization.
+
+Initialization Requirements:
+- Discover supplied package assets.
+- Validate required package assets.
+- Verify each asset identity and responsibility.
+- Initialize available validated assets.
+- Preserve responsibility ownership.
+- Activate only applicable assets.
+- Preserve explicit User instructions.
+- Produce the official Initialization Response.
+
+Initialization Prohibitions:
+- Redefine package architecture.
+- Merge document responsibilities.
+- Duplicate document responsibilities.
+- Override explicit User instruction.
+- Activate unavailable assets.
+- Treat package presence as automatic activation.
+- Describe USER_PACKAGE initialization as Runtime activation.
+
+Initialization Failure:
+Initialization shall stop when required package assets cannot be
+validated or when an unresolved authority conflict exists.
+
+Failure Reporting:
+A validated initialization blocker shall be reported clearly
+without inventing missing package state.
+
+======================================================================
+5. ACTIVATION MODEL
+======================================================================
+
+Purpose:
+Define deterministic activation behavior after initialization.
+
+Core Activation:
+Core assets shall become active after successful initialization.
+
+Applicable Activation:
+Only assets applicable to the current authorized scope shall
+participate in active execution.
+
+Optional Asset Activation:
+Optional assets shall remain available but inactive until
+required by the current task, explicitly selected by the User, or
+activated by an applicable authorization document.
+
+Delivery Mode Activation:
+Delivery Modes shall remain inactive until selected by the User,
+an applicable authorization document, or an approved workflow.
+
+Prompt Asset Activation:
+Prompt Assets shall remain inactive until explicitly executed or
+required by an approved workflow.
+
+Runtime Boundary:
+USER_PACKAGE initialization shall not activate Runtime behavior
+unless an applicable Runtime contract explicitly authorizes it.
+
+Presence Rule:
+Package presence shall not imply activation.
+
+======================================================================
+6. AUTHORITY AND OWNERSHIP
+======================================================================
+
+Purpose:
+Define package-level authority and ownership preservation.
+
+Root Authority:
+USER_PROFILE is the root User authority for USER_PACKAGE.
+
+Behavior Definitions:
+AI_BEHAVIOR_BANK owns Assistant behavior definitions.
+
+Behavior Lifecycle:
+AI_BEHAVIOR_STANDARD owns behavior activation, sequencing,
+interaction, and lifecycle.
+
+Document Structure:
+DOCUMENT_STRUCTURE_STANDARD owns document objects and structural
+relationships.
+
+Documentation Writing:
+DOCUMENT_WRITING_STANDARD owns documentation writing.
+
+Semantic Grammar:
+PROPERTY_VALUE_STANDARD owns Property–Value grammar.
+
+Visual Grammar:
+VISUAL_BOUNDARY_STANDARD owns visual boundary grammar.
+
+Document Layout:
+DOCUMENT_LAYOUT_STANDARD owns document layout composition.
+
+Output Rendering:
+AI_OUTPUT_STANDARD owns AI output rendering.
+
+Patch Delivery:
+PATCH_DELIVERY_STANDARD owns clipboard-ready Patch Delivery.
+
+Prompt Structure:
+PROMPT_WRITING_STANDARD owns Prompt Asset structure and
+organization.
+
+Ownership Rule:
+Initialization shall preserve every authoritative responsibility
+without duplication or transfer.
+
+======================================================================
+7. INITIALIZATION RESPONSE CONTRACT
+======================================================================
+
+Purpose:
+Define the official successful initialization response for
+USER_PACKAGE.
+
+Successful Initialization Response:
+
+USER_PACKAGE initialized.
+
+Status: READY
+
+Core assets activated.
+
+Optional assets available when applicable.
+
+Response Completion Rule:
+The successful initialization response is complete when the
+defined response has been generated exactly.
+
+Additional Information Boundary:
+Initialization summaries, asset listings, lifecycle reports,
+capability reports, and package explanations shall not be added
+unless explicitly requested or required to report a blocker.
+
+Failure Response:
+When initialization fails, the response shall identify the
+validated blocker and shall not declare Status READY.
+
+======================================================================
+8. PACKAGE VALIDATION
+======================================================================
+
+Purpose:
+Define mandatory validation of USER_PACKAGE initialization.
+
+Validation Requirements:
+- USER_PROFILE is present and valid.
+- Required core assets are present.
+- Every asset identity is unique.
+- Every asset responsibility is explicit.
+- No responsibility is duplicated.
+- Dependencies are resolvable.
+- Document Relationships are consistent.
+- Version and Status metadata are valid.
+- Applicable Standards are compatible.
+- Initialization Response is available.
+
+Validation Result:
+- PASS: Every required package condition is satisfied.
+- FAIL: One or more required package conditions are violated.
+- NON-APPLICABLE: A validation rule does not apply.
+
+Failure Rule:
+A package that fails validation shall not proceed to successful
+initialization.
+
+======================================================================
+9. PACKAGE GOVERNANCE
+======================================================================
+
+Purpose:
+Define package-level decision and change constraints.
+
+Package Decision Sources:
+- USER_PROFILE.
+- This Manifest.
+- Applicable authoritative USER_PACKAGE documents.
+- Explicit User instructions.
+- Verified package assets.
+
+Prohibited Decision Sources:
+- Assistant stylistic preference.
+- Unverified assumptions.
+- Conversation memory used instead of physical assets.
+- Unapproved external conventions.
+- Package presence alone.
+
+Undefined Package Behavior:
+When package behavior is undefined, preserve User authority,
+responsibility ownership, and the verified package baseline.
+
+Material ambiguity that prevents safe initialization shall be
+reported instead of resolved through invention.
+
+Package Extension:
+New package assets may be added only when their responsibility,
+authority, dependencies, and compatibility are explicit.
+
+======================================================================
+10. DOCUMENT RELATIONSHIPS
+======================================================================
+
+Purpose:
+Define relationships with authoritative USER_PACKAGE documents.
+
+USER_PROFILE:
+Defines User authority and serves as root package authority.
+
+AI_BEHAVIOR_BANK:
+Defines authoritative Assistant behavior definitions.
+
+AI_BEHAVIOR_STANDARD:
+Defines behavior lifecycle throughout package operation.
+
+DOCUMENT_STRUCTURE_STANDARD:
+Defines document objects and structural relationships.
+
+DOCUMENT_WRITING_STANDARD:
+Defines documentation writing and knowledge preservation.
+
+PROPERTY_VALUE_STANDARD:
+Defines semantic Property–Value grammar.
+
+VISUAL_BOUNDARY_STANDARD:
+Defines visual boundary grammar.
+
+DOCUMENT_LAYOUT_STANDARD:
+Defines document layout composition.
+
+AI_OUTPUT_STANDARD:
+Defines output rendering and presentation.
+
+PATCH_DELIVERY_STANDARD:
+Defines clipboard-ready Patch Delivery.
+
+PROMPT_WRITING_STANDARD:
+Defines Prompt Asset structure and organization.
+
+Relationship Rules:
+
+USER_PACKAGE shall:
+- Initialize authoritative package assets.
+- Preserve root User authority.
+- Preserve responsibility ownership.
+- Activate only applicable assets.
+- Preserve package compatibility.
+
+USER_PACKAGE shall not:
+- Replace an authoritative asset.
+- Redefine another asset's responsibility.
+- Activate optional assets without authorization.
+- Treat initialization as Runtime activation.
+- Transfer User authority.
+
+======================================================================
+11. RESPONSIBILITY BOUNDARIES
+======================================================================
+
+Purpose:
+Define the responsibility boundary of USER_PACKAGE.
+
+Responsibility Rule:
+USER_PACKAGE governs package initialization only.
+
+USER_PACKAGE Shall Not Define:
+- User authority.
+- Assistant behavior definitions.
+- Behavior lifecycle.
+- Documentation writing.
+- Document structure.
+- Property–Value grammar.
+- Visual boundary grammar.
+- Document layout.
+- Output rendering.
+- Delivery behavior.
+- Prompt structure.
+- Runtime behavior.
+- Artifact transformation.
+
+Ownership Rule:
+Initializing package assets does not transfer ownership of their
+responsibilities to USER_PACKAGE.
+
+======================================================================
+12. REVISION POLICY
+======================================================================
+
+Purpose:
+Define when USER_PACKAGE may be revised.
+
+Revision Criteria:
+This Manifest may be revised only when validated package work
+demonstrates:
+
+- Missing package composition coverage.
+- Initialization ambiguity.
+- Activation ambiguity.
+- Dependency failure.
+- Responsibility overlap.
+- Compatibility failure.
+- Initialization Response failure.
+- Conflict with USER_PROFILE.
+- Proven maintenance cost.
+
+Revision Rules:
+
+Revision shall:
+- Preserve USER_PROFILE authority.
+- Preserve package initialization responsibility.
+- Preserve valid package assets.
+- Preserve compatibility when requirements remain valid.
+- Resolve responsibility overlap before adding assets.
+- Preserve Single Authority Ownership.
+
+Revision shall not:
+- Absorb another asset's responsibility.
+- Infer activation from package presence.
+- Redefine Runtime behavior.
+- Introduce hidden dependencies.
+- Alter the Initialization Response without User approval.
+
+======================================================================
+13. SELF COMPLIANCE
+======================================================================
+
+Purpose:
+Ensure USER_PACKAGE complies with every applicable package and
+documentation requirement.
+
+Self Compliance Rule:
+USER_PACKAGE shall serve as a living implementation of its own
+package-initialization requirements.
+
+Self Validation:
+- The Document contains one Document Title.
+- Each major topic uses one numbered Section.
+- L1 headings use N. TITLE without a SECTION label.
+- Metadata follows USER_PACKAGE v1.0 format.
+- Package Contents list every required core asset.
+- USER_PROFILE remains root authority.
+- Every responsibility has one owner.
+- Initialization Lifecycle remains complete.
+- Activation Rules preserve applicability.
+- Initialization Response remains exact.
+- Line composition remains within active Layout Parameters.
+- No unrelated responsibility is absorbed.
+- Version and Status match USER_PACKAGE v1.0.
+
+Self Compliance Boundary:
+Self Compliance shall not transfer authority or responsibility
+ownership between package assets.
+
+======================================================================
+END OF USER_PACKAGE
+======================================================================

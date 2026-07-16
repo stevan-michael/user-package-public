@@ -1,0 +1,755 @@
+======================================================================
+======================================================================
+FILE SYNTHESIS
+======================================================================
+======================================================================
+
+Version:
+1.0
+
+Status:
+Official
+
+Category:
+Documentation Transformation Method
+
+Identity:
+Documentation Transformation Method governing synthesis of new
+documents from an approved Baseline and one or more approved
+Source documents.
+
+Purpose:
+Generate one new document using the Baseline as the authoritative
+structural template and Source documents as the authoritative
+information source.
+
+Scope:
+Define document synthesis behavior only.
+
+Primary Responsibility:
+Document synthesis.
+
+Authority:
+USER_PROFILE.
+
+Depends On:
+- AI_BEHAVIOR_STANDARD.
+- AI_OUTPUT_STANDARD.
+- DOCUMENT_STRUCTURE_STANDARD.
+- DOCUMENT_WRITING_STANDARD.
+- PROPERTY_VALUE_STANDARD.
+- VISUAL_BOUNDARY_STANDARD.
+- DOCUMENT_LAYOUT_STANDARD.
+- Approved Baseline document.
+- Approved Source document or Source documents.
+- Applicable authorization document.
+
+Referenced By:
+- USER_PACKAGE documentation workflows.
+- Documentation migration workflows.
+- Authorized document-generation tasks.
+
+Complements:
+- DOC_REFACTOR.
+- DOC_CONSOLIDATION.
+- DOC_STREAMLINING.
+- PATCH_DELIVERY_STANDARD.
+- SCRIPT_DELIVERY.
+
+Does Not Define:
+- Assistant behavior.
+- New knowledge approval.
+- Architecture design.
+- Document consolidation.
+- Documentation refactoring.
+- Documentation writing.
+- Document structure.
+- Property–Value grammar.
+- Visual boundary grammar.
+- Document layout.
+- Output rendering.
+- Delivery behavior.
+- Runtime behavior.
+
+======================================================================
+1. FOUNDATION
+======================================================================
+
+Purpose:
+Define the authoritative responsibility, interpretation,
+applicability, and operational boundary of File Synthesis.
+
+Synthesis Contract Interpretation:
+Every synthesis requirement expressed using "shall" constitutes a
+mandatory documentation transformation constraint.
+
+Synthesis behavior not explicitly required or permitted by this
+Method or a higher-authority USER_PACKAGE document shall not be
+assumed to be permitted.
+
+Requirements owned by another authoritative USER_PACKAGE Method
+or Standard shall not be interpreted as File Synthesis
+requirements.
+
+Synthesis Definition:
+File Synthesis generates one new document by applying approved
+Source information to the approved Baseline presentation model.
+
+Authority Model:
+Source documents define content. The Baseline defines
+presentation. This Method defines transformation.
+
+Applicability:
+This Method applies only to documentation assets within its
+defined Scope.
+
+Excluded Assets:
+- Source code.
+- Runtime implementations.
+- Executable assets.
+- Behavioral Standards.
+- Binary assets.
+- Machine-readable serialization formats.
+
+Responsibility Rule:
+File Synthesis governs document synthesis only.
+
+======================================================================
+2. INPUT CONTRACT
+======================================================================
+
+Baseline:
+The authoritative structural template.
+
+Preserve:
+- Document structure.
+- Section hierarchy.
+- Writing style.
+- Grammar style.
+- Property format.
+- Naming conventions.
+- Formatting.
+- Visual layout.
+- Overall document philosophy.
+
+Synthesis Applicability:
+
+This Method applies only to documentation assets
+within its defined Scope.
+
+This Method shall not be applied to:
+- Source code.
+- Runtime implementations.
+- Executable assets.
+- Behavioral Standards.
+- Output rendering.
+
+Assets outside the defined Scope remain governed
+by their applicable authoritative Method or
+Standard.
+
+Source:
+The authoritative information source.
+
+Supported Input:
+- One Source document.
+- Multiple Source documents.
+
+Supported document types depend on the
+assistant's available capabilities.
+
+If compressed archives are supported,
+
+extract and process their contents.
+
+Otherwise,
+
+report the unsupported input and request
+the documents in a readable format.
+
+Do not assume archive contents without
+successful extraction.
+
+Extract only information relevant
+to the target document.
+
+Source defines the content.
+
+Baseline defines the presentation.
+
+The active Method defines document transformation.
+
+Output presentation belongs to the active
+Output Mode when one is active.
+
+Required Inputs:
+- One approved Baseline document.
+- One or more approved Source documents.
+- Applicable Standards.
+- Explicit User constraints.
+- Applicable authorization.
+
+Baseline Authority:
+The Baseline governs structure, hierarchy, writing pattern,
+grammar pattern, Property format, naming conventions, formatting,
+visual layout, and document philosophy.
+
+Source Authority:
+Source documents govern approved content and factual information.
+
+Archive Rule:
+Compressed archives shall be processed only after successful
+extraction through available capabilities.
+
+======================================================================
+3. SYNTHESIS MODEL
+======================================================================
+
+Purpose:
+Define the deterministic document synthesis model.
+
+Synthesis Model:
+
+Approved Baseline
+        +
+Approved Source Documents
+        ↓
+Source Extraction
+        ↓
+Relevance Filtering
+        ↓
+Baseline Mapping
+        ↓
+Content Synthesis
+        ↓
+Standards Compliance Review
+        ↓
+Synthesized Document
+
+Model Interpretation:
+Each stage shall complete before the next stage begins.
+
+Model Boundary:
+The Synthesis Model shall not approve new knowledge, redesign
+architecture, or change the target document purpose.
+
+======================================================================
+4. SYNTHESIS RULES
+======================================================================
+
+A completely new document shall be generated.
+
+Do not copy the Baseline content.
+
+Do not preserve obsolete information.
+
+Relevant information shall be extracted from
+the Source document(s).
+
+The Baseline structure shall be populated using
+the extracted information.
+
+Rewrite content when necessary to naturally fit
+the Baseline writing style.
+
+Preserve terminology whenever appropriate.
+
+Merge overlapping information from multiple
+Source documents when applicable.
+
+Synthesis Preservation Interpretation:
+
+Preserving approved Source information takes
+precedence over improving writing style or
+presentation.
+
+Equivalent Source information shall produce
+equivalent synthesized information unless
+explicitly instructed otherwise or required by
+an approved architectural revision.
+
+Ignore Source information unrelated
+to the target document.
+
+Synthesis Decision Rule:
+
+Synthesis decisions shall be derived only from:
+- This Method.
+- Applicable higher-authority USER_PACKAGE
+  Standards.
+- Explicit User instructions.
+- Approved Baseline authority.
+- Approved Source authority.
+
+Synthesis decisions shall not be derived from
+Assistant stylistic preference.
+
+Source Relevance Rule:
+Only Source information relevant to the target document shall be
+included.
+
+Baseline Population Rule:
+Relevant Source information shall be mapped into the appropriate
+Baseline objects without copying obsolete Baseline content.
+
+Overlap Resolution:
+Overlapping Source information shall be merged only when semantic
+equivalence is verified.
+
+======================================================================
+5. EXECUTION
+======================================================================
+
+Execute immediately when all required inputs
+are available and no blocking issue exists.
+
+Do not request execution confirmation.
+
+Do not ask whether to proceed.
+
+If no blocking issue exists,
+
+begin synthesis immediately.
+
+Blocking issues are the only valid reason
+to suspend execution.
+
+Execution resumes only after:
+- the blocking issue has been resolved, or
+- the user explicitly instructs otherwise.
+
+Execution Sequence:
+- Verify the Baseline.
+- Verify all required Source documents.
+- Resolve authorized scope.
+- Identify applicable Standards.
+- Extract relevant Source information.
+- Map Source information to the Baseline.
+- Generate the complete synthesized document.
+- Perform Standards Compliance Review.
+- Correct validated compliance issues.
+- Validate the completed synthesis.
+
+Execution Boundary:
+Execution shall stop only when a validated blocker prevents safe
+continuation.
+
+======================================================================
+6. CONFLICT HANDLING
+======================================================================
+
+If any blocker,
+
+ambiguity,
+
+missing information,
+
+structural conflict,
+
+insufficient evidence,
+
+or inaccessible Source information prevents
+successful synthesis,
+
+stop before generating the final document.
+
+Report:
+- Issue.
+- Affected section(s).
+- Reason.
+- Recommended resolution.
+
+Do not invent missing information.
+
+Do not silently ignore conflicts.
+
+Conflict Types:
+- Missing Baseline information.
+- Missing Source information.
+- Inaccessible Source information.
+- Conflicting Source information.
+- Structural conflict.
+- Insufficient evidence.
+- Authority conflict.
+- Standards conflict.
+
+Conflict Prohibition:
+File Synthesis shall not silently ignore conflicts, invent
+missing information, or redesign the Baseline.
+
+======================================================================
+7. OUTPUT REQUIREMENTS
+======================================================================
+
+Generate one complete standalone document.
+
+The transformed document shall appear as though
+it were originally authored using the Baseline
+template.
+
+Generate only the transformed document.
+
+Output presentation belongs to the active
+Output Mode when one is active.
+
+Do not explain the synthesis process.
+
+Do not generate comparison tables unless
+explicitly requested.
+
+Do not generate implementation notes unless
+explicitly requested.
+
+Output Completeness:
+The output shall contain one complete standalone synthesized
+document.
+
+Output Authenticity:
+The synthesized document shall appear as though originally
+authored using the approved Baseline template.
+
+Output Ownership:
+The active Output Mode governs presentation and delivery only.
+
+======================================================================
+8. QUALITY CHECK
+======================================================================
+
+Before completing synthesis, verify:
+- Structure matches the Baseline.
+- Section hierarchy matches the Baseline.
+- Writing style matches the Baseline.
+- Grammar style matches the Baseline.
+- Property format matches the Baseline.
+- Formatting matches the Baseline.
+- Naming conventions remain consistent.
+- Required information has been preserved.
+- Obsolete information has been removed.
+- No irrelevant Source information remains.
+- All required Source documents were successfully
+  accessed.
+- All required Source information was successfully
+  extracted.
+- All relevant Source information has been
+  synthesized.
+
+Before completing synthesis,
+
+verify that the generated artifact complies with all
+applicable Standards.
+
+Standards Compliance Review shall be completed before
+synthesis is considered complete.
+
+Correct identified Standards compliance issues before
+completing the Method.
+
+Standards Compliance Review applies only to the generated
+synthesized artifact.
+
+It does not modify the approved knowledge established
+through the synthesis process.
+
+If no blocking issue exists,
+
+immediately generate the final document.
+
+Otherwise,
+
+follow the Conflict Handling rules.
+
+Validation Result:
+- PASS: Every applicable synthesis requirement is satisfied.
+- FAIL: One or more synthesis requirements are violated.
+- NON-APPLICABLE: A requirement does not apply.
+
+Failure Rule:
+A synthesized document that fails Quality Check shall not proceed
+to final delivery.
+
+======================================================================
+9. PRESERVATION CONTRACT
+======================================================================
+
+Purpose:
+Define mandatory preservation behavior during synthesis.
+
+Preservation Requirements:
+- Approved Source information.
+- Approved Baseline structure.
+- Approved Baseline hierarchy.
+- Approved writing pattern.
+- Approved grammar pattern.
+- Approved Property format.
+- Approved naming conventions.
+- Approved visual layout.
+- Target document purpose.
+- Traceability.
+
+Preservation Priority:
+Preserving approved Source information shall take precedence over
+stylistic improvement.
+
+Obsolete Content Rule:
+Obsolete Baseline content shall not be preserved merely because
+it exists in the template.
+
+Inference Rule:
+Unsupported information shall not be introduced as synthesized
+knowledge.
+
+======================================================================
+10. METHOD GOVERNANCE
+======================================================================
+
+Purpose:
+Define authority and decision constraints governing File
+Synthesis.
+
+Decision Sources:
+- This Method.
+- Applicable higher-authority USER_PACKAGE documents.
+- Explicit User instructions.
+- Approved Baseline authority.
+- Approved Source authority.
+- Applicable authorization.
+
+Prohibited Decision Sources:
+- Assistant stylistic preference.
+- Unverified assumptions.
+- Conversation memory used instead of physical inputs.
+- Unapproved external information.
+- Aesthetic preference alone.
+
+Undefined Synthesis:
+When synthesis behavior is undefined, preserve Source authority
+and Baseline presentation, then use the simplest valid synthesis
+behavior permitted by this Method.
+
+Material ambiguity that prevents safe synthesis shall be reported
+instead of resolved through invention.
+
+======================================================================
+11. OUTPUT RESPONSIBILITY
+======================================================================
+
+Document transformation belongs to this Method.
+
+Output presentation belongs to the active
+Output Mode.
+
+Method Ownership Interpretation:
+
+Owning the synthesis process does not transfer
+authority over the Baseline document, Source
+documents, or synthesized knowledge.
+
+Authority remains defined by the applicable
+authoritative USER_PACKAGE documents.
+
+Synthesis Responsibility Boundary:
+
+File Synthesis shall not:
+- Approve new knowledge.
+- Redesign approved architecture.
+- Modify approved responsibilities.
+- Perform document consolidation.
+- Perform documentation refactoring.
+- Change document purpose.
+
+File Synthesis shall remain limited to
+document synthesis.
+
+Method Ownership:
+File Synthesis owns the authorized document transformation
+process only.
+
+======================================================================
+12. DESIGN PRINCIPLES
+======================================================================
+
+Purpose:
+Define the long-term principles governing File Synthesis.
+
+Design Principles:
+- Source defines content.
+- Baseline defines presentation.
+- Preserve before rewriting.
+- Filter before mapping.
+- Synthesize before rendering.
+- Validate before completing.
+- Evidence before inference.
+- One complete standalone output.
+- No silent conflict suppression.
+- No unrelated Source content.
+
+======================================================================
+13. DOCUMENT RELATIONSHIPS
+======================================================================
+
+Purpose:
+Define relationships with authoritative USER_PACKAGE documents.
+
+USER_PROFILE:
+Defines User authority and documentation preferences.
+
+AI_BEHAVIOR_STANDARD:
+Defines Assistant behavior throughout Method execution.
+
+AI_OUTPUT_STANDARD:
+Defines output rendering and presentation.
+
+DOCUMENT_STRUCTURE_STANDARD:
+Defines document objects and structural relationships.
+
+DOCUMENT_WRITING_STANDARD:
+Defines documentation writing and knowledge preservation.
+
+PROPERTY_VALUE_STANDARD:
+Defines semantic Property–Value grammar.
+
+VISUAL_BOUNDARY_STANDARD:
+Defines visual boundary grammar.
+
+DOCUMENT_LAYOUT_STANDARD:
+Defines document layout composition.
+
+DOC_REFACTOR:
+Defines authorized documentation refactoring.
+
+DOC_CONSOLIDATION:
+Defines authorized documentation consolidation.
+
+DOC_STREAMLINING:
+Defines authorized documentation streamlining.
+
+PATCH_DELIVERY_STANDARD:
+Defines clipboard-ready Patch Delivery.
+
+SCRIPT_DELIVERY:
+Defines ready-to-run script delivery.
+
+Relationship Rules:
+
+File Synthesis shall:
+- Depend on the approved Baseline.
+- Depend on approved Source documents.
+- Apply all applicable documentation Standards.
+- Preserve Baseline presentation authority.
+- Preserve Source content authority.
+- Defer output rendering to AI_OUTPUT_STANDARD.
+- Defer delivery to the selected Delivery Mode.
+
+File Synthesis shall not:
+- Perform document consolidation.
+- Perform documentation refactoring.
+- Redefine documentation Standards.
+- Redefine output rendering.
+- Redefine Delivery Mode behavior.
+- Redesign approved architecture.
+
+======================================================================
+14. RESPONSIBILITY BOUNDARIES
+======================================================================
+
+Purpose:
+Define the responsibility boundary of File Synthesis.
+
+Responsibility Rule:
+File Synthesis governs document synthesis only.
+
+File Synthesis Shall Not Define:
+- Assistant behavior.
+- New knowledge approval.
+- Architecture design.
+- Document consolidation.
+- Documentation refactoring.
+- Documentation writing.
+- Document structure.
+- Property–Value grammar.
+- Visual boundary grammar.
+- Document layout.
+- Output rendering.
+- Delivery behavior.
+- Runtime behavior.
+
+Ownership Rule:
+Synthesizing a document does not transfer authority over the
+Baseline, Source documents, or synthesized knowledge to this
+Method.
+
+======================================================================
+15. REVISION POLICY
+======================================================================
+
+Purpose:
+Define when File Synthesis may be revised.
+
+Revision Criteria:
+This Method may be revised only when validated synthesis work
+demonstrates:
+
+- Baseline mapping ambiguity.
+- Repeated Source extraction failure.
+- Missing synthesis coverage.
+- Source conflict handling failure.
+- Preservation failure.
+- Standards compatibility failure.
+- Responsibility overlap.
+- Conflict with a higher-authority document.
+- Proven maintenance cost.
+
+Revision Rules:
+
+Revision shall:
+- Preserve the primary responsibility.
+- Preserve Source authority.
+- Preserve Baseline presentation authority.
+- Preserve compatibility when requirements remain valid.
+- Resolve validated deficiencies before expanding scope.
+- Preserve Single Authority Ownership.
+
+Revision shall not:
+- Absorb document consolidation.
+- Absorb documentation refactoring.
+- Absorb output rendering.
+- Absorb Delivery Mode behavior.
+- Introduce hidden assumptions.
+- Authorize architecture redesign.
+
+======================================================================
+16. SELF COMPLIANCE
+======================================================================
+
+Purpose:
+Ensure this Method complies with every applicable USER_PACKAGE
+standard.
+
+Self Compliance Rule:
+This Method shall serve as a living implementation of its own
+synthesis requirements.
+
+Self Validation:
+- The Document contains one Document Title.
+- Each major topic uses one numbered Section.
+- L1 headings use N. TITLE without a SECTION label.
+- Metadata follows USER_PACKAGE v1.0 format.
+- Property–Value relationships remain intact.
+- Visual boundaries use approved levels.
+- Line composition remains within active Layout Parameters.
+- Document Relationships are explicit.
+- Responsibility Boundaries are explicit.
+- Baseline presentation authority is preserved.
+- Source content authority is preserved.
+- Output rendering remains owned by AI_OUTPUT_STANDARD.
+- Delivery remains owned by the active Delivery Mode.
+- No unrelated responsibility is absorbed.
+- Version and Status match USER_PACKAGE v1.0.
+
+Self Compliance Boundary:
+Self Compliance shall not transfer Baseline, Source, rendering,
+or delivery ownership to File Synthesis.
+
+======================================================================
+END OF FILE SYNTHESIS
+======================================================================

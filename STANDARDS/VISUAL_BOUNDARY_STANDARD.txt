@@ -1,0 +1,661 @@
+======================================================================
+======================================================================
+VISUAL BOUNDARY STANDARD
+======================================================================
+======================================================================
+
+Version:
+1.0
+
+Status:
+Official
+
+Category:
+Visual Grammar Standard
+
+Identity:
+Visual Grammar Standard governing documentation boundary
+structures throughout USER_PACKAGE.
+
+Purpose:
+Define the official visual boundary grammar used throughout
+USER_PACKAGE documentation.
+
+Scope:
+Define visual boundary grammar only.
+
+Primary Responsibility:
+Visual boundary grammar.
+
+Authority:
+USER_PROFILE.
+
+Depends On:
+- DOCUMENT_STRUCTURE_STANDARD.
+- DOCUMENT_WRITING_STANDARD.
+- PROPERTY_VALUE_STANDARD.
+
+Referenced By:
+- DOCUMENT_LAYOUT_STANDARD.
+- AI_OUTPUT_STANDARD.
+- PROMPT_WRITING_STANDARD.
+- USER_PACKAGE.
+
+Complements:
+- DOCUMENT_STRUCTURE_STANDARD.
+- DOCUMENT_WRITING_STANDARD.
+- PROPERTY_VALUE_STANDARD.
+- DOCUMENT_LAYOUT_STANDARD.
+
+Does Not Define:
+- Document structure.
+- Documentation writing.
+- Property–Value grammar.
+- Document layout.
+- Output rendering.
+- Delivery behavior.
+- Prompt structure.
+- Runtime behavior.
+- Parser implementation.
+
+======================================================================
+1. FOUNDATION
+======================================================================
+
+Purpose:
+Define the authoritative responsibility, interpretation,
+applicability, and operational boundary of Visual Boundary Standard.
+
+Boundary Contract Interpretation:
+Every visual boundary requirement expressed using "shall"
+constitutes a mandatory visual grammar constraint.
+
+Boundary behavior not explicitly required or permitted by this
+Standard or a higher-authority USER_PACKAGE document shall not be
+assumed to be permitted.
+
+Requirements owned by another authoritative USER_PACKAGE document
+shall not be interpreted as visual boundary requirements.
+
+Visual Boundary Definition:
+A visual boundary is a deterministic renderer applied to one
+resolved document object.
+
+Core Objective:
+Resolved document objects shall receive consistent visual
+boundaries without changing their semantic structure.
+
+Boundary Applicability:
+This Standard applies only to documentation assets within its
+defined Scope.
+
+Applicable Assets:
+- Canonical documentation.
+- Entity documentation.
+- Development plans.
+- Development logs.
+- Documentation standards.
+- Prompt Assets.
+- Protocol documents.
+- Migration packages.
+- Future USER_PACKAGE documentation assets.
+
+Excluded Assets:
+- Source code formatting.
+- Programming language syntax.
+- User interface layout.
+- Runtime rendering behavior.
+- Binary assets.
+- Machine-readable serialization formats.
+
+Boundary Responsibility:
+Visual Boundary Standard governs visual boundary grammar only.
+
+Visual Boundary Standard shall not:
+- Define document structure.
+- Define documentation writing.
+- Define Property–Value grammar.
+- Define document layout.
+- Define output rendering.
+- Define delivery behavior.
+- Define prompt structure.
+- Define runtime behavior.
+- Redefine another authoritative responsibility.
+
+======================================================================
+2. BOUNDARY MODEL
+======================================================================
+
+Purpose:
+Define the official hierarchy of visual boundary renderers.
+
+Boundary Model:
+
+L0
+Document Title Renderer
+        ↓
+L1
+Section Renderer
+        ↓
+L2
+Subsection Renderer
+        ↓
+L3
+Field Renderer
+        ↓
+L4
+Paragraph Separator
+        ↓
+L5
+Micro Separator
+
+Hierarchy Rule:
+L0 > L1 > L2 > L3 > L4 > L5
+
+Hierarchy Interpretation:
+Higher levels represent broader visual document boundaries, and
+lower levels represent finer visual separation.
+
+Rendering Rule:
+L0 through L5 are renderers for resolved document objects and
+shall not define document structure.
+
+Structure Dependency:
+Document structure shall be resolved by
+DOCUMENT_STRUCTURE_STANDARD before a boundary level is selected.
+
+Equivalent Boundary Rule:
+Equivalent resolved document objects shall use equivalent
+boundary levels when the same requirements apply.
+
+======================================================================
+3. BOUNDARY SPECIFICATION
+======================================================================
+
+Purpose:
+Define the exact representation and constraints of every boundary
+level.
+
+----------------------------------------------------------------------
+L0 DOCUMENT TITLE RENDERER
+----------------------------------------------------------------------
+
+Representation:
+
+======================================================================
+======================================================================
+DOCUMENT TITLE
+======================================================================
+======================================================================
+
+Rules:
+- L0 uses exactly 70 equals signs per boundary line.
+- L0 uses four boundary lines around the Document Title.
+- L0 renders exactly one Document Title.
+- L0 shall not be used within normal document content.
+- L0 shall not replace another boundary level.
+
+----------------------------------------------------------------------
+L1 SECTION RENDERER
+----------------------------------------------------------------------
+
+Representation:
+
+======================================================================
+1. SECTION TITLE
+======================================================================
+
+Rules:
+- L1 uses exactly 70 equals signs per boundary line.
+- L1 renders one numbered Section.
+- L1 uses the representation N. SECTION TITLE.
+- N is the Section number without a leading zero.
+- The word SECTION shall not appear as a separate label.
+- L1 shall not define the Section object.
+- L1 shall preserve approved Section order.
+
+----------------------------------------------------------------------
+L2 SUBSECTION RENDERER
+----------------------------------------------------------------------
+
+Representation:
+
+======================================================================
+SUBSECTION TITLE
+======================================================================
+
+Rules:
+- L2 uses exactly 70 equals signs per boundary line.
+- L2 renders one resolved Subsection.
+- L2 does not use a mandatory numeric prefix.
+- L2 shall not replace L1.
+- L2 shall not create a new structural level.
+
+----------------------------------------------------------------------
+L3 FIELD RENDERER
+----------------------------------------------------------------------
+
+Representation:
+
+----------------------------------------------------------------------
+FIELD NAME
+----------------------------------------------------------------------
+
+Rules:
+- L3 uses exactly 70 hyphens per boundary line.
+- L3 uses paired boundary lines around one Field name.
+- L3 renders one resolved Field.
+- L3 shall not be used as a Paragraph separator.
+
+----------------------------------------------------------------------
+L4 PARAGRAPH SEPARATOR
+----------------------------------------------------------------------
+
+Representation:
+
+----------------------------------------------------------------------
+
+Rules:
+- L4 uses exactly 70 hyphens.
+- L4 uses one boundary line only.
+- L4 separates minor flow blocks.
+- L4 does not wrap content.
+- L4 does not create a title or hierarchy level.
+
+----------------------------------------------------------------------
+L5 MICRO SEPARATOR
+----------------------------------------------------------------------
+
+Representation:
+
+---
+
+Rules:
+- L5 uses exactly three hyphens.
+- L5 provides one micro semantic break.
+- L5 may appear inside protocols, procedures, or instructions.
+- L5 shall not create hierarchy.
+- L5 shall not replace L3 or L4.
+
+======================================================================
+4. BOUNDARY SELECTION
+======================================================================
+
+Purpose:
+Define deterministic boundary-level selection.
+
+Selection Principle:
+Select the lowest boundary level that completely represents the
+resolved document object.
+
+Selection Sequence:
+- Resolve document structure.
+- Identify the current document object.
+- Identify equivalent surrounding objects.
+- Select the lowest valid boundary level.
+- Preserve the established valid boundary pattern.
+- Validate the selected boundary.
+- Render the final boundary.
+
+Selection Decision Sources:
+- This Standard.
+- Resolved document structure.
+- Applicable higher-authority USER_PACKAGE documents.
+- Explicit User instructions.
+- The established valid boundary pattern of the current asset.
+
+Prohibited Decision Sources:
+- Assistant stylistic preference.
+- Aesthetic preference alone.
+- Unverified assumptions.
+- Existing invalid formatting.
+- Platform-specific appearance alone.
+
+No-Skip Rule:
+A required intermediate boundary level shall not be skipped.
+
+Cross-Level Substitution:
+One boundary level shall not replace another valid level unless
+an authorized revision explicitly changes the relationship.
+
+Undefined Boundary:
+When required boundary behavior is undefined, preserve the
+existing valid pattern or use the lowest valid level permitted by
+this Standard.
+
+Material ambiguity that prevents safe boundary selection shall be
+reported instead of resolved through invention.
+
+======================================================================
+5. BOUNDARY PRESERVATION
+======================================================================
+
+Purpose:
+Define preservation requirements during documentation updates.
+
+Boundary Preservation Rule:
+Established valid boundary patterns shall be preserved before
+stylistic boundary variation is introduced.
+
+Preservation Requirements:
+- Boundary level.
+- Boundary length.
+- Boundary symbol.
+- Boundary pairing.
+- Section numbering.
+- Equivalent boundary treatment.
+- Surrounding structural integrity.
+
+Partial Update Safety:
+A partial update shall preserve surrounding valid boundaries.
+
+Boundary Pair Integrity:
+Incomplete boundary pairs shall not be introduced.
+
+Orphan Prohibition:
+Orphaned structural boundaries shall not remain in documentation.
+
+Boundary Migration:
+A boundary migration shall require explicit authorization or an
+approved revision of this Standard.
+
+Strict Length Rule:
+Boundary length is part of the official visual grammar.
+
+======================================================================
+6. PARSING MODEL
+======================================================================
+
+Purpose:
+Define deterministic visual boundary detection without defining
+parser implementation.
+
+Detection Order:
+- Detect L0 Document Title Renderer.
+- Detect L1 Section Renderer.
+- Detect L2 Subsection Renderer.
+- Detect L3 Field Renderer.
+- Detect L4 Paragraph Separator.
+- Detect L5 Micro Separator.
+
+Parser Rules:
+- Boundaries shall be parsed in top-down order.
+- L0 uses four 70-character equals-sign boundary lines.
+- L1 uses N. TITLE between two equals-sign boundaries.
+- L2 uses one title between two equals-sign boundaries.
+- L3 uses paired hyphen boundaries around one Field name.
+- L4 uses one 70-character hyphen line.
+- L5 uses exactly three hyphens.
+
+Context Rule:
+Context shall distinguish boundary levels that share symbols or
+length.
+
+Parser Stability:
+Equivalent document structures shall produce equivalent boundary
+detection results.
+
+Parser Boundary:
+This Standard defines boundary detection requirements only and
+shall not define parser implementation.
+
+======================================================================
+7. DESIGN PRINCIPLES
+======================================================================
+
+Purpose:
+Define the long-term principles governing visual boundary
+grammar.
+
+Design Principles:
+- Deterministic visual structure.
+- Fixed-length boundary lines.
+- Human-readable boundaries.
+- Machine-parseable boundaries.
+- No arbitrary separator variants.
+- No cross-level substitution.
+- Visual boundaries support resolved structure.
+- Standards define grammar before tools implement it.
+- Equivalent structures preserve equivalent boundaries.
+- Existing valid patterns are preserved before variation.
+- Boundary grammar remains independent of layout.
+
+======================================================================
+8. BOUNDARY VALIDATION
+======================================================================
+
+Purpose:
+Define mandatory validation of rendered visual boundaries.
+
+Validation Requirements:
+- Every equals-sign boundary uses exactly 70 characters.
+- Every L3 and L4 hyphen boundary uses exactly 70 characters.
+- Every L5 separator uses exactly three hyphens.
+- L0 uses four boundary lines around one Document Title.
+- L1 uses N. TITLE without a separate SECTION label.
+- L2 uses one title without mandatory numeric prefix.
+- L3 uses paired boundaries around one Field name.
+- L4 uses one boundary line only.
+- L5 is not used as a structural boundary.
+- Equivalent objects use equivalent boundary levels.
+- Required intermediate levels are not skipped.
+- Every structural boundary is complete.
+- No orphaned boundary remains.
+- No undocumented separator style appears.
+
+Validation Result:
+- PASS: Every applicable boundary requirement is satisfied.
+- FAIL: One or more boundary requirements are violated.
+- NON-APPLICABLE: A boundary requirement does not apply.
+
+Failure Rule:
+Documentation that fails Boundary Validation shall not proceed to
+final layout, rendering, or delivery.
+
+Scope-Limited Correction:
+When correction exceeds authorized scope, the Assistant shall
+report the validated blocker instead of changing unrelated
+content.
+
+======================================================================
+9. EXAMPLES
+======================================================================
+
+Purpose:
+Demonstrate compliant boundary renderers without creating
+additional grammar rules.
+
+----------------------------------------------------------------------
+VALID L0 EXAMPLE
+----------------------------------------------------------------------
+
+======================================================================
+======================================================================
+DOCUMENT TITLE
+======================================================================
+======================================================================
+
+----------------------------------------------------------------------
+VALID L1 EXAMPLE
+----------------------------------------------------------------------
+
+======================================================================
+1. SECTION TITLE
+======================================================================
+
+----------------------------------------------------------------------
+VALID L2 EXAMPLE
+----------------------------------------------------------------------
+
+======================================================================
+SUBSECTION TITLE
+======================================================================
+
+----------------------------------------------------------------------
+VALID L3 EXAMPLE
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+FIELD NAME
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+VALID L4 EXAMPLE
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+VALID L5 EXAMPLE
+----------------------------------------------------------------------
+
+---
+
+Example Boundary:
+Examples illustrate visual grammar only and shall not define
+document structure or layout behavior.
+
+======================================================================
+10. DOCUMENT RELATIONSHIPS
+======================================================================
+
+Purpose:
+Define relationships with authoritative USER_PACKAGE documents.
+
+USER_PROFILE:
+Defines User authority and visual boundary preferences.
+
+DOCUMENT_STRUCTURE_STANDARD:
+Defines document objects and structural relationships.
+
+DOCUMENT_WRITING_STANDARD:
+Defines documentation writing and knowledge preservation.
+
+PROPERTY_VALUE_STANDARD:
+Defines semantic Property–Value grammar.
+
+DOCUMENT_LAYOUT_STANDARD:
+Defines document layout composition.
+
+AI_OUTPUT_STANDARD:
+Defines output rendering and presentation.
+
+PROMPT_WRITING_STANDARD:
+Defines Prompt Asset structure and organization.
+
+Relationship Rules:
+
+Visual Boundary Standard shall:
+- Depend on resolved document structure.
+- Depend on documentation writing requirements.
+- Preserve Property–Value semantics.
+- Provide visual boundaries to DOCUMENT_LAYOUT_STANDARD.
+- Provide approved boundary grammar to AI_OUTPUT_STANDARD.
+- Preserve downstream ownership.
+
+Visual Boundary Standard shall not:
+- Redefine document structure.
+- Redefine documentation writing.
+- Redefine Property–Value grammar.
+- Define layout parameters.
+- Define output rendering.
+- Define delivery behavior.
+- Define runtime behavior.
+
+======================================================================
+11. RESPONSIBILITY BOUNDARIES
+======================================================================
+
+Purpose:
+Define the responsibility boundary of Visual Boundary Standard.
+
+Responsibility Rule:
+Visual Boundary Standard governs visual boundary grammar only.
+
+Visual Boundary Standard Shall Not Define:
+- Document structure.
+- Documentation writing.
+- Property–Value grammar.
+- Document layout.
+- Output rendering.
+- Delivery behavior.
+- Prompt structure.
+- Runtime behavior.
+- Parser implementation.
+
+Ownership Rule:
+Rendering visual boundaries does not transfer ownership of
+structure, writing, semantics, layout, output, or delivery to
+this Standard.
+
+======================================================================
+12. REVISION POLICY
+======================================================================
+
+Purpose:
+Define when Visual Boundary Standard may be revised.
+
+Revision Criteria:
+This Standard may be revised only when validated documentation
+work demonstrates:
+
+- Boundary ambiguity.
+- Repeated detection failure.
+- Missing boundary coverage.
+- Cross-level substitution failure.
+- Parser compatibility failure.
+- Responsibility overlap.
+- Conflict with a higher-authority document.
+- Proven maintenance cost.
+
+Revision Rules:
+
+Revision shall:
+- Preserve the primary responsibility.
+- Preserve approved boundary meaning.
+- Preserve compatibility when requirements remain valid.
+- Resolve validated deficiencies before adding boundary levels.
+- Preserve Single Authority Ownership.
+
+Revision shall not:
+- Absorb document structure responsibility.
+- Absorb documentation writing responsibility.
+- Absorb Property–Value grammar.
+- Absorb document layout responsibility.
+- Absorb output rendering or delivery responsibility.
+- Introduce arbitrary separator variants.
+- Add boundary levels without validated need.
+
+======================================================================
+13. SELF COMPLIANCE
+======================================================================
+
+Purpose:
+Ensure this Standard complies with every applicable USER_PACKAGE
+standard.
+
+Self Compliance Rule:
+This Standard shall serve as a living implementation of its own
+visual boundary requirements.
+
+Self Validation:
+- The Document contains one L0 Document Title Renderer.
+- Each major topic uses one numbered L1 Section Renderer.
+- L1 headings use N. TITLE without a SECTION label.
+- Each Subsection uses an L2 renderer when required.
+- Each rendered Field uses an L3 renderer when required.
+- Every equals-sign boundary uses 70 characters.
+- Every L3 and L4 hyphen boundary uses 70 characters.
+- Every L5 separator uses three hyphens.
+- Property–Value relationships remain intact.
+- Line composition remains within active Layout Parameters.
+- No unrelated responsibility is absorbed.
+- Version and Status match USER_PACKAGE v1.0.
+
+Self Compliance Boundary:
+Self Compliance shall not override a higher-authority
+USER_PACKAGE document.
+
+======================================================================
+END OF VISUAL BOUNDARY STANDARD
+======================================================================

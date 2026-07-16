@@ -1,0 +1,1020 @@
+======================================================================
+======================================================================
+PATCH DELIVERY STANDARD
+======================================================================
+======================================================================
+
+Version:
+1.0
+
+Status:
+Official
+
+Category: Delivery Mode Standard
+
+Identity:
+Delivery Mode Standard governing clipboard-ready Patch
+Delivery throughout USER_PACKAGE.
+
+Purpose:
+Define the official contract for delivering authorized changes
+as complete, verifiable, and immediately usable Patch Payloads.
+
+Scope:
+Define Patch Delivery behavior only.
+
+Primary Responsibility:
+Clipboard-ready Patch Delivery.
+
+Authority:
+USER_PROFILE.
+
+Depends On:
+- Active Method when transformation is required.
+- Applicable authorization document.
+- AI_OUTPUT_STANDARD.
+
+Referenced By:
+- USER_PACKAGE documentation workflows.
+- USER_PACKAGE implementation workflows.
+- Applicable delivery workflows.
+
+Complements:
+- SCRIPT_DELIVERY.
+- Active Method.
+
+Does Not Define:
+- Artifact authoring.
+- Artifact transformation.
+- Review methodology.
+- Approval policy.
+- Documentation writing.
+- Property–Value grammar.
+- Visual boundary grammar.
+- Document layout.
+- Output rendering.
+- Standards Compliance Review.
+- Runtime behavior.
+- Artifact content.
+
+======================================================================
+1. FOUNDATION
+======================================================================
+
+Purpose:
+Define the foundation and responsibility boundary of
+Patch Delivery Standard.
+
+Patch Contract Interpretation:
+
+Every Patch Delivery requirement expressed using "shall" constitutes
+a mandatory delivery constraint.
+
+Patch Delivery behavior not explicitly required or permitted by
+this Standard or a higher-authority USER_PACKAGE document
+shall not be assumed to be permitted.
+
+Requirements owned by another authoritative USER_PACKAGE document
+shall not be interpreted as Patch Delivery requirements.
+
+Patch Definition:
+
+A Patch is an authorized replacement operation applied
+to one identified target object.
+
+A Patch may replace:
+- An entire file.
+- A section.
+- A subsection.
+- A Property.
+- A smaller verified target object.
+
+A Patch is not limited to incremental diff content.
+
+Patch Delivery Definition:
+
+Patch Delivery presents an authorized Patch through structured
+descriptors and one copyable Patch Payload.
+
+Patch Delivery does not authorize, design, review, or perform
+the underlying artifact transformation.
+
+Delivery Responsibility Boundary:
+
+Patch Delivery Standard shall not:
+- Determine whether a proposed change is correct.
+- Approve a proposed change.
+- Author artifact knowledge.
+- Transform artifact knowledge.
+- Redefine another document's responsibility.
+- Treat a Navigation Hint as target authority.
+- Apply a Patch when its target cannot be verified.
+
+Patch Delivery Standard shall remain limited to
+clipboard-ready delivery of authorized changes.
+
+======================================================================
+2. APPLICABILITY
+======================================================================
+
+Purpose:
+Define when Patch Delivery Standard applies.
+
+Patch Applicability:
+
+This Standard applies only to clipboard-ready delivery
+of authorized artifact changes.
+
+This Standard shall not be applied to:
+- Artifact authoring.
+- Artifact transformation.
+- Documentation review.
+- Standards Compliance Review.
+- Runtime orchestration.
+- Source code execution.
+- Machine-applied patch execution.
+- Output rendering owned by AI_OUTPUT_STANDARD.
+- Deliverables explicitly assigned to another
+  Delivery Mode.
+
+Activities outside the defined Scope shall remain governed
+by their applicable authoritative USER_PACKAGE documents.
+
+Eligible Delivery:
+
+Patch Delivery may deliver:
+- Explicitly requested immediate changes.
+- User-approved Change Proposals.
+- Completed output from an active Method.
+- Authorized full-file replacements.
+- Authorized partial replacements.
+
+Ineligible Delivery:
+
+Patch Delivery shall not deliver:
+- Unapproved recommendations as final changes.
+- Unresolved conflicting changes.
+- Incomplete replacement content.
+- Unverified target changes.
+- Content requiring manual reconstruction.
+
+======================================================================
+3. PATCH LIFECYCLE
+======================================================================
+
+Purpose:
+Define the relationship between review, authorization, Patch creation,
+delivery, and application.
+
+Lifecycle:
+
+Review Finding
+↓
+Change Proposal
+↓
+User Approval or Existing Authorization
+↓
+Approved Patch
+↓
+Patch Delivery
+↓
+Applied Change
+
+Lifecycle Interpretation:
+
+A Review Finding identifies a verified issue.
+
+A Change Proposal describes a proposed correction.
+
+An Approved Patch is an authorized correction ready
+for delivery.
+
+Patch Delivery presents the Approved Patch.
+
+An Applied Change is a Patch implemented in the target
+artifact.
+
+Authorization Rule:
+
+Patch Delivery shall deliver only:
+- Changes explicitly requested by the User.
+- Changes explicitly approved by the User.
+- Changes authorized by an applicable workflow or
+  authorization document.
+- Completed output supplied by an authorized active Method.
+
+Change Proposal Boundary:
+
+A Change Proposal shall not be represented as an Approved Patch
+unless authorization already exists.
+
+Patch Delivery shall not infer approval from:
+- Review acceptance language that is ambiguous.
+- Assistant recommendation.
+- Absence of User objection.
+- Previous approval for a different target.
+- Similarity to an approved change.
+
+======================================================================
+4. ACTIVATION
+======================================================================
+
+Purpose:
+Define how Patch Delivery becomes active.
+
+Patch Delivery may be activated through:
+- Direct User request.
+- Applicable authorization document.
+- Approved workflow.
+- Authorized active Method output.
+- User approval of a Change Proposal.
+
+When Patch Delivery is active,
+
+all eligible generated results shall be delivered through
+Patch Delivery unless the User explicitly selects another
+Delivery Mode.
+
+Activation Modes:
+
+Standalone:
+
+Patch Delivery receives the User request directly.
+
+Patch Delivery performs only the minimum analysis required to identify
+and deliver the requested Patch.
+
+Chained:
+
+Patch Delivery receives completed output from an active Method.
+
+Patch Delivery reformats the completed Method output without
+modifying its transformation behavior or approved content.
+
+Activation Boundary:
+
+Activating Patch Delivery shall not:
+- Activate another Method.
+- Grant transformation authority.
+- Grant review authority.
+- Grant approval authority.
+- Activate SCRIPT_DELIVERY automatically.
+
+======================================================================
+5. EXECUTION
+======================================================================
+
+Purpose:
+Define execution behavior when Patch Delivery is active.
+
+Immediate Execution:
+
+Execute immediately when Patch Delivery is active and no validated
+blocking issue exists.
+
+Do not request execution confirmation.
+
+Do not ask whether to proceed.
+
+When the requested Patch is sufficiently clear and authorized,
+immediately generate the requested Patch Delivery.
+
+Valid Blocking Issues:
+
+Patch Delivery may suspend execution only when:
+- The Target File is unavailable.
+- The Target Object is ambiguous.
+- The Verification Anchor does not match.
+- The requested Replacement Scope is unclear.
+- The supplied Patch is incomplete.
+- Required authorization is absent.
+- Applicable authoritative documents conflict.
+- Platform limits prevent complete delivery.
+
+Execution resumes only after:
+- The validated blocker has been resolved, or
+- The User explicitly authorizes another safe action.
+
+User Control:
+
+The User may cancel, defer, replace, or modify Patch
+Delivery at any time.
+
+======================================================================
+6. PATCH OBJECT MODEL
+======================================================================
+
+Purpose:
+Define the objects required for safe Patch Delivery.
+
+Patch Delivery consists of:
+- Patch Descriptor.
+- Patch Payload.
+
+Patch Descriptor:
+
+A Patch Descriptor identifies and verifies the
+requested Patch operation.
+
+Patch Descriptor fields may include:
+- Target File.
+- Target Version.
+- Operation.
+- Replacement Scope.
+- Target Object.
+- Target Section.
+- Target Subsection.
+- Verification Anchor.
+- Navigation Hint.
+- Expected Result.
+- Validation Rule.
+
+Patch Payload:
+
+A Patch Payload contains the complete replacement
+content for one independent target.
+
+Object Responsibility:
+
+Target File:
+Identifies the artifact containing the Target Object.
+
+Target Object:
+Identifies what shall be changed.
+
+Verification Anchor:
+Confirms that the intended Target Object matches the
+current artifact content.
+
+Navigation Hint:
+Helps the User locate the Target Object quickly.
+
+Replacement Scope:
+Defines the authorized extent of replacement.
+
+Patch Payload:
+Provides the complete replacement content.
+
+Validation Rule:
+Defines how successful application is verified.
+
+Object Separation Rule:
+
+A Target Object and a Navigation Hint shall not be
+treated as equivalent.
+
+A Navigation Hint shall not identify target authority.
+
+======================================================================
+7. TARGET RESOLUTION
+======================================================================
+
+Purpose:
+Define deterministic target identification and
+verification.
+
+Target Resolution Order:
+
+1. Resolve the Target File.
+2. Resolve the Target Object.
+3. Verify the Verification Anchor.
+4. Confirm the Replacement Scope.
+5. Provide the Navigation Hint when practical.
+6. Deliver the Patch Payload.
+
+Target Object Rule:
+
+Every Patch shall identify one Target Object.
+
+A Target Object may be:
+- Entire File.
+- Named Section.
+- Named Subsection.
+- Named Property.
+- Unique text block.
+- Unique insertion point.
+- Other uniquely identifiable artifact object.
+
+Verification Anchor Rule:
+
+Every partial Patch shall include a Verification Anchor.
+
+Valid Verification Anchors include:
+- Exact Before Text.
+- Unique heading.
+- Unique Property and current Value.
+- Unique surrounding context.
+- Stable object identifier.
+- Format-specific stable path when applicable.
+
+Navigation Hint Rule:
+
+A Navigation Hint may include:
+- Line number.
+- Line range.
+- Section name.
+- Subsection name.
+- Search phrase.
+- Nearby unique heading.
+
+A line number shall serve only as a Navigation Hint.
+
+A line number shall not serve as the sole
+Verification Anchor.
+
+Manual Edit Compatibility:
+
+Changes to wrapping, blank lines, or preceding content may change
+line numbers without changing the Target Object.
+
+Patch validity shall therefore depend on the Verification Anchor
+rather than the Navigation Hint.
+
+======================================================================
+8. TARGET MISMATCH
+======================================================================
+
+Purpose:
+Prevent a Patch from being applied to an unverified
+or changed target.
+
+Target Match:
+
+A Target Match exists when:
+- The Target File is correct.
+- The Target Object is identifiable.
+- The Verification Anchor matches the current target.
+- The Replacement Scope applies to that target.
+
+Target Mismatch:
+
+A Target Mismatch exists when:
+- The Verification Anchor is absent.
+- The Verification Anchor has materially changed.
+- Multiple target objects match.
+- The Target Object cannot be uniquely identified.
+- The current content differs from the approved
+  Before Text.
+- The Navigation Hint points to unrelated content.
+
+Mismatch Rule:
+
+When a Target Mismatch occurs,
+
+Patch Delivery shall:
+- Stop delivery for the affected target.
+- Report Target Mismatch.
+- Identify the failed Verification Anchor.
+- Request an updated target artifact or authorization
+  when required.
+
+Patch Delivery shall not:
+- Guess the intended location.
+- Select the closest similar text.
+- Rewrite the Verification Anchor silently.
+- Use the Navigation Hint as proof of correctness.
+- Deliver a replacement for an uncertain target.
+
+======================================================================
+9. REPLACEMENT SCOPES
+======================================================================
+
+Purpose:
+Define supported Patch replacement scopes.
+
+Supported Replacement Scopes:
+- Replace Entire File.
+- Replace Section.
+- Replace Subsection.
+- Replace Property.
+- Replace Target Object.
+- Insert Before.
+- Insert After.
+- Append.
+- Normalize.
+
+Smallest Safe Scope Rule:
+
+Patch Delivery shall use the smallest safe
+Replacement Scope that preserves:
+- Completeness.
+- Approved meaning.
+- Document consistency.
+- Structural integrity.
+- Application simplicity.
+
+Replace Entire File Rule:
+
+Replace Entire File shall be used when partial
+replacement would create:
+- Ambiguity.
+- Fragmentation.
+- Excessive manual reconstruction.
+- High application risk.
+- Structural inconsistency.
+- Multiple interdependent edits.
+
+Partial Patch Rule:
+
+A Partial Patch may be used when:
+- The Target Object is uniquely identifiable.
+- The Verification Anchor is stable.
+- The Patch Payload is complete.
+- Unrelated content can remain unchanged.
+- Manual reconstruction is not required.
+
+Replacement Scope Boundary:
+
+Generate only the authorized Replacement Scope unless
+the User explicitly requests broader normalization.
+
+======================================================================
+10. PATCH DESCRIPTOR
+======================================================================
+
+Purpose:
+Define descriptor requirements for each Patch.
+
+Required Descriptor Fields:
+
+Every Patch Delivery shall identify:
+- Target File.
+- Operation.
+- Replacement Scope.
+- Target Object.
+
+Every partial Patch shall also identify:
+- Verification Anchor.
+
+Conditional Descriptor Fields:
+
+Include when practical or required:
+- Target Version.
+- Target Section.
+- Target Subsection.
+- Navigation Hint.
+- Expected Result.
+- Validation Rule.
+
+Descriptor Precision:
+
+Patch Descriptor information shall identify the requested operation
+with sufficient precision to prevent target ambiguity.
+
+Descriptor Economy:
+
+Descriptor fields that provide no practical value may be omitted.
+
+Descriptor Placement:
+
+Patch Descriptor content shall remain outside every
+copyable Patch Payload.
+
+Patch Descriptor content shall never appear inside a Patch Payload
+unless it is part of the authorized artifact content.
+
+======================================================================
+11. PATCH PAYLOAD
+======================================================================
+
+Purpose:
+Define Patch Payload completeness and copy behavior.
+
+Patch Payload Requirements:
+
+Each Patch Payload shall:
+- Be complete.
+- Be self-contained.
+- Preserve approved meaning.
+- Preserve formatting.
+- Preserve indentation.
+- Preserve applicable visual boundaries.
+- Preserve document style.
+- Be immediately usable.
+- Require no manual reconstruction.
+
+Copyable Block Rule:
+
+Every Patch Payload shall be enclosed inside one
+dedicated copyable block.
+
+The Patch Payload shall be the only copyable content
+for its target.
+
+The User shall not need to remove Patch Descriptor
+content before copying.
+
+One-Target Rule:
+
+One Patch Payload shall represent one independent
+replacement target.
+
+A Patch Payload shall not span multiple target files.
+
+Multiple Target Files:
+
+When multiple files require updates,
+
+generate one independent Patch Delivery for each
+target file.
+
+Payload Ordering:
+
+Patch Payload ordering shall follow the order of the affected target
+files or target objects.
+
+Ordering shall remain stable throughout the same delivery.
+
+======================================================================
+12. PATCH DELIVERY RULES
+======================================================================
+
+Purpose:
+Define output behavior for Patch Delivery.
+
+Output Objectives:
+
+Patch Delivery shall:
+- Reduce manual editing.
+- Reduce copy effort.
+- Minimize manual interaction.
+- Preserve readability.
+- Preserve formatting.
+- Preserve document consistency.
+- Produce clipboard-ready output.
+- Reduce target-selection errors.
+- Support safe manual application.
+
+Primary Output Rule:
+
+When Patch Delivery is active,
+
+Patch Delivery shall be generated as the primary response.
+
+Patch Delivery shall take precedence over:
+- Additional review.
+- Extended explanation.
+- Unrequested analysis.
+- New recommendations.
+
+Explanatory text may be generated only when:
+- Explicitly requested.
+- Required to report a validated blocker.
+- Required to explain Target Mismatch.
+- Required to distinguish multiple authorized
+  operations.
+
+Incremental Diff Rule:
+
+Do not generate unified diff syntax or incremental patch notation
+unless explicitly requested.
+
+Default Patch Delivery shall provide complete replacement content
+for the selected Target Object.
+
+Manual Cleanup Prohibition:
+
+Patch Delivery shall not require the User to:
+- Remove metadata from a Patch Payload.
+- Reconstruct missing content.
+- Merge incomplete fragments.
+- Guess insertion location.
+- Repair formatting after application.
+
+======================================================================
+13. PATCH DECISION RULES
+======================================================================
+
+Purpose:
+Constrain Patch Delivery decisions.
+
+Patch Delivery decisions shall be derived only from:
+- This Standard.
+- Applicable higher-authority USER_PACKAGE documents.
+- Applicable authorization.
+- The active Method.
+- Explicit User instructions.
+- The verified current target artifact.
+
+Patch Delivery decisions shall not be derived from:
+- Assistant delivery preference.
+- Assistant stylistic preference.
+- An outdated Navigation Hint.
+- Unverified similarity.
+- Assumed User approval.
+
+Undefined Delivery:
+
+When delivery behavior is undefined,
+
+Patch Delivery shall:
+- Preserve approved content.
+- Use the simplest valid delivery defined by this
+  Standard.
+- Preserve the verified Target Object.
+- Report material ambiguity.
+
+Patch Delivery shall not invent a delivery rule to
+resolve undefined behavior.
+
+======================================================================
+14. PRESERVATION
+======================================================================
+
+Purpose:
+Define preservation requirements during Patch
+Delivery.
+
+Preservation Priority:
+
+Preserving approved artifact content takes precedence
+over:
+- Reducing Patch size.
+- Simplifying delivery.
+- Improving presentation.
+- Modernizing formatting.
+- Changing established style.
+
+Patch Preservation Interpretation:
+
+Equivalent approved artifacts shall produce equivalent Patch Payloads
+unless explicitly instructed otherwise.
+
+Patch Delivery shall preserve:
+- Approved meaning.
+- Approved knowledge.
+- Target structure.
+- Formatting required by applicable standards.
+- Established valid patterns.
+- Active Method output.
+
+Delivery shall not modify completed Method output
+except where presentation is governed by an
+applicable authoritative document.
+
+======================================================================
+15. STANDARDS COMPLIANCE
+======================================================================
+
+Purpose:
+Define the relationship between Patch Delivery and
+Standards Compliance Review.
+
+Compliance Boundary:
+
+Patch Delivery presents completed and approved artifacts.
+
+Patch Delivery does not perform or replace Standards Compliance
+Review.
+
+Before Patch Delivery begins,
+
+the generated artifact shall complete the Standards Compliance Review
+required by applicable authoritative USER_PACKAGE documents.
+
+Quality Verification:
+
+Before generating a Patch Payload, verify:
+- Authorization exists.
+- Target File is identified.
+- Target Object is identified.
+- Replacement Scope is correct.
+- Verification Anchor matches when required.
+- Patch Payload is complete.
+- Formatting is consistent.
+- Manual reconstruction is unnecessary.
+- Patch Descriptor remains outside the payload.
+- Every payload remains independently copyable.
+- Applicable standards are satisfied.
+
+Correct Patch presentation alone does not make an
+artifact delivery-ready.
+
+======================================================================
+16. DELIVERY FREEZE
+======================================================================
+
+Purpose:
+Prevent uncontrolled revision after Patch Delivery
+begins.
+
+Pre-Delivery Completion:
+
+Before generating the first Patch Payload,
+
+all approved improvements for the active Patch Delivery shall be
+internally resolved.
+
+Delivery Freeze:
+
+Once the first Patch Payload has been generated,
+
+the delivered target artifact shall be treated as frozen
+for the current Patch Delivery.
+
+Do not generate additional revision recommendations
+for the same target during the same delivery unless:
+- A validated blocker is discovered.
+- A Target Mismatch is discovered.
+- The User explicitly requests another revision.
+
+Freeze Boundary:
+
+Delivery Freeze does not prevent:
+- User rejection.
+- User revision.
+- A new Change Proposal.
+- A new authorized Patch Delivery.
+
+======================================================================
+17. PLATFORM LIMITATIONS
+======================================================================
+
+Purpose:
+Define safe behavior when platform limits affect delivery.
+
+Complete Delivery Rule:
+
+Patch Delivery shall provide the complete requested Patch Payload
+in one response when platform limits permit complete delivery.
+
+Platform Limitation:
+
+If the complete requested Patch Payload cannot be delivered within
+active platform limits,
+
+Patch Delivery shall:
+- Stop before producing an incomplete Patch.
+- Report the limitation clearly.
+- Preserve the selected Delivery Mode.
+- Request User authorization before using partial
+  delivery or another Delivery Mode.
+
+Authorized Partial Delivery:
+
+Partial delivery may be used only when explicitly
+authorized by the User.
+
+When partial delivery is authorized:
+- Each payload shall identify its sequence.
+- Each payload shall remain independently copyable.
+- Each payload shall represent a complete target
+  whenever practical.
+- The final payload shall clearly indicate
+  completion.
+
+Delivery Mode Preservation:
+
+Patch Delivery shall not silently replace itself with SCRIPT_DELIVERY
+or another Delivery Mode.
+
+======================================================================
+18. DOCUMENT RELATIONSHIPS
+======================================================================
+
+Purpose:
+Define how Patch Delivery Standard interacts with
+other authoritative documents.
+
+USER_PROFILE:
+Defines User authority and delivery preferences.
+
+ACTIVE METHOD:
+Defines artifact authoring or transformation.
+
+APPLICABLE AUTHORIZATION DOCUMENT:
+Authorizes the requested work when authorization is
+required.
+
+AI_OUTPUT_STANDARD:
+Defines output rendering and response presentation.
+
+PATCH_DELIVERY_STANDARD:
+Defines clipboard-ready Patch Delivery.
+
+SCRIPT_DELIVERY:
+Defines ready-to-run script delivery.
+
+Relationship Rules:
+
+Patch Delivery Standard shall:
+- Depend on the active Method when transformation is required.
+- Depend on applicable authorization when required.
+- Apply AI_OUTPUT_STANDARD during presentation.
+- Complement SCRIPT_DELIVERY as an alternative Delivery Mode.
+- Preserve completed active Method output.
+
+Patch Delivery Standard shall not:
+- Replace the active Method.
+- Replace authorization.
+- Redefine output rendering.
+- Redefine artifact content.
+- Activate SCRIPT_DELIVERY automatically.
+- Absorb review or transformation responsibility.
+
+======================================================================
+19. COMPATIBILITY
+======================================================================
+
+Purpose:
+Define compatibility with Methods, editors, and artifact workflows.
+
+Compatible Methods include:
+- File refactor.
+- File consolidation.
+- Document streamlining.
+- File synthesis.
+- Review.
+- Future approved Methods.
+
+Compatible Editors include:
+- Plain-text editors.
+- Notepad++.
+- Visual Studio Code.
+- Version-control interfaces.
+- Other editors that preserve text content.
+
+Editor Compatibility Rule:
+
+Patch correctness shall not depend on stable line numbers.
+
+Line numbers may improve navigation but shall not replace
+Verification Anchors.
+
+Method Compatibility Rule:
+
+Patch Delivery complements Methods.
+
+Patch Delivery does not replace Method behavior.
+
+======================================================================
+20. REVISION POLICY
+======================================================================
+
+Purpose:
+Define when Patch Delivery Standard may be revised.
+
+Revision Criteria:
+
+This Standard may be revised only when validated
+delivery work demonstrates:
+- Target ambiguity.
+- Repeated Target Mismatch.
+- Unsafe Patch application.
+- Excessive manual reconstruction.
+- Clipboard usability problems.
+- Compatibility problems.
+- Responsibility overlap.
+- Conflict with a higher-authority document.
+
+Revision Rules:
+
+Revision shall:
+- Preserve the primary responsibility.
+- Preserve approved delivery behavior.
+- Preserve compatibility when requirements remain valid.
+- Improve existing delivery objects before adding new objects.
+- Preserve Verification Anchors as target authority.
+
+Revision shall not:
+- Absorb review or transformation behavior.
+- Make line numbers authoritative.
+- Redesign the Patch Object Model without explicit User approval.
+
+
+======================================================================
+21. SELF COMPLIANCE
+======================================================================
+
+Purpose:
+Ensure this Standard complies with every applicable
+USER_PACKAGE standard.
+
+Self Compliance Rule:
+
+This Standard shall serve as a living implementation
+of its own Patch Delivery requirements.
+
+Self Validation:
+
+- The Document contains one Document Title.
+- Each major topic uses one numbered Section.
+- L1 headings use N. TITLE without a separate SECTION label.
+- Patch Descriptors remain outside Patch Payloads.
+- Every partial Patch uses a Verification Anchor.
+- Line numbers remain Navigation Hints only.
+- Every Patch Payload remains complete and independently copyable.
+- Replacement Scope remains explicit.
+- Target Mismatch prevents uncertain delivery.
+- Layout remains within active Layout Parameters.
+- No unrelated responsibility is absorbed.
+- Version and Status match USER_PACKAGE v1.0.
+
+Self Compliance Boundary:
+
+Self Compliance shall not override a higher-authority
+USER_PACKAGE document.
+
+======================================================================
+END OF PATCH DELIVERY STANDARD
+======================================================================

@@ -1,0 +1,718 @@
+======================================================================
+======================================================================
+AI OUTPUT STANDARD
+======================================================================
+======================================================================
+
+Version:
+1.0
+
+Status:
+Official
+
+Category:
+Output Standard
+
+Identity:
+Output Standard governing deterministic AI output rendering
+throughout USER_PACKAGE.
+
+Purpose:
+Define the official rendering contract governing how completed
+work is presented to the User without modifying approved
+knowledge, structure, layout, or delivery behavior.
+
+Scope:
+Define AI output rendering only.
+
+Primary Responsibility:
+AI output rendering.
+
+Authority:
+USER_PROFILE.
+
+Depends On:
+- AI_BEHAVIOR_STANDARD.
+- DOCUMENT_STRUCTURE_STANDARD.
+- DOCUMENT_WRITING_STANDARD.
+- PROPERTY_VALUE_STANDARD.
+- VISUAL_BOUNDARY_STANDARD.
+- DOCUMENT_LAYOUT_STANDARD.
+
+Referenced By:
+- PATCH_DELIVERY_STANDARD.
+- SCRIPT_DELIVERY.
+- USER_PACKAGE documentation workflows.
+- USER_PACKAGE implementation workflows.
+
+Complements:
+- DOCUMENT_LAYOUT_STANDARD.
+- PATCH_DELIVERY_STANDARD.
+- SCRIPT_DELIVERY.
+
+Does Not Define:
+- Assistant behavior.
+- Artifact authoring.
+- Artifact transformation.
+- Document structure.
+- Documentation writing.
+- Property–Value grammar.
+- Visual boundary grammar.
+- Document layout.
+- Delivery behavior.
+- Runtime behavior.
+- Artifact content.
+
+======================================================================
+1. FOUNDATION
+======================================================================
+
+Purpose:
+Define the authoritative responsibility, interpretation,
+applicability, and operational boundary of AI Output Standard.
+
+Rendering Contract Interpretation:
+Every rendering requirement expressed using "shall" constitutes a
+mandatory rendering constraint.
+
+Rendering behavior not explicitly required or permitted by this
+Standard or a higher-authority USER_PACKAGE document shall not be
+assumed to be permitted.
+
+Requirements owned by another authoritative USER_PACKAGE document
+shall not be interpreted as output-rendering requirements.
+
+Rendering Definition:
+Rendering is the presentation of completed work without changing
+approved meaning.
+
+Rendering Sequence:
+Rendering operates only after applicable authoring,
+transformation, structure, grammar, boundary, layout, and
+compliance requirements have been resolved.
+
+Rendering Responsibility:
+AI Output Standard governs output rendering only.
+
+AI Output Standard shall not:
+- Author artifact knowledge.
+- Transform artifact knowledge.
+- Create document structure.
+- Redefine Property–Value relationships.
+- Redefine visual boundaries.
+- Redefine document layout.
+- Redefine delivery behavior.
+- Redefine runtime behavior.
+
+======================================================================
+2. APPLICABILITY
+======================================================================
+
+Purpose:
+Define when AI Output Standard applies.
+
+Rendering Applicability:
+- Copyable documentation.
+- Long-term documentation assets.
+- Prompt Assets.
+- Generated TXT assets.
+- Updated documentation assets.
+- Presentation-ready text artifacts.
+
+Excluded Assets:
+- Source code formatting.
+- Machine-readable assets.
+- External quotations.
+- Binary assets.
+- User-requested excluded formats.
+- Deliverables governed by another rendering contract.
+
+Scope Stability:
+Rendering Scope shall remain unchanged unless modified by the
+User, a higher-authority USER_PACKAGE document, or an applicable
+authorization document.
+
+Scope Prohibition:
+The Assistant shall not expand rendering scope during rendering.
+
+======================================================================
+3. RENDERING PRINCIPLES
+======================================================================
+
+Purpose:
+Define the principles governing deterministic output rendering.
+
+Presentation Before Preference:
+Consistent presentation shall take precedence over stylistic
+variation.
+
+Knowledge Preservation:
+Rendering shall preserve approved knowledge.
+
+Structure Preservation:
+Rendering shall preserve approved document structure.
+
+Grammar Preservation:
+Rendering shall preserve approved Property–Value grammar.
+
+Boundary Preservation:
+Rendering shall preserve approved visual boundaries.
+
+Layout Preservation:
+Rendering shall preserve the layout produced under
+DOCUMENT_LAYOUT_STANDARD.
+
+Pattern Preservation:
+Rendering shall preserve established valid rendering patterns
+before introducing a new pattern.
+
+Equivalent Rendering:
+Equivalent approved input shall produce equivalent rendering when
+the same authoritative requirements apply.
+
+User Formatting Authority:
+Explicit User formatting instructions shall take precedence
+unless they conflict with a higher-authority USER_PACKAGE
+document.
+
+======================================================================
+4. RENDERING DOMAIN MODEL
+======================================================================
+
+Purpose:
+Define the rendering domains governed by this Standard.
+
+Rendering Domains:
+- Property Rendering.
+- Structural Rendering Preservation.
+- Code Block Rendering.
+- File Rendering.
+- Visual Boundary Application.
+- Output Presentation.
+
+Domain Rule:
+Each Rendering Domain shall remain limited to presentation
+behavior owned by AI Output Standard.
+
+Domain Prohibitions:
+- Redefine document structure.
+- Redefine documentation writing.
+- Redefine Property–Value semantics.
+- Redefine visual boundary grammar.
+- Redefine document layout.
+- Redefine delivery behavior.
+
+Domain Consistency:
+Equivalent rendering domains shall use equivalent rendering
+patterns when the same authoritative requirements apply.
+
+======================================================================
+5. PROPERTY RENDERING
+======================================================================
+
+Purpose:
+Define the presentation of approved Property–Value structures.
+
+Property Rendering Model:
+PROPERTY_VALUE_STANDARD defines the semantic Property–Value
+relationship. AI Output Standard presents that relationship
+without changing meaning.
+
+Inline Value Representation:
+Property: Value
+
+Block Value Representation:
+A Property shall be followed immediately by its complete Value
+when the Value occupies multiple lines.
+
+Supported Value Representations:
+- Inline text.
+- Paragraph.
+- List.
+- Hierarchy.
+- Table.
+- Code.
+- Another approved logical structure.
+
+Property Rendering Requirements:
+- Preserve Property names.
+- Preserve complete Values.
+- Preserve Property–Value adjacency.
+- Preserve approved Value representation.
+- Preserve applicable layout decisions.
+
+Property Rendering Prohibitions:
+- Rename a Property.
+- Split one Value into unrelated Values.
+- Merge unrelated Properties.
+- Modify Property ownership.
+- Change semantic relationships.
+
+======================================================================
+6. STRUCTURAL RENDERING PRESERVATION
+======================================================================
+
+Purpose:
+Define how rendering preserves approved structural presentation.
+
+Structural Rendering Model:
+DOCUMENT_STRUCTURE_STANDARD defines structure,
+DOCUMENT_LAYOUT_STANDARD composes it, and AI Output Standard
+presents the completed result without redefining it.
+
+Structural Rendering Requirements:
+- Preserve Document hierarchy.
+- Preserve Section identity.
+- Preserve Subsection identity.
+- Preserve Field identity.
+- Preserve Paragraph identity.
+- Preserve List identity.
+- Preserve Table identity.
+- Preserve Appendix identity.
+- Preserve approved flow orientation.
+
+Structural Rendering Prohibitions:
+- Renumber approved headings.
+- Create new structural levels.
+- Remove approved structural levels.
+- Convert vertical flow to horizontal flow.
+- Convert horizontal flow to vertical flow.
+- Change structure for stylistic preference.
+
+Heading Rendering:
+Rendering shall preserve approved heading text, numbering, style,
+and hierarchy.
+
+Section Heading Rendering:
+Numbered major Section headings shall use N. TITLE without a
+separate SECTION label.
+
+List Rendering:
+Rendering shall preserve approved item order, hierarchy,
+punctuation, and List type.
+
+======================================================================
+7. CODE BLOCK RENDERING
+======================================================================
+
+Purpose:
+Define presentation requirements for executable and standardized
+code blocks.
+
+Code Rendering Model:
+Code Block Rendering preserves executable content, syntax,
+formatting, and copyability.
+
+Code Rendering Requirements:
+- Preserve executable formatting.
+- Preserve indentation.
+- Preserve line order.
+- Preserve language identifiers.
+- Preserve code completeness.
+- Preserve copyability.
+- Preserve standardized syntax.
+
+Code Rendering Prohibitions:
+- Rewrap executable code.
+- Insert commentary inside executable content.
+- Remove required whitespace.
+- Alter identifiers.
+- Normalize code without authorization.
+- Convert code into narrative text.
+
+======================================================================
+8. FILE RENDERING
+======================================================================
+
+Purpose:
+Define rendering requirements for generated and updated
+documentation assets.
+
+File Rendering Model:
+File Rendering presents completed documentation assets in their
+approved authoring format.
+
+Applicable File Forms:
+- Inline copyable text.
+- Downloadable TXT files.
+- Complete generated documents.
+- Updated documentation assets.
+
+File Rendering Requirements:
+- Preserve approved knowledge.
+- Preserve approved structure.
+- Preserve approved grammar.
+- Preserve approved visual boundaries.
+- Preserve approved layout.
+- Preserve approved terminology.
+- Remain complete.
+- Remain copyable.
+- Require no rendering cleanup.
+
+Partial Update Rendering:
+When modifying an existing asset, render only generated or
+modified content unless the User authorizes Normalize, Full
+Reformat, Modernize, or Canonical Rewrite.
+
+Unrelated Content Rule:
+Unrelated content shall remain unchanged.
+
+======================================================================
+9. VISUAL BOUNDARY APPLICATION
+======================================================================
+
+Purpose:
+Define rendering responsibility for applying approved visual
+boundary grammar.
+
+Boundary Application Model:
+VISUAL_BOUNDARY_STANDARD defines visual boundary grammar. AI
+Output Standard applies that approved grammar during rendering.
+
+Boundary Application Requirements:
+- Apply the active VISUAL_BOUNDARY_STANDARD.
+- Use the resolved boundary level for each document object.
+- Preserve established valid boundary patterns.
+- Preserve equivalent boundaries for equivalent structures.
+- Preserve complete boundary pairs.
+- Render L1 Sections as N. TITLE.
+
+Boundary Application Prohibitions:
+- Invent boundary styles.
+- Change boundary lengths.
+- Substitute boundary levels.
+- Remove valid boundaries without authorization.
+- Leave incomplete boundary pairs.
+- Leave orphaned boundaries.
+- Render a separate SECTION label for L1 headings.
+
+======================================================================
+10. OUTPUT PRESENTATION
+======================================================================
+
+Purpose:
+Define the final presentation behavior of Assistant output.
+
+Presentation Model:
+Output Presentation presents approved content after applicable
+structure, grammar, boundary, layout, and compliance requirements
+have been resolved.
+
+Presentation Objectives:
+- Readability.
+- Consistency.
+- Compactness.
+- Scanability.
+- Copyability.
+
+Presentation Requirements:
+- Preserve approved Property Rendering.
+- Preserve approved structural rendering.
+- Preserve approved visual boundaries.
+- Preserve approved layout composition.
+- Preserve complete logical blocks.
+- Preserve dedicated copyable blocks when required.
+- Avoid presentation-only variation.
+
+Presentation Prohibitions:
+- Redefine document layout.
+- Redefine Property–Value grammar.
+- Redefine document structure.
+- Redefine Delivery Mode behavior.
+- Add unrequested explanation inside a copyable payload.
+
+======================================================================
+11. RENDERING GOVERNANCE
+======================================================================
+
+Purpose:
+Define rendering classification, authority, and decision
+boundaries.
+
+Rendering Classification:
+- Valid Rendering: Explicitly required or permitted.
+- Invalid Rendering: Explicitly prohibited.
+- Undefined Rendering: Neither required nor permitted.
+
+Undefined Rendering Resolution:
+When rendering behavior is undefined, preserve an existing valid
+pattern or use the simplest valid rendering permitted by this
+Standard.
+
+Material ambiguity that prevents safe rendering shall be reported
+instead of resolved through invention.
+
+Rendering Decision Sources:
+- This Standard.
+- Applicable higher-authority USER_PACKAGE documents.
+- Explicit User instructions.
+- Applicable authorization.
+- Existing valid rendering patterns.
+
+Prohibited Decision Sources:
+- Assistant stylistic preference.
+- Unapproved external conventions.
+- Unverified assumptions.
+- Platform-specific appearance alone.
+
+Rendering Tie-Break:
+When multiple options satisfy the same authority level, preserve
+the existing valid rendering pattern.
+
+Rendering Conflict:
+Equal-authority rendering conflicts shall be reported rather than
+resolved through an invented compromise.
+
+======================================================================
+12. STANDARDS COMPLIANCE
+======================================================================
+
+Purpose:
+Define the relationship between rendering and Standards
+Compliance Review.
+
+Compliance Boundary:
+Rendering shall begin only after the artifact satisfies all
+applicable authoritative requirements.
+
+Compliance Requirements:
+- Authoring requirements are satisfied.
+- Structure requirements are satisfied.
+- Property–Value requirements are satisfied.
+- Visual boundary requirements are satisfied.
+- Layout requirements are satisfied.
+- Delivery requirements are preserved.
+- Rendering does not modify approved content.
+
+Partial Compliance:
+Partial updates shall apply this Standard only to generated or
+modified content unless broader normalization is authorized.
+
+Rule Scope:
+Each rendering rule shall remain limited to its defined domain.
+
+======================================================================
+13. DEFINITIONS
+======================================================================
+
+Purpose:
+Define official terminology used throughout AI Output Standard.
+
+Documentation Asset:
+A copyable document or text artifact intended for long-term use.
+
+Existing Documentation Asset:
+The documentation asset currently being generated or modified.
+
+Rendering:
+Presentation of completed work without changing approved meaning.
+
+Rendering Pattern:
+An established presentation arrangement used within an asset.
+
+Rendering Style:
+The visual appearance used to express a Rendering Pattern.
+
+Partial Rendering:
+Application of this Standard only to generated or modified
+content.
+
+Normalize:
+Application of approved rendering requirements across an entire
+asset.
+
+Modernize:
+Application of the latest approved rendering requirements across
+an entire asset without modifying approved knowledge.
+
+Delivery Mode:
+An authoritative contract governing how completed output is
+delivered to the User.
+
+Patch Delivery:
+The official clipboard-ready Delivery Mode defined by
+PATCH_DELIVERY_STANDARD.
+
+Legacy Compatibility:
+RTCT (Ready-To-Copy Text) was the previous name used for
+clipboard-ready delivery behavior.
+
+RTCT is not an active Delivery Mode.
+
+Existing RTCT references shall be interpreted as
+PATCH_DELIVERY_STANDARD unless referring to historical
+documentation.
+
+======================================================================
+14. DOCUMENT RELATIONSHIPS
+======================================================================
+
+Purpose:
+Define relationships with authoritative USER_PACKAGE documents.
+
+USER_PROFILE:
+Defines User authority and output preferences.
+
+AI_BEHAVIOR_STANDARD:
+Defines Assistant behavior during output production.
+
+DOCUMENT_STRUCTURE_STANDARD:
+Defines document objects and structural relationships.
+
+DOCUMENT_WRITING_STANDARD:
+Defines documentation writing and knowledge preservation.
+
+PROPERTY_VALUE_STANDARD:
+Defines semantic Property–Value grammar.
+
+VISUAL_BOUNDARY_STANDARD:
+Defines visual boundary grammar.
+
+DOCUMENT_LAYOUT_STANDARD:
+Defines document layout composition.
+
+PATCH_DELIVERY_STANDARD:
+Defines clipboard-ready Patch Delivery.
+
+SCRIPT_DELIVERY:
+Defines ready-to-run script delivery.
+
+Legacy Delivery Migration:
+
+PATCH_DELIVERY_STANDARD replaces RTCT as the official
+clipboard-ready Delivery Mode.
+
+AI Output Standard shall reference active Delivery Modes
+through their authoritative Standards.
+
+Historical delivery terminology shall not override current
+Delivery Mode ownership.
+
+Relationship Rules:
+
+AI Output Standard shall:
+- Depend on applicable authoritative standards.
+- Present completed work without changing ownership.
+- Apply approved visual boundaries.
+- Preserve approved layout composition.
+- Preserve active Delivery Mode requirements.
+
+AI Output Standard shall not:
+- Replace another authoritative standard.
+- Absorb document layout responsibility.
+- Absorb document structure responsibility.
+- Absorb Delivery Mode responsibility.
+- Redefine artifact content.
+
+======================================================================
+15. RESPONSIBILITY BOUNDARIES
+======================================================================
+
+Purpose:
+Define the responsibility boundary of AI Output Standard.
+
+Responsibility Rule:
+AI Output Standard governs output rendering only.
+
+AI Output Standard Shall Not Define:
+- Assistant behavior.
+- Artifact authoring.
+- Artifact transformation.
+- Document structure.
+- Documentation writing.
+- Property–Value grammar.
+- Visual boundary grammar.
+- Document layout.
+- Delivery behavior.
+- Runtime behavior.
+- Artifact content.
+
+Ownership Rule:
+Rendering completed work does not transfer responsibility
+ownership to AI Output Standard.
+
+======================================================================
+16. REVISION POLICY
+======================================================================
+
+Purpose:
+Define when AI Output Standard may be revised.
+
+Revision Criteria:
+This Standard may be revised only when validated rendering work
+demonstrates:
+
+- Rendering ambiguity.
+- Repeated rendering inconsistency.
+- Missing rendering coverage.
+- Copyability failure.
+- Presentation incompatibility.
+- Responsibility overlap.
+- Conflict with a higher-authority document.
+- Proven maintenance cost.
+
+Revision Rules:
+
+Revision shall:
+- Preserve the primary responsibility.
+- Preserve approved rendering behavior.
+- Preserve compatibility when requirements remain valid.
+- Resolve validated deficiencies before adding domains.
+- Preserve Single Authority Ownership.
+
+Revision shall not:
+- Absorb layout behavior.
+- Absorb structure behavior.
+- Absorb delivery behavior.
+- Introduce hidden assumptions.
+- Add rendering rules without an identified owner.
+
+======================================================================
+17. SELF COMPLIANCE
+======================================================================
+
+Purpose:
+Ensure this Standard complies with every applicable USER_PACKAGE
+standard.
+
+Self Compliance Rule:
+This Standard shall serve as a living implementation of its own
+rendering requirements.
+
+Self Validation:
+- The Document contains one Document Title.
+- Each major topic uses one numbered Section.
+- L1 headings use N. TITLE without a SECTION label.
+- Property–Value relationships remain intact.
+- Visual boundaries use approved levels.
+- Line composition remains within Layout Parameters.
+- Rendering preserves structure and layout.
+- Code blocks remain unmodified.
+- Copyable payloads contain no unrequested commentary.
+- No unrelated responsibility is absorbed.
+- Version and Status match USER_PACKAGE v1.0.
+
+Self Compliance Boundary:
+Self Compliance shall not override a higher-authority
+USER_PACKAGE document.
+
+======================================================================
+18. RESERVED
+======================================================================
+
+Purpose:
+Reserve future rendering domains without changing the current
+responsibility model.
+
+Reserved Domains:
+- Quote Rendering.
+- Markdown-Specific Rendering.
+- Diagram Rendering.
+- Additional approved output formats.
+
+Reserved Boundary:
+Reserved status shall not authorize undefined rendering behavior.
+
+======================================================================
+END OF AI OUTPUT STANDARD
+======================================================================
