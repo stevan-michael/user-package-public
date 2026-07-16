@@ -70,9 +70,9 @@ USER_PACKAGE/
 
 ## Quick Start
 
-1. Download the complete USER_PACKAGE repository as a ZIP archive.
+1. Download the complete USER_PACKAGE repository.
 
-   If you are using GitHub, you can download it from the repository page using the available ZIP download option.
+   On the GitHub repository page, click **Code** → **Download ZIP**.
 
 2. Upload the downloaded ZIP archive to your AI assistant.
 
