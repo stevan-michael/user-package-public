@@ -72,7 +72,9 @@ USER_PACKAGE/
 
 1. Download the complete USER_PACKAGE repository as a ZIP archive.
 
-2. Upload the ZIP archive to an AI assistant that supports file uploads.
+   If you are using GitHub, you can download it from the repository page using the available ZIP download option.
+
+2. Upload the downloaded ZIP archive to your AI assistant.
 
 3. Send:
 
@@ -80,7 +82,7 @@ USER_PACKAGE/
 Initialize USER_PACKAGE
 ```
 
-4. Wait until the assistant returns:
+4. Wait for the successful initialization response:
 
 ```text
 USER_PACKAGE initialized.
@@ -91,8 +93,6 @@ Core assets activated.
 
 Optional assets available when applicable.
 ```
-
-5. Begin your task after the successful initialization response is returned.
 
 ## Core Design Principles
 
