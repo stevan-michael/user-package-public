@@ -1,0 +1,78 @@
+======================================================================
+======================================================================
+AI COMPATIBILITY DECISION TEMPLATE
+======================================================================
+======================================================================
+
+Version:
+1.0
+
+Status:
+Official
+
+Category:
+Compatibility Decision Template
+
+Identity:
+Standard template for recording the official compatibility
+decision of USER PACKAGE for an AI Platform.
+
+Purpose:
+Provide a consistent structure for documenting compatibility
+decisions following completed validation.
+
+Scope:
+Single AI Platform compatibility decision.
+
+Primary Responsibility:
+Compatibility decision recording.
+
+Owner:
+USER PACKAGE documentation owner.
+
+Applicability:
+Applicable to every completed AI Platform validation.
+
+======================================================================
+1. AI PLATFORM INFORMATION
+======================================================================
+
+AI Platform:
+
+Platform Version:
+
+Model Tested:
+
+Decision Date:
+
+Reviewer:
+
+======================================================================
+2. COMPATIBILITY DECISION
+======================================================================
+
+Compatibility Status:
+
+Decision Summary:
+
+======================================================================
+3. DECISION BASIS
+======================================================================
+
+Related Test Procedure:
+
+Related Test Evidence:
+
+Supporting Notes:
+
+======================================================================
+4. APPROVAL
+======================================================================
+
+Approved By:
+
+Approval Date:
+
+======================================================================
+END OF AI COMPATIBILITY DECISION TEMPLATE
+======================================================================

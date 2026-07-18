@@ -13,12 +13,20 @@ Repository releases follow Semantic Versioning where practical.
 - Copyright and usage notice in `COPYRIGHT.txt`.
 - Public positioning as **An AI Documentation & Collaboration Framework**.
 - Repository navigation and quick-start guidance for new readers.
+- AI platform compatibility validation documentation.
+- Platform-specific usage guidance for supported AI assistants.
+- Compatibility records covering ChatGPT, Claude, Copilot, Perplexity,
+  and Gemini validation results.
 
 ### Changed
 
 - Replaced the internal `README.txt` landing-page role with a GitHub-native `README.md`.
 - Clarified the separation between public presentation documents and the plain-text core framework.
 - Reframed public documentation around problems, practical value, supported capabilities, and repository navigation.
+- Updated USER_PACKAGE initialization guidance from exact response
+  matching to behavior-based initialization confirmation.
+- Improved cross-platform compatibility documentation to account for
+  differences in AI platform capabilities and file handling workflows.
 
 ### Removed
 

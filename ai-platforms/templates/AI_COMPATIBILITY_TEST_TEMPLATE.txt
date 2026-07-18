@@ -1,0 +1,96 @@
+======================================================================
+======================================================================
+AI COMPATIBILITY TEST TEMPLATE
+======================================================================
+======================================================================
+
+Version:
+1.0
+
+Status:
+Official
+
+Category:
+Compatibility Test Template
+
+Identity:
+Standard template for validating USER PACKAGE compatibility
+across AI Platforms.
+
+Purpose:
+Provide a consistent structure for recording compatibility
+validation results.
+
+Scope:
+Single AI Platform validation.
+
+Primary Responsibility:
+Compatibility test execution.
+
+Owner:
+USER PACKAGE documentation owner.
+
+Applicability:
+Applicable to every AI Platform validation.
+
+======================================================================
+1. AI PLATFORM INFORMATION
+======================================================================
+
+AI Platform:
+
+Platform Version:
+
+Model Tested:
+
+Test Date:
+
+Tester:
+
+======================================================================
+2. TEST ENVIRONMENT
+======================================================================
+
+Platform Access:
+
+USER PACKAGE Version:
+
+Package Format:
+
+Additional Notes:
+
+======================================================================
+3. VALIDATION CHECKLIST
+======================================================================
+
+AI Platform Accessible:
+
+Package Accepted:
+
+Package Understood:
+
+Initialization Successful:
+
+Expected Runtime Behavior:
+
+Evidence Recorded:
+
+======================================================================
+4. TEST RESULT
+======================================================================
+
+Compatibility Status:
+
+Summary:
+
+======================================================================
+5. OBSERVATIONS
+======================================================================
+
+Known Limitations:
+
+Recommendations:
+
+======================================================================
+END OF AI COMPATIBILITY TEST TEMPLATE
+======================================================================

@@ -219,7 +219,7 @@ Initialization Requirements:
 - Preserve responsibility ownership.
 - Activate only applicable assets.
 - Preserve explicit User instructions.
-- Produce the official Initialization Response.
+- Produce the official Initialization Confirmation.
 
 Initialization Prohibitions:
 - Redefine package architecture.
@@ -320,35 +320,71 @@ Initialization shall preserve every authoritative responsibility
 without duplication or transfer.
 
 ======================================================================
-7. INITIALIZATION RESPONSE CONTRACT
+7. INITIALIZATION CONFIRMATION CONTRACT
 ======================================================================
 
 Purpose:
-Define the official successful initialization response for
-USER_PACKAGE.
+Define the expected confirmation behavior after USER_PACKAGE
+initialization.
 
-Successful Initialization Response:
+Initialization Confirmation Contract:
 
-USER_PACKAGE initialized.
+Successful initialization shall be determined by behavioral
+confirmation rather than exact response wording.
 
-Status: READY
+After receiving:
 
-Core assets activated.
+Initialize USER_PACKAGE
 
-Optional assets available when applicable.
+the Assistant shall confirm that:
+- USER_PACKAGE has been recognized.
+- Applicable package context has been loaded.
+- Core assets are available.
+- The Assistant is ready to operate using USER_PACKAGE context.
 
-Response Completion Rule:
-The successful initialization response is complete when the
-defined response has been generated exactly.
+Response Flexibility:
 
-Additional Information Boundary:
-Initialization summaries, asset listings, lifecycle reports,
-capability reports, and package explanations shall not be added
-unless explicitly requested or required to report a blocker.
+The exact confirmation wording may vary depending on:
+- AI platform.
+- AI model.
+- Runtime capability.
+- Available context.
+- Platform-specific behavior.
 
-Failure Response:
-When initialization fails, the response shall identify the
-validated blocker and shall not declare Status READY.
+Equivalent confirmation meaning shall be accepted as successful
+initialization.
+
+The Assistant shall not be required to reproduce a fixed response
+string unless explicitly required by a specific validation workflow.
+
+Initialization Boundary:
+
+Successful initialization does not guarantee:
+- Identical Assistant behavior across platforms.
+- Identical response formatting.
+- Identical wording.
+- Identical capability availability.
+
+Actual behavior remains subject to:
+- Model capability.
+- Platform support.
+- Available tools.
+- Context limitations.
+- Active instructions.
+
+Validation Principle:
+
+USER_PACKAGE compatibility shall be evaluated based on:
+- Package acceptance.
+- Package understanding.
+- Initialization success.
+- Expected operational behavior.
+
+Not based solely on exact response reproduction.
+
+======================================================================
+END OF INITIALIZATION CONFIRMATION CONTRACT
+======================================================================
 
 ======================================================================
 8. PACKAGE VALIDATION
@@ -555,7 +591,7 @@ Self Validation:
 - Every responsibility has one owner.
 - Initialization Lifecycle remains complete.
 - Activation Rules preserve applicability.
-- Initialization Response remains exact.
+- Initialization Confirmation behavior remains valid.
 - Line composition remains within active Layout Parameters.
 - No unrelated responsibility is absorbed.
 - Version and Status match USER_PACKAGE v1.0.

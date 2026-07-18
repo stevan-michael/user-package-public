@@ -70,11 +70,11 @@ USER_PACKAGE/
 
 ## Quick Start
 
-1. Download the complete USER_PACKAGE repository.
+1. Download the complete USER_PACKAGE repository as a ZIP archive.
 
-   On the GitHub repository page, click **Code** → **Download ZIP**.
+2. Upload USER_PACKAGE using a workflow supported by your AI platform.
 
-2. Upload the downloaded ZIP archive to your AI assistant.
+See AI Platform Compatibility Guide for platform-specific instructions.
 
 3. Send:
 
@@ -82,17 +82,155 @@ USER_PACKAGE/
 Initialize USER_PACKAGE
 ```
 
-4. Wait for the successful initialization response:
+Wait until the assistant confirms that USER_PACKAGE has been
+initialized and is ready for use.
+
+A successful initialization confirmation means:
+
+- USER_PACKAGE has been recognized.
+- Applicable package context has been loaded.
+- Core assets are available.
+- The Assistant is ready to operate using USER_PACKAGE context.
+
+The exact confirmation wording may vary depending on the AI platform
+and model behavior.
+
+Begin your task after successful initialization confirmation.
+
+## AI Platform Compatibility Guide
+
+USER_PACKAGE has been validated across multiple AI platforms.
+
+Each platform may require a different upload workflow depending on
+its file handling capability.
+
+| Platform | Status | Recommended Workflow |
+|---|---|---|
+| ChatGPT | PASS | ZIP upload |
+| Claude | PASS | ZIP upload |
+| Copilot | PASS | Extracted file upload (20 file limit) |
+| Perplexity | PASS (Pro) | Extracted file upload |
+| Gemini | PARTIAL | Upload limitations (10 file limit / ZIP handling) |
+
+---
+
+## ChatGPT
+
+Status:
+
+PASS
+
+Validated workflow:
+
+1. Upload USER_PACKAGE ZIP archive.
+2. Wait until processing completes.
+3. Send:
 
 ```text
-USER_PACKAGE initialized.
-
-Status: READY
-
-Core assets activated.
-
-Optional assets available when applicable.
+Initialize USER_PACKAGE
 ```
+
+ChatGPT successfully initialized USER_PACKAGE using the ZIP workflow.
+
+---
+
+## Claude
+
+Status:
+
+PASS
+
+Validated workflow:
+
+1. Upload USER_PACKAGE ZIP archive.
+2. Wait until processing completes.
+3. Send:
+
+```text
+Initialize USER_PACKAGE
+```
+
+Claude successfully initialized USER_PACKAGE using the ZIP workflow.
+
+---
+
+## Copilot
+
+Status:
+
+PASS
+
+Validated workflow:
+
+1. Extract USER_PACKAGE files.
+2. Upload supported files.
+3. Wait until processing completes.
+4. Send:
+
+```text
+Initialize USER_PACKAGE
+```
+
+Copilot successfully initialized USER_PACKAGE using extracted files.
+
+Note:
+
+Copilot upload capability was validated within the platform file
+upload limitation during testing.
+
+---
+
+## Perplexity
+
+Status:
+
+PASS (Pro)
+
+Validated workflow:
+
+1. Use a plan with file upload capability.
+2. Upload extracted USER_PACKAGE files.
+3. Wait until processing completes.
+4. Send:
+
+```text
+Initialize USER_PACKAGE
+```
+
+Note:
+
+Perplexity file upload capability required a Pro subscription during
+validation.
+
+---
+
+## Gemini
+
+Status:
+
+PARTIAL COMPATIBILITY
+
+Current limitations:
+
+- ZIP upload did not execute the USER_PACKAGE initialization workflow.
+- Extracted file workflow was limited by maximum upload capability.
+
+Recommended workaround:
+
+1. Upload the first batch of USER_PACKAGE files.
+2. Wait until Gemini processes the uploaded files.
+3. Upload the remaining files.
+4. Confirm all required files are available in context.
+5. Send:
+
+```text
+Initialize USER_PACKAGE
+```
+
+Note:
+
+This workaround has not been validated as an official compatible
+workflow during current testing.
 
 ## Core Design Principles
 
