@@ -4,7 +4,22 @@ All notable public changes to USER_PACKAGE are recorded in this file.
 
 Repository releases follow Semantic Versioning where practical.
 
-## [1.1.0] - Unreleased
+## [1.2.0] - Unreleased
+
+### Changed
+
+- Updated `AI_BEHAVIOR_BANK.txt` from version 1.0 to 1.1.
+- Added stricter Assistant communication-scope boundaries.
+- Added behavior rules preventing unsolicited optional analysis,
+  recommendations, alternatives, summaries, conclusions, and future
+  discussion after the active communication objective is complete.
+- Preserved required communication for blockers, conflicts,
+  uncertainties, significant risks, missing information, active
+  workflows, and continuity requirements.
+- Updated public distribution guidance to prioritize Release packages
+  over repository ZIP downloads.
+
+## [1.1.0] - 2026-07-16
 
 ### Added
 
@@ -27,6 +42,9 @@ Repository releases follow Semantic Versioning where practical.
   matching to behavior-based initialization confirmation.
 - Improved cross-platform compatibility documentation to account for
   differences in AI platform capabilities and file handling workflows.
+- Clarified the separation of responsibilities between AI_BEHAVIOR_BANK, AI_BEHAVIOR_STANDARD, and AI_OUTPUT_STANDARD through architecture regression and compatibility validation.
+- Strengthened deterministic Assistant behavior through stricter communication scope boundaries without changing the USER_PACKAGE authority model or runtime architecture.
+- Refined Assistant communication behavior to reduce unsolicited recommendations, summaries, conclusions, and future suggestions while preserving required operational communication.
 
 ### Removed
 

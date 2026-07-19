@@ -68,22 +68,34 @@ USER_PACKAGE/
 | [`DOCUMENTATION METHODS/`](DOCUMENTATION%20METHODS/) | Controlled documentation transformation methods |
 | [`DELIVERY/`](DELIVERY/) | Patch, script, and build-delivery capabilities |
 
+## Distribution
+
+Two distribution methods are available:
+
+- **Recommended:** Download the latest Release package.
+- **Alternative:** Download the repository as a ZIP archive.
+
+The Release package contains only the runtime files required for AI initialization.
+
+The repository additionally contains documentation, release history, and development assets.
+
 ## Quick Start
 
-1. Download the complete USER_PACKAGE repository as a ZIP archive.
+1. Download the latest USER_PACKAGE Release package.
 
-2. Upload USER_PACKAGE using a workflow supported by your AI platform.
+2. If a Release package is unavailable, download the repository as a ZIP archive instead.
+
+3. Upload the USER_PACKAGE package using a workflow supported by your AI platform.
 
 See AI Platform Compatibility Guide for platform-specific instructions.
 
-3. Send:
+4. Send:
 
 ```text
 Initialize USER_PACKAGE
 ```
 
-Wait until the assistant confirms that USER_PACKAGE has been
-initialized and is ready for use.
+5. Wait until the assistant confirms that USER_PACKAGE has been initialized and is ready for use.
 
 A successful initialization confirmation means:
 
@@ -95,7 +107,7 @@ A successful initialization confirmation means:
 The exact confirmation wording may vary depending on the AI platform
 and model behavior.
 
-Begin your task after successful initialization confirmation.
+6. Begin your task after successful initialization confirmation.
 
 ## AI Platform Compatibility Guide
 
@@ -103,6 +115,8 @@ USER_PACKAGE has been validated across multiple AI platforms.
 
 Each platform may require a different upload workflow depending on
 its file handling capability.
+
+The latest Release package is the recommended distribution unless stated otherwise.
 
 | Platform | Status | Recommended Workflow |
 |---|---|---|
@@ -122,7 +136,7 @@ PASS
 
 Validated workflow:
 
-1. Upload USER_PACKAGE ZIP archive.
+1. Upload the USER_PACKAGE package.
 2. Wait until processing completes.
 3. Send:
 
@@ -142,7 +156,7 @@ PASS
 
 Validated workflow:
 
-1. Upload USER_PACKAGE ZIP archive.
+1. Upload the USER_PACKAGE package.
 2. Wait until processing completes.
 3. Send:
 
@@ -212,7 +226,7 @@ PARTIAL COMPATIBILITY
 
 Current limitations:
 
-- ZIP upload did not execute the USER_PACKAGE initialization workflow.
+- ZIP upload did not successfully complete the USER_PACKAGE initialization workflow during validation.
 - Extracted file workflow was limited by maximum upload capability.
 
 Recommended workaround:
@@ -245,12 +259,12 @@ These principles are intended to reduce ambiguity without removing user control.
 
 ## Project Status
 
-- **Target public release:** `v1.1.0`
+- **Current public release:** `v1.2.0`
 - **Release focus:** public documentation and repository readiness
 - **Core framework format:** plain-text (`.txt`) documents
 - **Development model:** versioned, controlled evolution
 
-Major architecture harmonization is outside the scope of the v1.1 public baseline.
+Major architecture harmonization is outside the scope of the v1.2 public baseline.
 
 ## Usage and Copyright
 
