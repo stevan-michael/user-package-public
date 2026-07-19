@@ -4,7 +4,7 @@ All notable public changes to USER_PACKAGE are recorded in this file.
 
 Repository releases follow Semantic Versioning where practical.
 
-## [1.2.0] - Unreleased
+## [1.2.0] - 2026-07-19
 
 ### Changed
 
