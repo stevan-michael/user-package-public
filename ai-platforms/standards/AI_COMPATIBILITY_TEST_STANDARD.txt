@@ -71,6 +71,26 @@ Controlled Publication
 Public compatibility information shall only be published after
 successful internal validation.
 
+Validation Scope
+
+Compatibility validation represents documented validation
+performed under the conditions available at the time of
+evaluation.
+
+Compatibility validation shall not be interpreted as a permanent
+guarantee of identical behavior across future sessions,
+platform versions, or service conditions.
+
+Platform Capability Dependency
+
+Compatibility validation shall consider the effective
+capabilities available on the evaluated AI Platform during
+testing.
+
+These capabilities may include file handling, upload availability,
+context capacity, subscription features, operational limits,
+session-specific availability, and platform behavior.
+
 ======================================================================
 3. MINIMUM VALIDATION REQUIREMENTS
 ======================================================================
@@ -84,6 +104,8 @@ before compatibility may be declared.
 - Initialization completes successfully.
 - Expected runtime behavior is achieved.
 - Validation evidence is recorded.
+- Effective platform capabilities required for the validated
+  workflow are identified and documented.
 
 ======================================================================
 4. COMPATIBILITY STATUS
@@ -91,11 +113,13 @@ before compatibility may be declared.
 
 PASS
 
-Compatibility has been successfully validated.
+Compatibility has been successfully validated under documented
+validation conditions.
 
 PARTIAL
 
-Compatibility is functional with documented limitations.
+Compatibility is functional with documented limitations that
+affect one or more supported workflows.
 
 NOT TESTED
 
@@ -103,8 +127,9 @@ Compatibility validation has not been completed.
 
 UNSUPPORTED
 
-Compatibility validation failed or the AI Platform cannot
-support USER PACKAGE.
+Compatibility validation failed, or the AI Platform cannot
+satisfy the minimum validation requirements defined by this
+Standard.
 
 ======================================================================
 5. DOCUMENT RELATIONSHIP
@@ -123,6 +148,10 @@ This Standard governs compatibility validation.
 
 Public compatibility documentation shall derive compatibility
 information from validated internal documentation.
+
+Public compatibility documentation shall not introduce
+compatibility claims that are unsupported by documented
+validation.
 
 ======================================================================
 END OF AI COMPATIBILITY TEST STANDARD

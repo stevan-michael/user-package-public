@@ -111,26 +111,48 @@ and model behavior.
 
 ## AI Platform Compatibility Guide
 
-USER_PACKAGE has been validated across multiple AI platforms.
+USER_PACKAGE initialization workflows have been validated across
+multiple AI platforms.
 
 Each platform may require a different upload workflow depending on
 its file handling capability.
 
 The latest Release package is the recommended distribution unless stated otherwise.
 
-| Platform | Status | Recommended Workflow |
+Compatibility results reflect workflows validated under the conditions
+available at the time of evaluation.
+
+Successful USER_PACKAGE initialization depends not only on the package
+itself but also on the effective capabilities of the target AI
+platform.
+
+These capabilities may include upload availability, file handling,
+context capacity, operational limits, subscription features,
+session-specific availability, and platform behavior that may change
+over time.
+
+As a result, compatibility should be interpreted as validation evidence
+rather than a permanent guarantee of identical behavior across future
+sessions or platform versions.
+
+The validation status below reflects the latest documented validation
+available for each platform.
+
+| Platform | Validation Status | Recommended Workflow |
 |---|---|---|
 | ChatGPT | PASS | ZIP upload |
 | Claude | PASS | ZIP upload |
 | Copilot | PASS | Extracted file upload (20 file limit) |
-| Perplexity | PASS (Pro) | Extracted file upload |
+| Perplexity | PASS* (Pro) | Extracted file upload |
 | Gemini | PARTIAL | Upload limitations (10 file limit / ZIP handling) |
+
+* Validation performed using a Pro subscription. Operational availability may vary.
 
 ---
 
 ## ChatGPT
 
-Status:
+Validation Status:
 
 PASS
 
@@ -150,7 +172,7 @@ ChatGPT successfully initialized USER_PACKAGE using the ZIP workflow.
 
 ## Claude
 
-Status:
+Validation Status:
 
 PASS
 
@@ -170,7 +192,7 @@ Claude successfully initialized USER_PACKAGE using the ZIP workflow.
 
 ## Copilot
 
-Status:
+Validation Status:
 
 PASS
 
@@ -196,9 +218,9 @@ upload limitation during testing.
 
 ## Perplexity
 
-Status:
+Validation Status:
 
-PASS (Pro)
+PASS* (Pro)
 
 Validated workflow:
 
@@ -216,13 +238,16 @@ Note:
 Perplexity file upload capability required a Pro subscription during
 validation.
 
+Operational availability may vary between sessions as platform
+capabilities and service behavior evolve.
+
 ---
 
 ## Gemini
 
-Status:
+Validation Status:
 
-PARTIAL COMPATIBILITY
+PARTIAL
 
 Current limitations:
 
@@ -276,4 +301,9 @@ See [`COPYRIGHT.txt`](COPYRIGHT.txt) for details.
 
 ## Disclaimer
 
-USER_PACKAGE provides structure, standards, and reusable working methods. It does not guarantee deterministic AI behavior, eliminate model limitations, or replace security, legal, technical, or domain-specific review.
+USER_PACKAGE provides structure, standards, and reusable working
+methods.
+
+It does not guarantee deterministic AI behavior, continuous platform
+compatibility, or freedom from model limitations, nor does it replace
+security, legal, technical, or domain-specific review.

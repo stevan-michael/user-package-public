@@ -40,7 +40,7 @@ Perplexity AI Platform.
 AI Platform:
 Perplexity
 
-Model Coverage:
+Model Tested:
 Best
 
 Decision Date:
@@ -57,20 +57,39 @@ Compatibility Status:
 PASS
 
 Decision Summary:
-USER PACKAGE is officially verified as compatible with the
-Perplexity AI Platform based on successful extracted package
-compatibility validation.
+USER PACKAGE is verified as compatible with the Perplexity AI
+Platform under the documented validation conditions based on
+successful extracted package compatibility validation.
 
 ======================================================================
 3. DECISION BASIS
 ======================================================================
 
-Related Test Records:
+Related Test Procedure:
+
 AI_COMPATIBILITY_TEST_RECORD_PERPLEXITY_DESKTOP_PRO.txt
 
+Related Test Evidence:
+
+AI_COMPATIBILITY_TEST_RECORD_PERPLEXITY_DESKTOP_PRO.txt
+
+Validation Conditions:
+- Perplexity Pro subscription.
+- Extracted USER PACKAGE file workflow.
+- Validation performed on 2026-07-17.
+
+Effective Platform Capabilities:
+- File upload capability available.
+- Extracted file processing supported.
+- Required USER PACKAGE files accepted.
+
 Supporting Notes:
+
 The validated test environment successfully initialized
-USER PACKAGE without compatibility issues.
+USER PACKAGE under the documented validation conditions.
+
+Operational availability may vary between sessions as platform
+capabilities and service behavior evolve.
 
 ======================================================================
 4. APPROVAL

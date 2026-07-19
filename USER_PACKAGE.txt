@@ -367,6 +367,7 @@ Successful initialization does not guarantee:
 
 Actual behavior remains subject to:
 - Model capability.
+- Effective platform capabilities.
 - Platform support.
 - Available tools.
 - Context limitations.

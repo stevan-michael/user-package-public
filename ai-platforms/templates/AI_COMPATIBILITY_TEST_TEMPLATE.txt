@@ -57,6 +57,8 @@ USER PACKAGE Version:
 
 Package Format:
 
+Effective Platform Capabilities:
+
 Additional Notes:
 
 ======================================================================
@@ -81,6 +83,8 @@ Evidence Recorded:
 
 Compatibility Status:
 
+Validation Conditions:
+
 Summary:
 
 ======================================================================
@@ -88,6 +92,8 @@ Summary:
 ======================================================================
 
 Known Limitations:
+
+Platform Capability Notes:
 
 Recommendations:
 

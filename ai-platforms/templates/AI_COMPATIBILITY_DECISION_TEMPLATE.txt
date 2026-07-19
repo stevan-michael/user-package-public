@@ -63,6 +63,10 @@ Related Test Procedure:
 
 Related Test Evidence:
 
+Validation Conditions:
+
+Effective Platform Capabilities:
+
 Supporting Notes:
 
 ======================================================================
