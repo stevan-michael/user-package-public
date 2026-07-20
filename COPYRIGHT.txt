@@ -4,25 +4,48 @@ Copyright © 2026 Stevan Michael.
 All rights reserved.
 
 USER_PACKAGE and its included documentation, standards, methods,
-templates, workflows, and supporting materials are publicly visible
-for portfolio, evaluation, and educational review purposes.
+templates, workflows, and supporting materials are publicly available
+for:
+
+- Portfolio review
+- Technical evaluation
+- Educational learning
 
 No open-source license is granted.
+
+Public visibility does not transfer ownership or grant permission
+beyond the rights explicitly described in this notice, applicable law,
+or GitHub's platform terms.
+
+-------------------------------------------------------------------------------
+
+PERMITTED
+
+You may:
+
+- View this repository.
+- Study the project.
+- Evaluate the framework.
+- Reference or cite USER_PACKAGE when discussing, reviewing, or
+  evaluating the project.
+
+-------------------------------------------------------------------------------
+
+NOT PERMITTED
 
 Unless explicit written permission is provided by the copyright owner,
 you may not:
 
 - Copy or redistribute substantial portions of this repository.
 - Publish modified or derivative versions.
-- Repackage or present the work as your own.
-- Use the materials as part of a commercial product or paid service.
-- Remove or misrepresent ownership and attribution information.
+- Repackage USER_PACKAGE under another name.
+- Sell USER_PACKAGE or represent it as your own work.
+- Remove or misrepresent copyright, ownership, or attribution
+  information.
 
-Public visibility does not transfer ownership or grant permission for
-reuse beyond rights that may apply under applicable law or GitHub's
-platform terms.
+-------------------------------------------------------------------------------
 
-Requests for additional permission may be submitted through the
+Requests for additional permissions may be submitted through the
 repository owner's public GitHub contact channels.
 
 This notice is not an open-source license.
