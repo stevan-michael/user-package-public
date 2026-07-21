@@ -384,10 +384,6 @@ USER_PACKAGE compatibility shall be evaluated based on:
 Not based solely on exact response reproduction.
 
 ======================================================================
-END OF INITIALIZATION CONFIRMATION CONTRACT
-======================================================================
-
-======================================================================
 8. PACKAGE VALIDATION
 ======================================================================
 
